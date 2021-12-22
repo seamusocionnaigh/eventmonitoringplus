@@ -1,0 +1,2595 @@
+{
+    "label": "Apex Exceptions",
+    "mobileDisabled": false,
+    "description": "Which Classes are generating the most amount of errors, by type, over time.",
+    "state": {
+        "dataSourceLinks": [],
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb09000000r0IwCAI",
+                    "name": "ApexUnexpectedException",
+                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "TIMESTAMP_DERIVED"
+                ],
+                "locked": false,
+                "operator": ">=<="
+            },
+            {
+                "dataset": {
+                    "id": "0Fb09000000r0IwCAI",
+                    "name": "ApexUnexpectedException",
+                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "EXCEPTION_TYPE"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb09000000r0IwCAI",
+                    "name": "ApexUnexpectedException",
+                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "EXCEPTION_MESSAGE"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb09000000r0IwCAI",
+                    "name": "ApexUnexpectedException",
+                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "STACK_TRACE"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb09000000r0IwCAI",
+                    "name": "ApexUnexpectedException",
+                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "REQUEST_ID"
+                ],
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "maxWidth": 1600,
+                "name": "D",
+                "numColumns": 49,
+                "pages": [
+                    {
+                        "label": "Details Page 4",
+                        "name": "1e3e4ca5-2a09-4ca1-aa0f-d4db2245c7f7",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 49,
+                                "column": 0,
+                                "name": "container_1",
+                                "row": 0,
+                                "rowspan": 4,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "rgb(0, 112, 210)",
+                                    "borderEdges": [
+                                        "bottom"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 4
+                                }
+                            },
+                            {
+                                "colspan": 21,
+                                "column": 1,
+                                "name": "text_1",
+                                "row": 1,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [
+                                        "left"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 18,
+                                "column": 1,
+                                "name": "text_17",
+                                "row": 11,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 47,
+                                "column": 1,
+                                "name": "chart_9",
+                                "row": 14,
+                                "rowspan": 31,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 16,
+                                "column": 1,
+                                "name": "chart_10",
+                                "row": 46,
+                                "rowspan": 44,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 30,
+                                "column": 18,
+                                "name": "chart_11",
+                                "row": 46,
+                                "rowspan": 44,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 45,
+                                "column": 2,
+                                "name": "table_34",
+                                "row": 124,
+                                "rowspan": 38,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 2,
+                                "name": "table_1",
+                                "row": 96,
+                                "rowspan": 24,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 13,
+                                "column": 2,
+                                "name": "text_5",
+                                "row": 92,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#FFFFFF",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 34,
+                                "column": 13,
+                                "name": "chart_14",
+                                "row": 96,
+                                "rowspan": 24,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 3,
+                                "name": "text_7",
+                                "row": 213,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 47,
+                                "column": 1,
+                                "name": "container_10",
+                                "row": 91,
+                                "rowspan": 74,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#FFFFFF",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 15,
+                                "name": "listselector_3",
+                                "row": 92,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#FFFFFF",
+                                    "borderEdges": [
+                                        "bottom"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 47,
+                                "column": 1,
+                                "name": "filterpanel_1",
+                                "row": 5,
+                                "rowspan": 5,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 45,
+                                "column": 2,
+                                "name": "text_8",
+                                "row": 162,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 45,
+                                "column": 2,
+                                "name": "text_9",
+                                "row": 121,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "fine",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "rgb(24, 42, 82)",
+                    "cellSpacingX": 0,
+                    "cellSpacingY": 0,
+                    "fit": "original",
+                    "gutterColor": "rgb(240, 244, 247)"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "ExceptionHeatmap_1": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "ExceptionHeatmap",
+                "numbers": [],
+                "query": "q = load \"ApexUnexpectedException\";\nq = foreach q generate 'EXCEPTION_TYPE' as 'EXCEPTION_TYPE', case when 'EXCEPTION_MESSAGE' matches \"UNABLE_TO_LOCK\" then \"RowLock\" when 'EXCEPTION_MESSAGE' matches \"CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY\" then \"Field Access Rights\" when 'EXCEPTION_MESSAGE' matches \" FIELD_CUSTOM_VALIDATION\" then \"Custom Validation Rule\" when 'EXCEPTION_MESSAGE' matches \" FIELD_CUSTOM_VALIDATION_EXCEPTIO\" then \"Custom Validation Rule\" when 'EXCEPTION_MESSAGE' matches \"Attempt to de-reference\" then \"Attempt to de-reference a null object\" when 'EXCEPTION_MESSAGE' matches \"Too many query rows\" then \"Too many query rows\" when 'EXCEPTION_MESSAGE' matches \"CPU Time\" then \"Apex CPU Time Limit\" when 'EXCEPTION_MESSAGE' matches \"Too many queueable\" then \"Too many queueable jobs in queue\" when 'EXCEPTION_MESSAGE' matches \"List has no rows\" then \"List has no rows for assignment to SObject\" when 'EXCEPTION_MESSAGE' matches \"Too Many SOQL Queries\" then \"Too Many SOQL Queries\" when 'EXCEPTION_MESSAGE' matches \"Read timed out\" then \"Read timed out\" when 'EXCEPTION_MESSAGE' matches \"connection was cancelled\" then \"Connection Cancelled\" when 'EXCEPTION_MESSAGE' matches \"Too many DML rows\" then \"Too many DML rows\" when 'EXCEPTION_MESSAGE' matches  \"batchSize must not be null\" then \"Null Batch Size\" when 'EXCEPTION_MESSAGE' matches \"beforeUpdate\" then \"BeforeUpdate Trigger\" when 'EXCEPTION_MESSAGE' matches \"duplicate\" then \"Duplicate Row\" when 'EXCEPTION_MESSAGE' matches \"Record Currently Unavailable\" then \"Record Currently Unavailable\" when 'EXCEPTION_MESSAGE' matches \"TEMPLATE_NOT_ACTIVE\" then \"TEMPLATE_NOT_ACTIVE\" when 'EXCEPTION_MESSAGE' matches \"AfterUpdate\" then \"AfterUpdate Trigger\" when 'EXCEPTION_MESSAGE' matches \"BeforeInsert\" then \"BeforeInsert Trigger\" when 'EXCEPTION_MESSAGE' matches \"AfterInsert\" then \"AfterInsert Trigger\" when 'EXCEPTION_MESSAGE' matches \"ENTITY_IS_DELETED\" then \"ENTITY_IS_DELETED\" when 'EXCEPTION_MESSAGE' matches \"Apex heap size too large\" then \"Apex Heap (Memory)\" when 'EXCEPTION_MESSAGE' matches \"BeforeDelete\" then \"BeforeDelete\" when 'EXCEPTION_MESSAGE' matches \"INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY\" then \"Access Rights\" when 'EXCEPTION_MESSAGE' matches \"failed to get force.com org details\" then \"Authentication Error\" when 'EXCEPTION_MESSAGE' matches \"No contact roles found for contract\" then \"Missing contact roles\" when 'EXCEPTION_MESSAGE' matches \"index out of bounds\" then \"index out of bounds\" when 'EXCEPTION_MESSAGE' matches \"Dependent class is invalid\" then \"Invalid Class\" when 'EXCEPTION_MESSAGE' matches \"Permission to access\" then \"Permission Denied\" when 'EXCEPTION_MESSAGE' matches \"group membership operation already in progress\" then \"Group Lock\" when 'EXCEPTION_MESSAGE' matches \"INVALID_CROSS_REFERENCE\" then \"Wrong ID\"  when 'EXCEPTION_MESSAGE' matches \"SObject row was retrieved\" then \"SOQL Field Error\" when 'EXCEPTION_MESSAGE' matches \"Invalid field\" then \"Invalid field\" when 'EXCEPTION_MESSAGE' matches \"Can only throw this exception\" then \"Exception Error\" when 'EXCEPTION_MESSAGE' matches \"Invalid Visualforce page parameter\" then \"Invalid Parameter\" when 'EXCEPTION_MESSAGE' matches \"Quote to oppty sync failed\" then \"Quote-Opp Sync Fail\" when 'EXCEPTION_MESSAGE' matches \"unexpected token\" then \"unexpected token\" when 'EXCEPTION_MESSAGE' matches \"SendEmail failed\" then \"SendEmail failed\"  when 'EXCEPTION_MESSAGE' matches \"Batchable instance is too big\" then \"Batch Size Error\"  else \"Unknown\" end as 'Exception Message Detail', coalesce(substr('EXCEPTION_MESSAGE',index_of('EXCEPTION_MESSAGE',\":\",1)+1,index_of('EXCEPTION_MESSAGE',\":\",1,2)-index_of('EXCEPTION_MESSAGE',\":\",1)-1),\"Unknown\") as 'Class Name';\nq = group q by ('Exception Message Detail', 'Class Name');\nq = foreach q generate  'Class Name' as 'Class Name','Exception Message Detail' as 'Exception Message Detail', count() as 'count';\nq = order q by ('count' desc,'Class Name' asc);\nq = limit q 10000;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": false,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "bottom-center",
+                            "inside": false
+                        },
+                        "highColor": "#009DDF",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "lowColor": "#E2F4FC",
+                        "visualizationType": "heatmap",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Exception heatmap",
+                            "align": "center",
+                            "subtitleLabel": "Which Classes Generate Specific Errors (you may need to scroll left / right; up / down)"
+                        },
+                        "binValues": false,
+                        "showActionMenu": true,
+                        "x": {
+                            "showTitle": false,
+                            "showAxis": true,
+                            "title": ""
+                        },
+                        "y": {
+                            "showTitle": false,
+                            "showAxis": true,
+                            "title": ""
+                        },
+                        "theme": "wave",
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart"
+                }
+            },
+            "ExceptionHeatmap_4": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "ExceptionErrorMessages",
+                "numbers": [],
+                "query": "q = load \"ApexUnexpectedException\";\nq = foreach q generate case when 'EXCEPTION_MESSAGE' matches \"UNABLE_TO_LOCK\" then \"RowLock\" when 'EXCEPTION_MESSAGE' matches \"CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY\" then \"Field Access Rights\" when 'EXCEPTION_MESSAGE' matches \" FIELD_CUSTOM_VALIDATION\" then \"Custom Validation Rule\" when 'EXCEPTION_MESSAGE' matches \" FIELD_CUSTOM_VALIDATION_EXCEPTIO\" then \"Custom Validation Rule\" when 'EXCEPTION_MESSAGE' matches \"Attempt to de-reference\" then \"Attempt to de-reference a null object\" when 'EXCEPTION_MESSAGE' matches \"Too many query rows\" then \"Too many query rows\" when 'EXCEPTION_MESSAGE' matches \"CPU Time\" then \"Apex CPU Time Limit\" when 'EXCEPTION_MESSAGE' matches \"Too many queueable\" then \"Too many queueable jobs in queue\" when 'EXCEPTION_MESSAGE' matches \"List has no rows\" then \"List has no rows for assignment to SObject\" when 'EXCEPTION_MESSAGE' matches \"Too Many SOQL Queries\" then \"Too Many SOQL Queries\" when 'EXCEPTION_MESSAGE' matches \"Read timed out\" then \"Read timed out\" when 'EXCEPTION_MESSAGE' matches \"connection was cancelled\" then \"Connection Cancelled\" when 'EXCEPTION_MESSAGE' matches \"Too many DML rows\" then \"Too many DML rows\" when 'EXCEPTION_MESSAGE' matches  \"batchSize must not be null\" then \"Null Batch Size\" when 'EXCEPTION_MESSAGE' matches \"beforeUpdate\" then \"BeforeUpdate Trigger\" when 'EXCEPTION_MESSAGE' matches \"duplicate\" then \"Duplicate Row\" when 'EXCEPTION_MESSAGE' matches \"Record Currently Unavailable\" then \"Record Currently Unavailable\" when 'EXCEPTION_MESSAGE' matches \"TEMPLATE_NOT_ACTIVE\" then \"TEMPLATE_NOT_ACTIVE\" when 'EXCEPTION_MESSAGE' matches \"AfterUpdate\" then \"AfterUpdate Trigger\" when 'EXCEPTION_MESSAGE' matches \"BeforeInsert\" then \"BeforeInsert Trigger\" when 'EXCEPTION_MESSAGE' matches \"AfterInsert\" then \"AfterInsert Trigger\" when 'EXCEPTION_MESSAGE' matches \"ENTITY_IS_DELETED\" then \"ENTITY_IS_DELETED\" when 'EXCEPTION_MESSAGE' matches \"Apex heap size too large\" then \"Apex Heap (Memory)\" when 'EXCEPTION_MESSAGE' matches \"BeforeDelete\" then \"BeforeDelete\" when 'EXCEPTION_MESSAGE' matches \"INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY\" then \"Access Rights\" when 'EXCEPTION_MESSAGE' matches \"failed to get force.com org details\" then \"Authentication Error\" when 'EXCEPTION_MESSAGE' matches \"No contact roles found for contract\" then \"Missing contact roles\" when 'EXCEPTION_MESSAGE' matches \"index out of bounds\" then \"index out of bounds\" when 'EXCEPTION_MESSAGE' matches \"Dependent class is invalid\" then \"Invalid Class\" when 'EXCEPTION_MESSAGE' matches \"Permission to access\" then \"Permission Denied\" when 'EXCEPTION_MESSAGE' matches \"group membership operation already in progress\" then \"Group Lock\" when 'EXCEPTION_MESSAGE' matches \"INVALID_CROSS_REFERENCE\" then \"Wrong ID\"  when 'EXCEPTION_MESSAGE' matches \"SObject row was retrieved\" then \"SOQL Field Error\" when 'EXCEPTION_MESSAGE' matches \"Invalid field\" then \"Invalid field\" when 'EXCEPTION_MESSAGE' matches \"Can only throw this exception\" then \"Exception Error\" when 'EXCEPTION_MESSAGE' matches \"Invalid Visualforce page parameter\" then \"Invalid Parameter\" when 'EXCEPTION_MESSAGE' matches \"Quote to oppty sync failed\" then \"Quote-Opp Sync Fail\" when 'EXCEPTION_MESSAGE' matches \"unexpected token\" then \"unexpected token\" when 'EXCEPTION_MESSAGE' matches \"SendEmail failed\" then \"SendEmail failed\"  when 'EXCEPTION_MESSAGE' matches \"Batchable instance is too big\" then \"Batch Size Error\"  else \"Unknown\" end as 'Exception Message Label',case when 'EXCEPTION_MESSAGE' matches \"UNABLE_TO_LOCK\" then \"UNABLE_TO_LOCK\" when 'EXCEPTION_MESSAGE' matches \"CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY\" then \"CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY\" when 'EXCEPTION_MESSAGE' matches \"FIELD_CUSTOM_VALIDATION\" then \"FIELD_CUSTOM_VALIDATION\" when 'EXCEPTION_MESSAGE' matches \"FIELD_CUSTOM_VALIDATION_EXCEPTIO\" then \"FIELD_CUSTOM_VALIDATION_EXCEPTIO\" when 'EXCEPTION_MESSAGE' matches \"Attempt to de-reference\" then \"Attempt to de-reference\" when 'EXCEPTION_MESSAGE' matches \"Too many query rows\" then \"Too many query rows\" when 'EXCEPTION_MESSAGE' matches \"CPU Time\" then \"CPU Time\" when 'EXCEPTION_MESSAGE' matches \"Too many queueable\" then \"Too many queueable\" when 'EXCEPTION_MESSAGE' matches \"List has no rows\" then \"List has no rows\" when 'EXCEPTION_MESSAGE' matches \"Too Many SOQL Queries\" then \"Too Many SOQL Queries\" when 'EXCEPTION_MESSAGE' matches \"Read timed out\" then \"Read timed out\" when 'EXCEPTION_MESSAGE' matches \"connection was cancelled\" then \"connection was cancelled\" when 'EXCEPTION_MESSAGE' matches \"Too many DML rows\" then \"Too many DML rows\" when 'EXCEPTION_MESSAGE' matches  \"batchSize must not be null\" then \"batchSize must not be null\" when 'EXCEPTION_MESSAGE' matches \"beforeUpdate\" then \"beforeUpdate\" when 'EXCEPTION_MESSAGE' matches \"duplicate\" then \"duplicate\" when 'EXCEPTION_MESSAGE' matches \"Record Currently Unavailable\" then \"Record Currently Unavailable\" when 'EXCEPTION_MESSAGE' matches \"TEMPLATE_NOT_ACTIVE\" then \"TEMPLATE_NOT_ACTIVE\" when 'EXCEPTION_MESSAGE' matches \"AfterUpdate\" then \"AfterUpdate\" when 'EXCEPTION_MESSAGE' matches \"BeforeInsert\" then \"BeforeInsert\" when 'EXCEPTION_MESSAGE' matches \"AfterInsert\" then \"AfterInsert\" when 'EXCEPTION_MESSAGE' matches \"ENTITY_IS_DELETED\" then \"ENTITY_IS_DELETED\" when 'EXCEPTION_MESSAGE' matches \"Apex heap size too large\" then \"Apex heap\" when 'EXCEPTION_MESSAGE' matches \"BeforeDelete\" then \"BeforeDelete\" when 'EXCEPTION_MESSAGE' matches \"INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY\" then \"INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY\" when 'EXCEPTION_MESSAGE' matches \"failed to get force.com org details\" then \"failed to get force.com org details\" when 'EXCEPTION_MESSAGE' matches \"No contact roles found for contract\" then \"No contact roles found for contract\" when 'EXCEPTION_MESSAGE' matches \"index out of bounds\" then \"index out of bounds\" when 'EXCEPTION_MESSAGE' matches \"Dependent class is invalid\" then \"Dependent class is invalid\" when 'EXCEPTION_MESSAGE' matches \"Permission to access\" then \"Permission to access\" when 'EXCEPTION_MESSAGE' matches \"group membership operation already in progress\" then \"group membership\" when 'EXCEPTION_MESSAGE' matches \"INVALID_CROSS_REFERENCE\" then \"INVALID_CROSS_REFERENCE\"  when 'EXCEPTION_MESSAGE' matches \"SObject row was retrieved\" then \"SObject row was retrieved\" when 'EXCEPTION_MESSAGE' matches \"Invalid field\" then \"Invalid field\" when 'EXCEPTION_MESSAGE' matches \"Can only throw this exception\" then \"Can only throw this exception\" when 'EXCEPTION_MESSAGE' matches \"Invalid Visualforce page parameter\" then \"Invalid Visualforce page parameter\" when 'EXCEPTION_MESSAGE' matches \"Quote to oppty sync failed\" then \"Quote to oppty sync failed\" when 'EXCEPTION_MESSAGE' matches \"unexpected token\" then \"unexpected token\" when 'EXCEPTION_MESSAGE' matches \"SendEmail failed\" then \"SendEmail failed\"  when 'EXCEPTION_MESSAGE' matches \"Batchable instance is too big\" then \"Batchable instance is too big\"  else \"Unknown\" end as 'Exception Message Detail';\nq = group q by ('Exception Message Label','Exception Message Detail');\nq = foreach q generate  'Exception Message Label' as 'Exception Message Label','Exception Message Detail' as 'Exception Message Detail', count() as 'count';\nq = order q by ('count' desc);\nq = limit q 10000;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "singlerequired",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "showValues": true,
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": false,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "bottom-center",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Exception heatmap",
+                            "align": "center",
+                            "subtitleLabel": "Which Types Generate Specific Errors"
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Exception Message Label"
+                            ],
+                            "plots": [
+                                "count"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "applyConditionalFormatting": true,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        }
+                    },
+                    "type": "chart"
+                }
+            },
+            "all_1": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "all_1",
+                "numbers": [],
+                "query": "q = load \"ApexUnexpectedException\";\nq = filter q by 'EXCEPTION_MESSAGE' matches \"{{cell(ExceptionHeatmap_4.selection, 0, \"Exception Message Detail\").asString()}}\";\nq = foreach q generate substr('EXCEPTION_MESSAGE',index_of('EXCEPTION_MESSAGE',\":\",1)+1,index_of('EXCEPTION_MESSAGE',\":\",1,2)-index_of('EXCEPTION_MESSAGE',\":\",1)-1) as 'Class Name', 'STACK_TRACE' as 'STACK_TRACE', 'TIMESTAMP_DERIVED' as 'TIMESTAMP_DERIVED';\n\nq = filter q by 'Class Name' in {{coalesce(column(ROW_LOCKS_2.selection, [\"Class Name\"]),column(ROW_LOCKS_2.result, [\"Class Name\"])).asString()}};\nq = group q by ('STACK_TRACE','TIMESTAMP_DERIVED');\nq = foreach q generate 'STACK_TRACE' as 'STACK_TRACE', 'TIMESTAMP_DERIVED' as 'TIMESTAMP_DERIVED';",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "start": [],
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "borderColor": "#e0e5ee",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12
+                        },
+                        "columnProperties": {},
+                        "columns": [],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#f4f6f9",
+                            "fontColor": "#16325c",
+                            "fontSize": 12
+                        },
+                        "innerMajorBorderColor": "#a8b7c7",
+                        "innerMinorBorderColor": "#e0e5ee",
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "showActionMenu": true,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "ApexExceptions_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb09000000r0IwCAI",
+                        "label": "ApexUnexpectedException",
+                        "name": "ApexUnexpectedException",
+                        "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "ApexUnexpectedException",
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        [
+                            "TIMESTAMP_DERIVED_Year",
+                            "TIMESTAMP_DERIVED_Month",
+                            "TIMESTAMP_DERIVED_Day",
+                            "TIMESTAMP_DERIVED_Hour"
+                        ],
+                        "EXCEPTION_TYPE"
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "none",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "showPoints": false,
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "sync",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "time",
+                        "missingValue": "connect",
+                        "dashLine": {
+                            "measures": "",
+                            "showDashLine": false
+                        },
+                        "timeAxis": {
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": ""
+                        },
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "fillArea": true,
+                        "columnMap": {
+                            "split": [
+                                "EXCEPTION_TYPE"
+                            ],
+                            "timeAxis": [
+                                "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour"
+                            ],
+                            "trellis": [],
+                            "plots": [
+                                "count"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "showZero": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "none",
+                        "theme": "wave",
+                        "applyConditionalFormatting": true,
+                        "drawArea": {
+                            "measure": "",
+                            "showDrawArea": false,
+                            "bounding1": "",
+                            "bounding2": ""
+                        }
+                    },
+                    "type": "chart"
+                }
+            },
+            "ApexExceptions_2": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb09000000r0IwCAI",
+                        "label": "ApexUnexpectedException",
+                        "name": "ApexUnexpectedException",
+                        "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "ApexUnexpectedException",
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*",
+                            "A"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "B"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "C"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "D"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "E"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "F"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "G"
+                        ],
+                        [
+                            "count",
+                            "*",
+                            "H"
+                        ]
+                    ],
+                    "columns": [
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "UNABLE_TO_LOCK"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "RowLocks"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "Too many query rows"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Too Many Rows"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "CPU Time"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Apex CPU Timeout"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "Too many queueable"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Too Many Queued Jobs"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "Too Many SOQL Queries"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Too Many Queries"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "Read timed out"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Read Time-Out"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "connection was cancelled"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Connection Cancelled"
+                        },
+                        {
+                            "query": {
+                                "measures": [
+                                    [
+                                        "count",
+                                        "*"
+                                    ]
+                                ],
+                                "groups": [
+                                    [
+                                        "TIMESTAMP_DERIVED_Year",
+                                        "TIMESTAMP_DERIVED_Month",
+                                        "TIMESTAMP_DERIVED_Day",
+                                        "TIMESTAMP_DERIVED_Hour"
+                                    ]
+                                ],
+                                "filters": [
+                                    [
+                                        "EXCEPTION_MESSAGE",
+                                        [
+                                            "Too many DML rows"
+                                        ],
+                                        "matches"
+                                    ]
+                                ]
+                            },
+                            "header": "Too Many DMLs"
+                        }
+                    ],
+                    "groups": [
+                        [
+                            "TIMESTAMP_DERIVED_Year",
+                            "TIMESTAMP_DERIVED_Month",
+                            "TIMESTAMP_DERIVED_Day",
+                            "TIMESTAMP_DERIVED_Hour"
+                        ]
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "none",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "showPoints": false,
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": false,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "top-center",
+                            "inside": false
+                        },
+                        "axisMode": "sync",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "time",
+                        "missingValue": "connect",
+                        "dashLine": {
+                            "measures": "",
+                            "showDashLine": false
+                        },
+                        "timeAxis": {
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": ""
+                        },
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Contention Leaders",
+                            "align": "center",
+                            "subtitleLabel": "Exceptions that can trigger or indicate service contention"
+                        },
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnProperties": {},
+                        "fillArea": true,
+                        "columnMap": {
+                            "split": [],
+                            "timeAxis": [
+                                "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour"
+                            ],
+                            "trellis": [],
+                            "plots": [
+                                "A",
+                                "B",
+                                "C",
+                                "D",
+                                "E",
+                                "F",
+                                "G",
+                                "H"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "showZero": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "none",
+                        "theme": "wave",
+                        "applyConditionalFormatting": true,
+                        "drawArea": {
+                            "measure": "",
+                            "showDrawArea": false,
+                            "bounding1": "",
+                            "bounding2": ""
+                        }
+                    },
+                    "type": "chart"
+                }
+            },
+            "ROW_LOCKS_2": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "ROW LOCKSc TABLE",
+                "numbers": [],
+                "query": "q = load \"ApexUnexpectedException\";\nq = filter q by 'EXCEPTION_MESSAGE' matches \"{{cell(ExceptionHeatmap_4.selection, 0, \"Exception Message Detail\").asString()}}\";\nq = foreach q generate substr('EXCEPTION_MESSAGE',index_of('EXCEPTION_MESSAGE',\":\",1)+1,index_of('EXCEPTION_MESSAGE',\":\",1,2)-index_of('EXCEPTION_MESSAGE',\":\",1)-1) as 'Class Name';\nq = group q by ('Class Name');\nq = foreach q generate  coalesce('Class Name',\"Unknown\") as 'Class Name', count() as 'Error Count';\nq = order q by ('Error Count' desc);\nq = limit q 10000",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "start": [],
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "borderColor": "#54698d",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12
+                        },
+                        "columnProperties": {},
+                        "columns": [],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#000000",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#54698d",
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "lens_1": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "lens_1",
+                "numbers": [],
+                "query": "q = load \"ApexUnexpectedException\";\nq = filter q by 'EXCEPTION_MESSAGE' matches \"{{cell(ExceptionHeatmap_4.selection, 0, \"Exception Message Detail\").asString()}}\";\nq = foreach q generate 'TIMESTAMP_DERIVED' as 'TIMESTAMP_DERIVED', coalesce(substr('EXCEPTION_MESSAGE',index_of('EXCEPTION_MESSAGE',\":\",1)+1,index_of('EXCEPTION_MESSAGE',\":\",1,2)-index_of('EXCEPTION_MESSAGE',\":\",1)-1),\"Unknown\") as 'Class Name','EXCEPTION_MESSAGE' as 'EXCEPTION_MESSAGE', 'EXCEPTION_TYPE' as 'EXCEPTION_TYPE', 'STACK_TRACE' as 'STACK_TRACE';\nq = filter q by 'Class Name' in {{coalesce(column(ROW_LOCKS_2.selection, [\"Class Name\"]),column(ROW_LOCKS_2.result, [\"Class Name\"])).asString()}};\nq = order q by 'TIMESTAMP_DERIVED';\nq = limit q 100;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "borderColor": "#54698d",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12
+                        },
+                        "columnProperties": {},
+                        "columns": [],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#000000",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#54698d",
+                        "mode": "fittocontainer",
+                        "numberOfLines": 1,
+                        "showActionMenu": true,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "lens_2": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "lens_2",
+                "numbers": [],
+                "query": "q = load \"ApexUnexpectedException\";\nq = filter q by 'EXCEPTION_MESSAGE' matches \"{{cell(ExceptionHeatmap_4.selection, 0, \"Exception Message Detail\").asString()}}\";\nq = group q by ('TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day');\nq = foreach q generate 'TIMESTAMP_DERIVED_Year' + \"~~~\" + 'TIMESTAMP_DERIVED_Month' + \"~~~\" + 'TIMESTAMP_DERIVED_Day' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day', count() as 'count';\nq = order q by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day' asc;\nq = limit q 2000;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "start": [],
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "showValues": true,
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "vbar",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day"
+                            ],
+                            "plots": [
+                                "count"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart"
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "rgba(255, 255, 255, 0)",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "text_18": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Metric 1"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_17": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "16px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Apex Exceptions Over Time, By Type"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_19": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Chart Tiltle"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_14": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "16px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Section Details"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_13": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "All Page Views"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "link_10": {
+                "parameters": {
+                    "destinationLink": {
+                        "name": "112df963-8b04-4a03-abc1-0cc174a9e255"
+                    },
+                    "destinationType": "page",
+                    "fontSize": 18,
+                    "includeState": false,
+                    "text": "X",
+                    "textAlignment": "right",
+                    "textColor": "#7D98B3"
+                },
+                "type": "link"
+            },
+            "text_12": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Summary Data Table"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "table_34": {
+                "parameters": {
+                    "borderColor": "#54698d",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#000000",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#54698d",
+                    "mode": "fittocontainer",
+                    "numberOfLines": 5,
+                    "showActionMenu": true,
+                    "step": "lens_1",
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            },
+            "container_1": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "chart_9": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "showPoints": false,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "sync",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "time",
+                    "missingValue": "connect",
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "exploreLink": true,
+                    "timeAxis": {
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Date / Hour"
+                    },
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "fillArea": true,
+                    "columnMap": {
+                        "split": [
+                            "EXCEPTION_TYPE"
+                        ],
+                        "timeAxis": [
+                            "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour"
+                        ],
+                        "trellis": [],
+                        "plots": [
+                            "count"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "showZero": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "none",
+                    "theme": "dark",
+                    "step": "ApexExceptions_1",
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    }
+                },
+                "type": "chart"
+            },
+            "container_3": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "container_4": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "container_5": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "text_3": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Long Running Requests (>5s)"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "chart_6": {
+                "parameters": {
+                    "showActionMenu": true
+                },
+                "type": "chart"
+            },
+            "text_2": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "16px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Visualforce"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "chart_5": {
+                "parameters": {
+                    "showActionMenu": true
+                },
+                "type": "chart"
+            },
+            "container_8": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "text_5": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#ffffff",
+                                    "size": "16px"
+                                },
+                                "insert": "Investigate Details by Day - Select an Exception Type:"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_4": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Pages > 5s"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_7": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#006714",
+                                    "bold": true
+                                },
+                                "insert": "[Exception_Message_De_1]"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ],
+                        "values": {
+                            "Exception_Message_De_1": {
+                                "field": "Exception Message Detail",
+                                "sourceType": "selection",
+                                "step": "ExceptionHeatmap_1"
+                            }
+                        }
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "chart_1": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "showPoints": false,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [
+                                    ""
+                                ],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": [
+                                    ""
+                                ]
+                            }
+                        }
+                    },
+                    "visualizationType": "line",
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "showGridLines": true,
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "split": [],
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day"
+                        ],
+                        "plots": [
+                            "count"
+                        ]
+                    },
+                    "fillArea": true,
+                    "showActionMenu": true,
+                    "showZero": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Count",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    }
+                },
+                "type": "chart"
+            },
+            "text_6": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Long Running Requests (>5s)"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "chart_4": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "showPoints": false,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [
+                                    ""
+                                ],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": [
+                                    ""
+                                ]
+                            }
+                        }
+                    },
+                    "visualizationType": "line",
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "showGridLines": true,
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "split": [],
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day"
+                        ],
+                        "plots": [
+                            "count"
+                        ]
+                    },
+                    "fillArea": true,
+                    "showActionMenu": true,
+                    "showZero": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Count",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    }
+                },
+                "type": "chart"
+            },
+            "text_9": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#ffffff",
+                                    "size": "12px"
+                                },
+                                "insert": "After selecting a class and date, you will have a timestamp and a stack trace detail to report to the relevant class or method owner to investigate further.  If you do not know who owns this code in the codebase, contain the person listed as the Last Modified By on the Apex Class Detail page in Setup."
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_8": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#ffffff",
+                                    "size": "12px"
+                                },
+                                "insert": "The table above is limited to return 100 rows. You can edit the table using the 'Advanced Query Editor' and changed the limit clause at the end of the query to more than 100.  However, it is important to tackle issues on a class-by-class basis."
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "listselector_3": {
+                "parameters": {
+                    "compact": false,
+                    "displayMode": "filter",
+                    "exploreLink": false,
+                    "filterStyle": {
+                        "titleColor": "#FFFFFF",
+                        "valueColor": "#FFFFFF"
+                    },
+                    "instant": true,
+                    "measureField": "count",
+                    "showActionMenu": true,
+                    "step": "ExceptionHeatmap_4",
+                    "title": ""
+                },
+                "type": "listselector"
+            },
+            "text_1": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Apex Exception Analysis"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "link_4": {
+                "parameters": {
+                    "destinationType": "lens",
+                    "fontSize": 14,
+                    "includeState": false,
+                    "text": "Show More",
+                    "textAlignment": "center",
+                    "textColor": "#0D34B6"
+                },
+                "type": "link"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#E6ECF2",
+                        "borderRadius": 4,
+                        "borderWidth": 1,
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [],
+                    "itemsPerRow": 5,
+                    "showAllFilters": true,
+                    "title": {
+                        "separatorColor": "#E6ECF2",
+                        "text": {
+                            "align": "left",
+                            "color": "#091A3E",
+                            "fontSize": 16,
+                            "label": "Filters"
+                        },
+                        "visible": false
+                    }
+                },
+                "type": "filterpanel"
+            },
+            "link_1": {
+                "parameters": {
+                    "destinationLink": {
+                        "name": "77332a9f-061f-4d3c-acfd-71d66eb9b4a4"
+                    },
+                    "destinationType": "page",
+                    "fontSize": 14,
+                    "includeState": false,
+                    "text": "Show More",
+                    "textAlignment": "center",
+                    "textColor": "#E6ECF2"
+                },
+                "type": "link"
+            },
+            "text_21": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Metric 1"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_20": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "16px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Section Details"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_22": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "14px",
+                                    "color": "#e6ecf2"
+                                },
+                                "insert": "Chart Tiltle"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "left"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "number_5": {
+                "parameters": {
+                    "showActionMenu": true
+                },
+                "type": "number"
+            },
+            "table_1": {
+                "parameters": {
+                    "borderColor": "#54698d",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#000000",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#54698d",
+                    "mode": "fittocontainer",
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "step": "ROW_LOCKS_2",
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            },
+            "number_4": {
+                "parameters": {
+                    "showActionMenu": true
+                },
+                "type": "number"
+            },
+            "link_5": {
+                "parameters": {
+                    "destinationType": "lens",
+                    "fontSize": 14,
+                    "includeState": false,
+                    "text": "Show More",
+                    "textAlignment": "center",
+                    "textColor": "#0D34B6"
+                },
+                "type": "link"
+            },
+            "container_10": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "chart_14": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "showValues": true,
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "vbar",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": "Select a Date on the chart below and a Class Name Error Count on the table on the left (click on the number rather than the class name) to investigate that specific stack trace in the table below."
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day"
+                        ],
+                        "plots": [
+                            "count"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Error Count",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "sunriseDark",
+                    "step": "lens_2",
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "Date",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            },
+            "chart_11": {
+                "parameters": {
+                    "showPoints": false,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": false,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "top-center",
+                        "inside": false
+                    },
+                    "axisMode": "sync",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "time",
+                    "missingValue": "connect",
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "exploreLink": true,
+                    "timeAxis": {
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Date / Hour"
+                    },
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Contention Leaders",
+                        "align": "center",
+                        "subtitleLabel": "Exceptions that indicate the org is under stress due to competing, long-running or intensive operations."
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnProperties": {},
+                    "fillArea": true,
+                    "columnMap": {
+                        "split": [],
+                        "timeAxis": [
+                            "TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour"
+                        ],
+                        "trellis": [],
+                        "plots": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E",
+                            "F",
+                            "G",
+                            "H"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "showZero": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "none",
+                    "theme": "dark",
+                    "step": "ApexExceptions_2",
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    }
+                },
+                "type": "chart"
+            },
+            "chart_10": {
+                "parameters": {
+                    "autoFitMode": "none",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": false,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "bottom-center",
+                        "inside": false
+                    },
+                    "highColor": "#009DDF",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "lowColor": "#E2F4FC",
+                    "visualizationType": "heatmap",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Exception heatmap",
+                        "align": "center",
+                        "subtitleLabel": "Which Classes Generate Specific Errors (you may need to scroll left / right; up / down)"
+                    },
+                    "binValues": false,
+                    "showActionMenu": true,
+                    "x": {
+                        "showTitle": false,
+                        "showAxis": true,
+                        "title": ""
+                    },
+                    "y": {
+                        "showTitle": false,
+                        "showAxis": true,
+                        "title": ""
+                    },
+                    "theme": "dark",
+                    "step": "ExceptionHeatmap_1",
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            }
+        }
+    },
+    "datasets": [
+        {
+            "id": "0Fb09000000r0IwCAI",
+            "label": "ApexUnexpectedException",
+            "name": "ApexUnexpectedException",
+            "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+        }
+    ]
+}
