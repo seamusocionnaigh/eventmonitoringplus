@@ -44,7 +44,7 @@ This dashboard leverages the [ApexExecution event log](https://developer.salesfo
 ### Apex Exceptions
 When Apex starts to break, quick and decisive action is needed. This dashboard gives a clear view of what Apex classes and methods are generating unhandled exceptions, by volume, over time. Realistically, every datapoint on this dashboard is something for developers to review, consider, and fix or prevent. QAs, Release Managers and Product Owners should be reviewing this dashboard early in the development process, or at the very latest in a UAT full-copy sandbox. If things are beaking, this dashboard will help decide if a current release is about to introduce risk to the business in production by breaking business-critical processes.
 This dashboard leverages the [ApexUnexpectedException event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_apexunexpectedexception.htm); reading the documentation is strongly encouraged.
-![Apex_Exceptions](https://user-images.githubusercontent.com/20658634/147172587-f2fa43ad-cdf7-44e7-b0e9-e12084cc7a44.png)
+![Apex_Exceptions](https://user-images.githubusercontent.com/20658634/147174402-a45c0868-872e-45d2-97bc-495a3359c994.png)
 
 ## Notes, Observations, Comments:
 
