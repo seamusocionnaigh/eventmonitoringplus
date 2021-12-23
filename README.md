@@ -34,14 +34,17 @@ Harder Option: [Set up a custom process to push Event Logs into Tableau CRM](htt
 ### User Journeys:
 It is imperative that every business understands what parts of a Salesforce implementation are valuable to its users.  This dashboard gives a top-to-bottom view of what UI-level interactions users perform in Lightning, from apps, standard and custom objects, to components of a page layout, what they view and what they click. As a result, Salesforce sponsors, stakeholdes, owners, product owners, project managers, admins and developers have a clearer sense of what is valuable to users by virtue of their level of interaction with many of the customisations they have developed and improved and put in the hands of users.
 This dashboard leverages the [LightingInteration event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightninginteraction.htm); reading the documentation is strongly encouraged.
+![User_Activities](https://user-images.githubusercontent.com/20658634/147172567-c1ff9dee-c955-4429-a163-c104363f9c8d.png)
 
 ### Apex Performance:
 A narrative of the raw ApexExecution dataset in order to help pin-point slow-performing code. Ideally for a Developer, Admin, QA, Release Manager and / or Product Owner to identify what code is consistently slow, what's started being slow, and what skillset is required to begin reviewing the code. Try and use this early-on in your development process, or at the very latest in a UAT full-copy sandbox, so you can spot trends in newly-problematic code and decide if a current release is about to introduce risk to the business in production.
 This dashboard leverages the [ApexExecution event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_apexexecution.htm); reading the documentation is strongly encouraged.
+![Apex_Performance](https://user-images.githubusercontent.com/20658634/147172579-f79cc601-23c6-4e1e-83bd-4b352a377aed.png)
 
 ### Apex Exceptions
 When Apex starts to break, quick and decisive action is needed. This dashboard gives a clear view of what Apex classes and methods are generating unhandled exceptions, by volume, over time. Realistically, every datapoint on this dashboard is something for developers to review, consider, and fix or prevent. QAs, Release Managers and Product Owners should be reviewing this dashboard early in the development process, or at the very latest in a UAT full-copy sandbox. If things are beaking, this dashboard will help decide if a current release is about to introduce risk to the business in production by breaking business-critical processes.
 This dashboard leverages the [ApexUnexpectedException event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_apexunexpectedexception.htm); reading the documentation is strongly encouraged.
+![Apex_Exceptions](https://user-images.githubusercontent.com/20658634/147172587-f2fa43ad-cdf7-44e7-b0e9-e12084cc7a44.png)
 
 ## Notes, Observations, Comments:
 
