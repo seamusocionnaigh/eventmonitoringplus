@@ -54,5 +54,3 @@ If you're used to working with Event Monitoring data in Tableau CRM, you might b
 
 The app is deployed with a default security setting of 'Manager' for the Entire Organisation; anyone in the Entire Organisation that has access to Tableau CRM. Users will only be able to view the contents of the dashboards *if* they also have access to the datasets. Your datasets are protected within whichever app you've stored them in and so will remain as the main security control.
 Related point: feel free to edit and save these dashboards into your existing Event Monitoring Tableau CRM app. Again, be aware of reconfiguring any templated apps, as it will delete these dashboards.
-
-This is on Github for the momement as it's the easiest way for Event Monitoring customers to get some additional insights from the Event Logs without being overly-reliant on additional Tableau CRM features. If we were to follow Tableau CRM best practices of app creation, packaging, etc, each customer would need to purchase a full Tableau CRM licence. There is a much-more robust Tableau CRM version of these dashboards in the works, so watch this space. Or what the AppExchange, where it may end up.
