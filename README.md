@@ -46,6 +46,9 @@ When Apex starts to break, quick and decisive action is needed. This dashboard g
 This dashboard leverages the [ApexUnexpectedException event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_apexunexpectedexception.htm); reading the documentation is strongly encouraged.
 ![Apex_Exceptions](https://user-images.githubusercontent.com/20658634/147174402-a45c0868-872e-45d2-97bc-495a3359c994.png)
 
+### Lightning Page Performance
+Helps you to identify the pages that are performing poorly in Lightning, by GEO, App, Object. Uses TCRM compare tables to calculate lost productivity due to poor page load time (EPT). 
+
 ## Notes, Observations, Comments:
 
 The Dashboards are in an app / folder called "Event Monitoring Plus" that uses the Event Monitoring licence type. Please do not click the 'Reconfigure' link at the top of the app page; it will overwrite and remove these dashboards.
