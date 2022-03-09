@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#3AE867</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>C</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>gradient</type>
+        </conditionalFormatting>
+        <field>CLIENT_GEO_PAGE_ENTI_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#3AE867</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>C</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>gradient</type>
+        </conditionalFormatting>
+        <field>CLIENT_GEO_PAGE_ENTI_1.C</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Lightning_Page_Performance_EPT</waveVisualization>
+</WaveXmd>

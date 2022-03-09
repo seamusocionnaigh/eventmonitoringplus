@@ -9,7 +9,7 @@
                 "dataset": {
                     "id": "0Fb09000000r0IwCAI",
                     "name": "ApexUnexpectedException",
-                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                 },
                 "dependent": true,
                 "fields": [
@@ -22,7 +22,7 @@
                 "dataset": {
                     "id": "0Fb09000000r0IwCAI",
                     "name": "ApexUnexpectedException",
-                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                 },
                 "dependent": true,
                 "fields": [
@@ -35,7 +35,7 @@
                 "dataset": {
                     "id": "0Fb09000000r0IwCAI",
                     "name": "ApexUnexpectedException",
-                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                 },
                 "dependent": true,
                 "fields": [
@@ -48,7 +48,7 @@
                 "dataset": {
                     "id": "0Fb09000000r0IwCAI",
                     "name": "ApexUnexpectedException",
-                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                 },
                 "dependent": true,
                 "fields": [
@@ -61,7 +61,7 @@
                 "dataset": {
                     "id": "0Fb09000000r0IwCAI",
                     "name": "ApexUnexpectedException",
-                    "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                    "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                 },
                 "dependent": true,
                 "fields": [
@@ -583,7 +583,7 @@
                         "id": "0Fb09000000r0IwCAI",
                         "label": "ApexUnexpectedException",
                         "name": "ApexUnexpectedException",
-                        "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                        "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                     }
                 ],
                 "isGlobal": false,
@@ -721,7 +721,7 @@
                         "id": "0Fb09000000r0IwCAI",
                         "label": "ApexUnexpectedException",
                         "name": "ApexUnexpectedException",
-                        "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+                        "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
                     }
                 ],
                 "isGlobal": false,
@@ -1504,7 +1504,8 @@
                     "cell": {
                         "backgroundColor": "#16325c",
                         "fontColor": "#ffffff",
-                        "fontSize": 12
+                        "fontSize": 12,
+                        "textWrap": false
                     },
                     "columnProperties": {},
                     "columns": [],
@@ -1513,7 +1514,8 @@
                     "header": {
                         "backgroundColor": "#000000",
                         "fontColor": "#ffffff",
-                        "fontSize": 12
+                        "fontSize": 12,
+                        "textWrap": false
                     },
                     "innerMajorBorderColor": "#54698d",
                     "innerMinorBorderColor": "#54698d",
@@ -1562,7 +1564,7 @@
                         }
                     },
                     "visualizationType": "time",
-                    "missingValue": "connect",
+                    "missingValue": "cumulative",
                     "dashLine": {
                         "measures": "",
                         "showDashLine": false
@@ -2236,7 +2238,8 @@
                     "cell": {
                         "backgroundColor": "#16325c",
                         "fontColor": "#ffffff",
-                        "fontSize": 12
+                        "fontSize": 12,
+                        "textWrap": false
                     },
                     "columnProperties": {},
                     "columns": [],
@@ -2245,7 +2248,8 @@
                     "header": {
                         "backgroundColor": "#000000",
                         "fontColor": "#ffffff",
-                        "fontSize": 12
+                        "fontSize": 12,
+                        "textWrap": false
                     },
                     "innerMajorBorderColor": "#54698d",
                     "innerMinorBorderColor": "#54698d",
@@ -2427,7 +2431,7 @@
                         }
                     },
                     "visualizationType": "time",
-                    "missingValue": "connect",
+                    "missingValue": "cumulative",
                     "dashLine": {
                         "measures": "",
                         "showDashLine": false
@@ -2589,7 +2593,7 @@
             "id": "0Fb09000000r0IwCAI",
             "label": "ApexUnexpectedException",
             "name": "ApexUnexpectedException",
-            "url": "/services/data/v53.0/wave/datasets/0Fb09000000r0IwCAI"
+            "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IwCAI"
         }
     ]
 }

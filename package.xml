@@ -7,12 +7,14 @@
     <types>
         <members>Apex_Exceptions</members>
         <members>Apex_Performance</members>
+        <members>Lightning_Page_Performance_EPT</members>
         <members>User_Activities</members>
         <name>WaveDashboard</name>
     </types>
     <types>
         <members>Apex_Exceptions</members>
         <members>Apex_Performance</members>
+        <members>Lightning_Page_Performance_EPT</members>
         <members>User_Activities</members>
         <name>WaveXmd</name>
     </types>
