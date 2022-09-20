@@ -9,6 +9,7 @@
         <members>Apex_Performance</members>
         <members>Lightning_Page_Performance_EPT</members>
         <members>User_Activities</members>
+		<members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <name>WaveDashboard</name>
     </types>
     <types>
@@ -16,6 +17,7 @@
         <members>Apex_Performance</members>
         <members>Lightning_Page_Performance_EPT</members>
         <members>User_Activities</members>
+		<members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <name>WaveXmd</name>
     </types>
     <version>52.0</version>
