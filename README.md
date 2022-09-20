@@ -1,32 +1,32 @@
 # Event Monitoring Plus
-A lightweight collection of Tableau CRM dashboards for gaining a better understanding of Event Monitoring data.
+A lightweight collection of CRM Analytics dashboards for gaining a better understanding of Event Monitoring data.
 
 ## Installation Instructions
 
 ### Prerequisite: Setting Up The Log Ingestion process:
 
-Easy Option: Tableau CRM Templated App
+Easy Option: CRM Analytics Templated App
 
-* (If the "Event Monitoring Analytics" Tableau CRM app is already running with the below-listed log types, you can skip to Package Deployment)
+* (If the "Event Monitoring Analytics" CRM Analytics app is already running with the below-listed log types, you can skip to Package Deployment)
 * Select a sandbox or production org
 * [Ensure Event Monitoring Analytics is enabled](https://help.salesforce.com/s/articleView?id=sf.bi_app_event_monitor_enable_select_PSL.htm&type=5)
 * [Assign permissions to users](https://help.salesforce.com/s/articleView?id=bi_app_event_monitor_create_permsets.htm&type=5&language=en_US)
 * [Create the analytics app](https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.bi_app_admin_wave_create.htm)
     * *Hard Requirement*: **must** include following log types:  LightningInteraction, LightningPageview, ApexExecution, ApexUnexpectedException)
 
-Harder Option: [Set up a custom process to push Event Logs into Tableau CRM](https://www.salesforcehacker.com/2015/01/simple-script-for-loading-event.html)
+Harder Option: [Set up a custom process to push Event Logs into CRM Analytics](https://www.salesforcehacker.com/2015/01/simple-script-for-loading-event.html)
 
 ### Deploying the new dashboards
 
-* Identify the API name of the above-mention datasets in Tableau CRM that you wanted to analyse.
+* Identify the API name of the above-mention datasets in CRM Analytics that you wanted to analyse.
 * These should be datasets that are regularly updated, as part of whichever log ingestion process you've configured above.
 * To identify the API name of a dataset, [follow these steps](https://help.salesforce.com/s/articleView?id=sf.bi_dataset_edit.htm&type=5) to reach the edit page and note the 'API Name' in the top-left.
-* This package assumes that the dataset names are the first or only iteration of the log ingestion process, and hence uses simple dataet names, like, for example "ApexExecution" for the ApexExecution log file. (If you have gone through several iterations of creating the Tableau CRM templated app, you may end up with dataset names like "ApexExecution1" or "ApexExecution5" (if you've been unlucky enough to create it 5 times)).
+* This package assumes that the dataset names are the first or only iteration of the log ingestion process, and hence uses simple dataet names, like, for example "ApexExecution" for the ApexExecution log file. (If you have gone through several iterations of creating the CRM Analytics templated app, you may end up with dataset names like "ApexExecution1" or "ApexExecution5" (if you've been unlucky enough to create it 5 times)).
 * **If** your dataset names are different / have numbers as suffixes, download the package, edit the .wdash (Wave Dashboard) files, and Find/Replace with the appropriate dataset API name from your environment (e.g. "LightningPageView" with "LightningPageView1"). (User_Activities.wdash uses the LightningInteraction and LightningPageView datasets; Apex_Performance.wdash uses ApexExecution; Apex_Exceptions.wdash uses ApexUnexpectedException).
 * There are two options to deploy the dashboards:
   - Metadata deployment with Ant, SFDX, etc. If you know how to do this, the package.xml and payload should suffice.
     - If you *don't* know how to do a metadata deployment, create a .zip of the *package.xml* file and the *wave* directory together, [and then follow this guide](https://help.salesforce.com/s/articleView?id=000315117&type=1); note in Step 7 you *do have to* click the 'Single Package' checkbox.
-  - Copying and pasting the dashboard JSON from the *json* folder direclty into a new, blank dashboard in Tableau CRM. This method is not preferred as you're not deploying the dashboard's extended metadata (XMD), and so you lose the rich, informative colour-coded metrics that were lovingly added to the dashboards. Only use this approach as a last resort or you just want an initial glance.
+  - Copying and pasting the dashboard JSON from the *json* folder direclty into a new, blank dashboard in CRM Analytics. This method is not preferred as you're not deploying the dashboard's extended metadata (XMD), and so you lose the rich, informative colour-coded metrics that were lovingly added to the dashboards. Only use this approach as a last resort or you just want an initial glance.
 
 
 ## Dashboards
@@ -50,7 +50,7 @@ This dashboard leverages the [ApexUnexpectedException event log](https://develop
 ![Apex_Exceptions](https://user-images.githubusercontent.com/20658634/147174402-a45c0868-872e-45d2-97bc-495a3359c994.png)
 
 ### Lightning Page Performance
-Helps you to identify the pages that are performing poorly in Lightning, by GEO, App, Object. Uses TCRM compare tables to calculate lost productivity due to poor page load time (EPT).
+Helps you to identify the pages that are performing poorly in Lightning, by GEO, App, Object. Uses CRMA compare tables to calculate lost productivity due to poor page load time (EPT).
 This dashboard leverages the [LightningPageView](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightningpageview.htm) and [LightingInteration event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightninginteraction.htm); reading the documentation is strongly encouraged.
 
 ![image](https://user-images.githubusercontent.com/20658634/157493917-9955c525-0332-4c2a-8b67-0caea2508815.png)
@@ -64,7 +64,7 @@ A very similar dashboard to the Lightning Page Performance EPT dashboard, but wi
 
 The Dashboards are in an app / folder called "Event Monitoring Plus" that uses the Event Monitoring licence type. Please do not click the 'Reconfigure' link at the top of the app page; it will overwrite and remove these dashboards.
 
-If you're used to working with Event Monitoring data in Tableau CRM, you might be used to working with the *'~WithUsers'* datasets. We have opted not to use these for two reasons: augmenting the event logs with user names is a Tableau CRM function. This package focuses on highlighting the valuable insights you can gain from event logs without too much Tableau CRM magic. As much as we love Tableau CRM (*it really is just the best thing ever*), users have a choice of using any analytical or log processing tool to gain these insights. So for that reason we've stuck with the original logs. (Although, there is *a bit* of sourcery in the Apex Exceptions dashboard, which does some if-else (or *case statement*) logic on the EXCEPTION_MESSAGE and STACK_TRACE columns, but nothing you can't do in Python). The second point is, some people forget to schedule the dataflow and the *'~WithUsers'* datasets can be out of date, so we're just focusing on the logs that are most likely to be up-to-date.
+If you're used to working with Event Monitoring data in CRM Analytics, you might be used to working with the *'~WithUsers'* datasets. We have opted not to use these for two reasons: augmenting the event logs with user names is a CRM Analytics function. This package focuses on highlighting the valuable insights you can gain from event logs without too much CRM Analytics magic. As much as we love CRM Analytics (*it really is just the best thing ever*), users have a choice of using any analytical or log processing tool to gain these insights. So for that reason we've stuck with the original logs. (Although, there is *a bit* of sourcery in the Apex Exceptions dashboard, which does some if-else (or *case statement*) logic on the EXCEPTION_MESSAGE and STACK_TRACE columns, but nothing you can't do in Python). The second point is, some people forget to schedule the dataflow and the *'~WithUsers'* datasets can be out of date, so we're just focusing on the logs that are most likely to be up-to-date.
 
-The app is deployed with a default security setting of 'Manager' for the Entire Organisation; anyone in the Entire Organisation that has access to Tableau CRM. Users will only be able to view the contents of the dashboards *if* they also have access to the datasets. Your datasets are protected within whichever app you've stored them in and so will remain as the main security control.
-Related point: feel free to edit and save these dashboards into your existing Event Monitoring Tableau CRM app. Again, be aware of reconfiguring any templated apps, as it will delete these dashboards.
+The app is deployed with a default security setting of 'Manager' for the Entire Organisation; anyone in the Entire Organisation that has access to CRM Analytics. Users will only be able to view the contents of the dashboards *if* they also have access to the datasets. Your datasets are protected within whichever app you've stored them in and so will remain as the main security control.
+Related point: feel free to edit and save these dashboards into your existing Event Monitoring CRM Analytics app. Again, be aware of reconfiguring any templated apps, as it will delete these dashboards.
