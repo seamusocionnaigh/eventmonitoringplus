@@ -53,7 +53,12 @@ This dashboard leverages the [ApexUnexpectedException event log](https://develop
 Helps you to identify the pages that are performing poorly in Lightning, by GEO, App, Object. Uses TCRM compare tables to calculate lost productivity due to poor page load time (EPT).
 This dashboard leverages the [LightningPageView](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightningpageview.htm) and [LightingInteration event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightninginteraction.htm); reading the documentation is strongly encouraged.
 
-![image](https://user-images.githubusercontent.com/20658634/157493917-9955c525-0332-4c2a-8b67-0caea2508815.png) 
+![image](https://user-images.githubusercontent.com/20658634/157493917-9955c525-0332-4c2a-8b67-0caea2508815.png)
+
+### Experience Cloud Page Performance
+A very similar dashboard to the Lightning Page Performance EPT dashboard, but with some filters and tweaks to help better understand and visualise which Experience Cloud pages have higher EPT.  This can be explored by many dimensions, such as the Site URL, user's location / geo, browser version, etc.  This has only been tested with Experience Cloud site templates; it has not been tested with Aura or LWR Buil-Your-Own sites.
+
+![image](https://user-images.githubusercontent.com/20658634/191331061-3a32f043-bf29-423c-8852-dcb3d8f24ab1.png)
 
 ## Notes, Observations, Comments:
 
