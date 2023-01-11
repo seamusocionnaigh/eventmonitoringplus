@@ -1,0 +1,1736 @@
+{
+    "dataSourceLinks": [],
+    "filters": [{
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["User.Name"],
+        "label": "User",
+        "locked": false,
+        "operator": "in"
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["User.Profile.Name"],
+        "label": "Profile",
+        "locked": false,
+        "operator": "in"
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["User.User.Role.Name"],
+        "label": "Role",
+        "locked": false,
+        "operator": "in"
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["Report.Name"],
+        "label": "Report Name",
+        "locked": false,
+        "operator": "in"
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["ENTITY_NAME"],
+        "label": "Object Name",
+        "locked": false,
+        "operator": "in"
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["TIMESTAMP_DERIVED"],
+        "label": "Time",
+        "locked": false,
+        "operator": ">=<="
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["DISPLAY_TYPE"],
+        "label": "Type",
+        "locked": false,
+        "operator": "in"
+    }, {
+        "dataset": {
+            "name": "ReportWithUsers"
+        },
+        "dependent": true,
+        "fields": ["ROW_COUNT"],
+        "locked": false,
+        "operator": ">=<="
+    }],
+    "gridLayouts": [{
+        "maxWidth": 1200,
+        "name": "Default",
+        "numColumns": 12,
+        "pages": [{
+            "label": "Main",
+            "name": "b7931d73-fc10-4053-ada7-b790f56b8209",
+            "navigationHidden": false,
+            "widgets": [{
+                "colspan": 12,
+                "column": 0,
+                "name": "filterpanel_1",
+                "row": 1,
+                "rowspan": 2,
+                "widgetStyle": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#C6D3E1",
+                    "borderEdges": ["bottom"],
+                    "borderRadius": 0,
+                    "borderWidth": 1
+                }
+            }, {
+                "colspan": 7,
+                "column": 0,
+                "name": "chart_1",
+                "row": 3,
+                "rowspan": 7,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 12,
+                "column": 0,
+                "name": "table_1",
+                "row": 35,
+                "rowspan": 7,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 5,
+                "column": 7,
+                "name": "chart_2",
+                "row": 3,
+                "rowspan": 7,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 7,
+                "column": 0,
+                "name": "chart_3",
+                "row": 10,
+                "rowspan": 8,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 5,
+                "column": 7,
+                "name": "table_2",
+                "row": 11,
+                "rowspan": 7,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 9,
+                "column": 0,
+                "name": "text_1",
+                "row": 0,
+                "rowspan": 1,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 5,
+                "column": 7,
+                "name": "text_2",
+                "row": 10,
+                "rowspan": 1,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 7,
+                "column": 0,
+                "name": "chart_4",
+                "row": 18,
+                "rowspan": 9,
+                "widgetStyle": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#7D98B3",
+                    "borderEdges": [],
+                    "borderRadius": 0,
+                    "borderWidth": 1
+                }
+            }, {
+                "colspan": 5,
+                "column": 7,
+                "name": "chart_5",
+                "row": 18,
+                "rowspan": 9,
+                "widgetStyle": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#C6D3E1",
+                    "borderEdges": ["top"],
+                    "borderRadius": 0,
+                    "borderWidth": 1
+                }
+            }, {
+                "colspan": 12,
+                "column": 0,
+                "name": "text_3",
+                "row": 34,
+                "rowspan": 1,
+                "widgetStyle": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#7D98B3",
+                    "borderEdges": ["top"],
+                    "borderRadius": 0,
+                    "borderWidth": 1
+                }
+            }, {
+                "colspan": 6,
+                "column": 1,
+                "name": "table_4",
+                "row": 27,
+                "rowspan": 7,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 3,
+                "column": 8,
+                "name": "text_4",
+                "row": 28,
+                "rowspan": 5,
+                "widgetStyle": {
+                    "borderEdges": []
+                }
+            }, {
+                "colspan": 3,
+                "column": 8,
+                "name": "link_2",
+                "row": 33,
+                "rowspan": 1,
+                "widgetStyle": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#FFFFFF",
+                    "borderEdges": [],
+                    "borderRadius": 0,
+                    "borderWidth": 1
+                }
+            }, {
+                "colspan": 3,
+                "column": 9,
+                "name": "link_3",
+                "row": 0,
+                "rowspan": 1,
+                "widgetStyle": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#FFFFFF",
+                    "borderEdges": [],
+                    "borderRadius": 0,
+                    "borderWidth": 1
+                }
+            }]
+        }],
+        "rowHeight": "normal",
+        "selectors": [],
+        "style": {
+            "alignmentX": "left",
+            "alignmentY": "top",
+            "backgroundColor": "#F2F6FA",
+            "cellSpacingX": 8,
+            "cellSpacingY": 8,
+            "fit": "original",
+            "gutterColor": "#C5D3E0"
+        },
+        "version": 1.0
+    }],
+    "layouts": [],
+    "steps": {
+        "AdHocReportDist_1": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "AdHocReportDist",
+            "query": {
+                "query": "{\"measures\":[[\"count\",\"*\",\"A\"],[\"count\",\"*\",\"B\"],[\"unique\",\"Report.Name\",\"C\"]],\"columns\":[{\"query\":{\"measures\":[[\"count\",\"*\"]],\"groups\":[\"User.Name\"],\"filters\":[[\"Report.Name\",[],\"isnotnull\"]]},\"header\":\"Existing Report Executions\"},{\"query\":{\"measures\":[[\"count\",\"*\"]],\"groups\":[\"User.Name\"],\"filters\":[[\"Report.Name\",[],\"isnull\"]]},\"header\":\"Ad-Hoc Report Executions\"},{\"query\":{\"measures\":[[\"unique\",\"Report.Name\"]],\"groups\":[\"User.Name\"]},\"header\":\"Count of Report Names\"}],\"groups\":[\"User.Name\"]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "showValues": true,
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": ["A", "B", "C"],
+                                "showNullValues": false,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": false,
+                                "dimensions": ["USER_ID_DERIVED"]
+                            }
+                        }
+                    },
+                    "visualizationType": "scatter",
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Who is generating their own reports?",
+                        "align": "center",
+                        "subtitleLabel": "Report executions with with no name suggests the user is building or running a report from scratch."
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [100, 100],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnProperties": {},
+                    "radiusRatio": 5,
+                    "columnMap": {
+                        "r": ["C"],
+                        "x": ["A"],
+                        "y": ["B"],
+                        "trellis": [],
+                        "plots": ["User.Name"]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "x": {
+                        "sqrtScale": true,
+                        "showZero": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "y": {
+                        "sqrtScale": true,
+                        "showZero": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            }
+        },
+        "RenderingDisplayType_1": {
+            "broadcastFacet": true,
+            "groups": [],
+            "label": "RenderingDisplayType",
+            "numbers": [],
+            "query": "q = load \"ReportWithUsers\";\nq = filter q by 'RENDERING_TYPE' is not null && 'RENDERING_TYPE' != \"\";\nq = group q by ('DISPLAY_TYPE','RENDERING_TYPE');\nq = foreach q generate case when 'DISPLAY_TYPE' == \"H\" then \"Hide Details\" when 'DISPLAY_TYPE' == \"S\" then \"Show Details\" when 'RENDERING_TYPE' == \"D\" then \"Dashboard\" else \"Standard\" end as 'Display Type', case when 'RENDERING_TYPE' == \"C\" then \"CSV\" when 'RENDERING_TYPE' == \"W\" then \"Web (HTML)\" when 'RENDERING_TYPE' == \"E\" then \"Email\" when 'RENDERING_TYPE' == \"P\" then \"Printable\" when 'RENDERING_TYPE' == \"X\" then \"Excel\" when 'RENDERING_TYPE' == \"J\" then \"JSON\" when 'RENDERING_TYPE' == \"D\" then \"DummyData\" else \"Standard\" end as 'Rendering Type',  count() as 'Executions', sum('ROW_COUNT') as 'Row Count', unique(USER_ID_DERIVED) as 'Users';\nq = order q by ('Rendering Type' asc, 'Display Type' asc);\nq = limit q 2000;",
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "strings": [],
+            "type": "saql",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "parameters": {
+                    "borderColor": "#a8b7c7",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "header": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#a8b7c7",
+                    "mode": "fittocontainer",
+                    "numberOfLines": 1,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            }
+        },
+        "Details_Table_1": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "Details Table",
+            "query": {
+                "query": "{\"values\":[\"USER_ID_DERIVED\",\"DISPLAY_TYPE\",\"ENTITY_NAME\",\"RENDERING_TYPE\",\"Report.Name\",\"REQUEST_STATUS\",\"ROW_COUNT\",\"RUN_TIME\",\"SORT\",\"TIMESTAMP_DERIVED\",\"USER_TYPE\",\"ORIGIN\"]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "options": {},
+                "parameters": {
+                    "borderColor": "#e0e5ee",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#a8b7c7",
+                    "innerMinorBorderColor": "#e0e5ee",
+                    "maxColumnWidth": 300,
+                    "minColumnWidth": 40,
+                    "mode": "variable",
+                    "numberOfLines": 1,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": true,
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            }
+        },
+        "PrimaryTable_2": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "ReportTrend",
+            "query": {
+                "query": "{\"measures\":[[\"count\",\"*\",\"A\"],[\"unique\",\"USER_ID_DERIVED\",\"B\"],[\"avg\",\"ROW_COUNT\",\"C\"],[\"max\",\"ROW_COUNT\",\"D\"]],\"columns\":[{\"query\":{\"measures\":[[\"count\",\"*\"]],\"groups\":[[\"TIMESTAMP_DERIVED_Year\",\"TIMESTAMP_DERIVED_Month\",\"TIMESTAMP_DERIVED_Day\"]],\"order\":[[-1,{\"ascending\":false,\"inner\":false}]]},\"header\":\"Executions\"},{\"query\":{\"measures\":[[\"unique\",\"USER_ID_DERIVED\"]],\"groups\":[[\"TIMESTAMP_DERIVED_Year\",\"TIMESTAMP_DERIVED_Month\",\"TIMESTAMP_DERIVED_Day\"]]},\"header\":\"Users\"},{\"query\":{\"measures\":[[\"avg\",\"ROW_COUNT\"]],\"groups\":[[\"TIMESTAMP_DERIVED_Year\",\"TIMESTAMP_DERIVED_Month\",\"TIMESTAMP_DERIVED_Day\"]]},\"header\":\"Avg Row Count\"},{\"query\":{\"measures\":[[\"max\",\"ROW_COUNT\"]],\"groups\":[[\"TIMESTAMP_DERIVED_Year\",\"TIMESTAMP_DERIVED_Month\",\"TIMESTAMP_DERIVED_Day\"]]},\"header\":\"Max Row Count\"}],\"groups\":[[\"TIMESTAMP_DERIVED_Year\",\"TIMESTAMP_DERIVED_Month\",\"TIMESTAMP_DERIVED_Day\"]]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "showPoints": false,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "time",
+                    "missingValue": "connect",
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "timeAxis": {
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": ""
+                    },
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Report Execution Summary",
+                        "align": "center",
+                        "subtitleLabel": "How many users view which reports how many times, and how much data?"
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [100, 100],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnProperties": {},
+                    "fillArea": true,
+                    "columnMap": {
+                        "split": [],
+                        "timeAxis": ["TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day"],
+                        "trellis": [],
+                        "plots": ["D", "C", "A", "B"]
+                    },
+                    "showActionMenu": true,
+                    "showZero": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "none",
+                    "theme": "wave",
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    }
+                },
+                "type": "chart"
+            }
+        },
+        "PrimaryTable_1": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "PrimaryTable",
+            "query": {
+                "query": "{\"measures\":[[\"count\",\"*\",\"A\"],[\"unique\",\"USER_ID_DERIVED\",\"B\"],[\"avg\",\"ROW_COUNT\",\"C\"]],\"columns\":[{\"query\":{\"measures\":[[\"count\",\"*\"]],\"groups\":[\"Report.Name\"],\"order\":[[-1,{\"ascending\":false,\"inner\":false}]]},\"header\":\"Executions\"},{\"query\":{\"measures\":[[\"unique\",\"USER_ID_DERIVED\"]],\"groups\":[\"Report.Name\"]},\"header\":\"Users\"},{\"query\":{\"measures\":[[\"avg\",\"ROW_COUNT\"]],\"groups\":[\"Report.Name\"]},\"header\":\"Avg Row Count\"}],\"groups\":[\"Report.Name\"]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "options": {},
+                "parameters": {
+                    "borderColor": "#e0e5ee",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#a8b7c7",
+                    "innerMinorBorderColor": "#e0e5ee",
+                    "maxColumnWidth": 300,
+                    "minColumnWidth": 40,
+                    "mode": "variable",
+                    "numberOfLines": 1,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            }
+        },
+        "ReportPerformance_1": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "ReportPerformance",
+            "query": {
+                "query": "{\"measures\":[[\"sum\",\"DB_TOTAL_TIME\",\"A\"],[\"sum\",\"ROW_COUNT\",\"B\"],[\"sum\",\"RUN_TIME\",\"C\"],[\"count\",\"*\",\"D\"]],\"columns\":[{\"query\":{\"measures\":[[\"sum\",\"DB_TOTAL_TIME\"]],\"groups\":[\"Report.Name\"]},\"header\":\"Total DB Time\"},{\"query\":{\"measures\":[[\"sum\",\"ROW_COUNT\"]],\"groups\":[\"Report.Name\"]},\"header\":\"Number of Rows\"},{\"query\":{\"measures\":[[\"sum\",\"RUN_TIME\"]],\"groups\":[\"Report.Name\"]},\"header\":\"Run Time (ms)\"},{\"query\":{\"measures\":[[\"count\",\"*\"]],\"groups\":[\"Report.Name\"],\"formula\":\"A/1000\"},\"header\":\"Total DB Time (ms)\"}],\"groups\":[\"Report.Name\"]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "parameters": {
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "scatter",
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [100, 100],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnProperties": {},
+                    "radiusRatio": 5,
+                    "columnMap": {
+                        "r": ["C"],
+                        "x": ["B"],
+                        "y": ["D"],
+                        "trellis": [],
+                        "plots": ["Report.Name"]
+                    },
+                    "showActionMenu": true,
+                    "x": {
+                        "sqrtScale": true,
+                        "showZero": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "y": {
+                        "sqrtScale": true,
+                        "showZero": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            }
+        },
+        "CreatedByTable_1": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "CreatedByTable",
+            "query": {
+                "query": "{\"measures\":[[\"count\",\"*\",\"A\"],[\"unique\",\"USER_ID_DERIVED\",\"B\"],[\"avg\",\"ROW_COUNT\",\"C\"],[\"unique\",\"REPORT_ID_DERIVED\",\"D\"]],\"columns\":[{\"query\":{\"measures\":[[\"count\",\"*\"]],\"groups\":[\"User.Profile.Name\"],\"order\":[[-1,{\"ascending\":false,\"inner\":false}]]},\"header\":\"Executions\"},{\"query\":{\"measures\":[[\"unique\",\"USER_ID_DERIVED\"]],\"groups\":[\"User.Profile.Name\"]},\"header\":\"Users\"},{\"query\":{\"measures\":[[\"avg\",\"ROW_COUNT\"]],\"groups\":[\"User.Profile.Name\"]},\"header\":\"Avg Row Count\"},{\"query\":{\"measures\":[[\"unique\",\"REPORT_ID_DERIVED\"]],\"groups\":[\"User.Profile.Name\"]},\"header\":\"Reports\"}],\"groups\":[\"User.Profile.Name\"]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "options": {},
+                "parameters": {
+                    "borderColor": "#e0e5ee",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {},
+                    "columns": ["B", "D", "A", "C", "User.Profile.Name"],
+                    "customBulkActions": [],
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#a8b7c7",
+                    "innerMinorBorderColor": "#e0e5ee",
+                    "mode": "fittocontainer",
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            }
+        },
+        "OriginDist_1": {
+            "broadcastFacet": true,
+            "datasets": [{
+                "name": "ReportWithUsers"
+            }],
+            "isGlobal": false,
+            "label": "OriginDist",
+            "query": {
+                "query": "{\"measures\":[[\"count\",\"*\"]],\"groups\":[\"ORIGIN\"],\"order\":[[\"count\",{\"ascending\":false}]]}",
+                "version": -1.0
+            },
+            "receiveFacetSource": {
+                "mode": "all",
+                "steps": []
+            },
+            "selectMode": "single",
+            "type": "aggregateflex",
+            "useGlobal": true,
+            "visualizationParameters": {
+                "parameters": {
+                    "centerText": "",
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "showMeasureTitle": true,
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "pie",
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [100, 100],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "inner": 60,
+                    "columnMap": {
+                        "trellis": [],
+                        "dimension": ["ORIGIN"],
+                        "plots": ["count"]
+                    },
+                    "showActionMenu": true,
+                    "centerValueType": "number",
+                    "valueType": "compactNumber",
+                    "theme": "wave",
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            }
+        }
+    },
+    "widgetStyle": {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E6ECF2",
+        "borderEdges": [],
+        "borderRadius": 0,
+        "borderWidth": 1
+    },
+    "widgets": {
+        "text_1": {
+            "parameters": {
+                "content": {
+                    "richTextContent": [{
+                        "attributes": {
+                            "color": "#7d98b3",
+                            "size": "16px",
+                            "bold": true
+                        },
+                        "insert": "Report Adoption"
+                    }, {
+                        "attributes": {
+                            "color": "#7d98b3",
+                            "size": "16px"
+                        },
+                        "insert": ": who is running which reports, how frequently, how are they performing, and are they being exported."
+                    }, {
+                        "attributes": {
+                            "align": "left"
+                        },
+                        "insert": "\n"
+                    }]
+                },
+                "showActionMenu": true
+            },
+            "type": "text"
+        },
+        "link_3": {
+            "parameters": {
+                "destinationLink": {
+                    "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_eventlogfile_report.htm"
+                },
+                "destinationType": "url",
+                "fontSize": 14,
+                "includeState": false,
+                "text": "[ Report Log Documentation ]",
+                "textAlignment": "center",
+                "textColor": "#7D98B3"
+            },
+            "type": "link"
+        },
+        "filterpanel_1": {
+            "parameters": {
+                "filterItemOptions": {
+                    "backgroundColor": "#FFFFFF",
+                    "borderColor": "#E6ECF2",
+                    "borderRadius": 4,
+                    "borderWidth": 1,
+                    "propertyColor": "#54698D",
+                    "valueColor": "#16325C"
+                },
+                "filters": [],
+                "itemsPerRow": 8,
+                "showAllFilters": true,
+                "title": {
+                    "separatorColor": "#E6ECF2",
+                    "text": {
+                        "align": "left",
+                        "color": "#091A3E",
+                        "fontSize": 16,
+                        "label": "Filters"
+                    },
+                    "visible": false
+                }
+            },
+            "type": "filterpanel"
+        },
+        "link_2": {
+            "parameters": {
+                "destinationLink": {
+                    "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_eventlogfile_report.htm"
+                },
+                "destinationType": "url",
+                "fontSize": 14,
+                "includeState": false,
+                "text": "[ Report Log Documentation ]",
+                "textAlignment": "center",
+                "textColor": "#7D98B3"
+            },
+            "type": "link"
+        },
+        "table_1": {
+            "parameters": {
+                "borderColor": "#e0e5ee",
+                "borderWidth": 1,
+                "cell": {
+                    "backgroundColor": "#ffffff",
+                    "fontColor": "#16325c",
+                    "fontSize": 12,
+                    "textWrap": true
+                },
+                "columnProperties": {},
+                "columns": [],
+                "customBulkActions": [],
+                "exploreLink": true,
+                "header": {
+                    "backgroundColor": "#f4f6f9",
+                    "fontColor": "#16325c",
+                    "fontSize": 12,
+                    "textWrap": true
+                },
+                "innerMajorBorderColor": "#a8b7c7",
+                "innerMinorBorderColor": "#e0e5ee",
+                "maxColumnWidth": 300,
+                "minColumnWidth": 40,
+                "mode": "variable",
+                "numberOfLines": 1,
+                "showActionMenu": true,
+                "showRowIndexColumn": true,
+                "step": "Details_Table_1",
+                "totals": true,
+                "verticalPadding": 8
+            },
+            "type": "table"
+        },
+        "table_2": {
+            "parameters": {
+                "borderColor": "#e0e5ee",
+                "borderWidth": 1,
+                "cell": {
+                    "backgroundColor": "#ffffff",
+                    "fontColor": "#16325c",
+                    "fontSize": 12,
+                    "textWrap": true
+                },
+                "columnProperties": {},
+                "columns": ["B", "D", "A", "C", "User.Profile.Name"],
+                "customBulkActions": [],
+                "exploreLink": true,
+                "header": {
+                    "backgroundColor": "#f4f6f9",
+                    "fontColor": "#16325c",
+                    "fontSize": 12,
+                    "textWrap": true
+                },
+                "innerMajorBorderColor": "#a8b7c7",
+                "innerMinorBorderColor": "#e0e5ee",
+                "mode": "fittocontainer",
+                "numberOfLines": 1,
+                "pivoted": false,
+                "showActionMenu": true,
+                "showRowIndexColumn": false,
+                "step": "CreatedByTable_1",
+                "totals": true,
+                "verticalPadding": 8
+            },
+            "type": "table"
+        },
+        "table_4": {
+            "parameters": {
+                "borderColor": "#a8b7c7",
+                "borderWidth": 1,
+                "cell": {
+                    "backgroundColor": "#ffffff",
+                    "fontColor": "#16325c",
+                    "fontSize": 12,
+                    "textWrap": true
+                },
+                "columnProperties": {},
+                "columns": [],
+                "customBulkActions": [],
+                "exploreLink": true,
+                "header": {
+                    "backgroundColor": "#16325c",
+                    "fontColor": "#ffffff",
+                    "fontSize": 12,
+                    "textWrap": true
+                },
+                "innerMajorBorderColor": "#54698d",
+                "innerMinorBorderColor": "#a8b7c7",
+                "mode": "fittocontainer",
+                "numberOfLines": 1,
+                "pivoted": false,
+                "showActionMenu": true,
+                "showRowIndexColumn": false,
+                "step": "RenderingDisplayType_1",
+                "totals": true,
+                "verticalPadding": 8
+            },
+            "type": "table"
+        },
+        "text_3": {
+            "parameters": {
+                "content": {
+                    "richTextContent": [{
+                        "attributes": {
+                            "size": "12px"
+                        },
+                        "insert": "Details table:  a complete view of what reports were run, by whom, on what objects. Select any of the groupings in the charts above to narrow down the scope of the table below."
+                    }, {
+                        "attributes": {
+                            "align": "left"
+                        },
+                        "insert": "\n"
+                    }]
+                },
+                "showActionMenu": true
+            },
+            "type": "text"
+        },
+        "text_2": {
+            "parameters": {
+                "content": {
+                    "richTextContent": [{
+                        "attributes": {
+                            "size": "12px",
+                            "color": "#7d98b3"
+                        },
+                        "insert": "Which user profiles are using reports the most?"
+                    }, {
+                        "attributes": {
+                            "align": "center"
+                        },
+                        "insert": "\n"
+                    }]
+                },
+                "showActionMenu": true
+            },
+            "type": "text"
+        },
+        "chart_5": {
+            "parameters": {
+                "autoFitMode": "keepLabels",
+                "showPoints": false,
+                "legend": {
+                    "descOrder": false,
+                    "showHeader": true,
+                    "show": false,
+                    "customSize": "auto",
+                    "position": "right-top",
+                    "inside": false
+                },
+                "axisMode": "multi",
+                "tooltip": {
+                    "content": {
+                        "legend": {
+                            "showBinLabel": true,
+                            "measures": [],
+                            "showNullValues": true,
+                            "customizeLegend": false,
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": []
+                        }
+                    }
+                },
+                "visualizationType": "time",
+                "missingValue": "connect",
+                "dashLine": {
+                    "measures": "",
+                    "showDashLine": false
+                },
+                "exploreLink": true,
+                "timeAxis": {
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "Date"
+                },
+                "title": {
+                    "fontSize": 14,
+                    "subtitleFontSize": 11,
+                    "label": "Adoption Timeline",
+                    "align": "center",
+                    "subtitleLabel": ""
+                },
+                "trellis": {
+                    "flipLabels": false,
+                    "showGridLines": true,
+                    "size": [100, 100],
+                    "enable": false,
+                    "type": "x",
+                    "chartsPerLine": 4
+                },
+                "columnProperties": {},
+                "fillArea": true,
+                "columnMap": {
+                    "split": [],
+                    "timeAxis": ["TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day"],
+                    "trellis": [],
+                    "plots": ["D", "C", "A", "B"]
+                },
+                "showActionMenu": true,
+                "showZero": true,
+                "measureAxis2": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "measureAxis1": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "valueType": "none",
+                "theme": "wave",
+                "step": "PrimaryTable_2",
+                "applyConditionalFormatting": true,
+                "drawArea": {
+                    "measure": "",
+                    "showDrawArea": false,
+                    "bounding1": "",
+                    "bounding2": ""
+                }
+            },
+            "type": "chart"
+        },
+        "text_4": {
+            "parameters": {
+                "content": {
+                    "richTextContent": [{
+                        "attributes": {
+                            "size": "14px",
+                            "color": "#54698d",
+                            "bold": true
+                        },
+                        "insert": "Who is exporting reports?"
+                    }, {
+                        "attributes": {},
+                        "insert": "\n\n"
+                    }, {
+                        "attributes": {
+                            "size": "14px",
+                            "color": "#54698d"
+                        },
+                        "insert": "Any reports that have a high row count, are CSV, Excel or Printable rendering types, and are showing details, are possibly users exporting personal or business details."
+                    }, {
+                        "attributes": {},
+                        "insert": "\n\n"
+                    }, {
+                        "attributes": {
+                            "size": "14px",
+                            "color": "#54698d"
+                        },
+                        "insert": "Check the documentation on what Rendering and Display type values to filter on to see the incident table below."
+                    }, {
+                        "attributes": {},
+                        "insert": "\n"
+                    }]
+                },
+                "showActionMenu": true
+            },
+            "type": "text"
+        },
+        "chart_2": {
+            "parameters": {
+                "autoFitMode": "keepLabels",
+                "centerText": "",
+                "showValues": true,
+                "bins": {
+                    "breakpoints": {
+                        "high": 100,
+                        "low": 0
+                    },
+                    "bands": {
+                        "high": {
+                            "color": "#008000",
+                            "label": ""
+                        },
+                        "low": {
+                            "color": "#B22222",
+                            "label": ""
+                        },
+                        "medium": {
+                            "color": "#ffa500",
+                            "label": ""
+                        }
+                    }
+                },
+                "legend": {
+                    "descOrder": false,
+                    "showHeader": true,
+                    "show": true,
+                    "customSize": "auto",
+                    "position": "right-top",
+                    "inside": false
+                },
+                "showMeasureTitle": false,
+                "axisMode": "multi",
+                "tooltip": {
+                    "content": {
+                        "legend": {
+                            "showBinLabel": true,
+                            "measures": [],
+                            "showNullValues": true,
+                            "customizeLegend": false,
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": []
+                        }
+                    }
+                },
+                "visualizationType": "pie",
+                "exploreLink": true,
+                "title": {
+                    "fontSize": 14,
+                    "subtitleFontSize": 11,
+                    "label": "Origin of Reports",
+                    "align": "center",
+                    "subtitleLabel": "From where are the reports being run in the user experience?"
+                },
+                "binValues": false,
+                "trellis": {
+                    "flipLabels": false,
+                    "showGridLines": true,
+                    "size": [100, 100],
+                    "enable": false,
+                    "type": "x",
+                    "chartsPerLine": 4
+                },
+                "inner": 60,
+                "columnMap": {
+                    "trellis": [],
+                    "dimension": ["ORIGIN"],
+                    "plots": ["count"]
+                },
+                "showActionMenu": true,
+                "centerValueType": "number",
+                "measureAxis2": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "measureAxis1": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "valueType": "percent",
+                "theme": "wave",
+                "step": "OriginDist_1",
+                "dimensionAxis": {
+                    "showTitle": true,
+                    "customSize": "auto",
+                    "showAxis": true,
+                    "title": "",
+                    "icons": {
+                        "useIcons": false,
+                        "iconProps": {
+                            "fit": "cover",
+                            "column": "",
+                            "type": "round"
+                        }
+                    }
+                },
+                "applyConditionalFormatting": true
+            },
+            "type": "chart"
+        },
+        "chart_1": {
+            "parameters": {
+                "autoFitMode": "keepLabels",
+                "showValues": true,
+                "bins": {
+                    "breakpoints": {
+                        "high": 100,
+                        "low": 0
+                    },
+                    "bands": {
+                        "high": {
+                            "color": "#008000",
+                            "label": ""
+                        },
+                        "low": {
+                            "color": "#B22222",
+                            "label": ""
+                        },
+                        "medium": {
+                            "color": "#ffa500",
+                            "label": ""
+                        }
+                    }
+                },
+                "legend": {
+                    "descOrder": false,
+                    "showHeader": true,
+                    "show": false,
+                    "customSize": "auto",
+                    "position": "right-top",
+                    "inside": false
+                },
+                "axisMode": "multi",
+                "tooltip": {
+                    "content": {
+                        "legend": {
+                            "showBinLabel": true,
+                            "measures": [],
+                            "showNullValues": true,
+                            "customizeLegend": false,
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": []
+                        }
+                    }
+                },
+                "visualizationType": "hbar",
+                "exploreLink": true,
+                "title": {
+                    "fontSize": 14,
+                    "subtitleFontSize": 11,
+                    "label": "Adoption Summary",
+                    "align": "center",
+                    "subtitleLabel": "How many users view which reports how many times, and how much data?"
+                },
+                "binValues": false,
+                "trellis": {
+                    "flipLabels": false,
+                    "showGridLines": true,
+                    "size": [100, 100],
+                    "enable": false,
+                    "type": "x",
+                    "chartsPerLine": 4
+                },
+                "showActionMenu": true,
+                "measureAxis2": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "measureAxis1": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "theme": "wave",
+                "step": "PrimaryTable_1",
+                "dimensionAxis": {
+                    "showTitle": true,
+                    "customSize": "auto",
+                    "showAxis": true,
+                    "title": "Report Name",
+                    "icons": {
+                        "useIcons": false,
+                        "iconProps": {
+                            "fit": "cover",
+                            "column": "",
+                            "type": "round"
+                        }
+                    }
+                },
+                "applyConditionalFormatting": true
+            },
+            "type": "chart"
+        },
+        "chart_4": {
+            "parameters": {
+                "autoFitMode": "keepLabels",
+                "showValues": true,
+                "bins": {
+                    "breakpoints": {
+                        "high": 100,
+                        "low": 0
+                    },
+                    "bands": {
+                        "high": {
+                            "color": "#008000",
+                            "label": ""
+                        },
+                        "low": {
+                            "color": "#B22222",
+                            "label": ""
+                        },
+                        "medium": {
+                            "color": "#ffa500",
+                            "label": ""
+                        }
+                    }
+                },
+                "legend": {
+                    "descOrder": false,
+                    "showHeader": true,
+                    "show": true,
+                    "customSize": "auto",
+                    "position": "right-top",
+                    "inside": false
+                },
+                "axisMode": "multi",
+                "tooltip": {
+                    "content": {
+                        "legend": {
+                            "showBinLabel": true,
+                            "measures": ["A", "B", "C", "D"],
+                            "showNullValues": false,
+                            "customizeLegend": true,
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": ["Report.Name"]
+                        }
+                    }
+                },
+                "visualizationType": "scatter",
+                "exploreLink": true,
+                "title": {
+                    "fontSize": 14,
+                    "subtitleFontSize": 11,
+                    "label": "Performance",
+                    "align": "center",
+                    "subtitleLabel": "Database (DB) Time should increase linearly with Number of Rows. Outliers suggest suboptimal report structure (non-indexed filters, etc)."
+                },
+                "binValues": false,
+                "trellis": {
+                    "flipLabels": false,
+                    "showGridLines": true,
+                    "size": [100, 100],
+                    "enable": false,
+                    "type": "x",
+                    "chartsPerLine": 4
+                },
+                "columnProperties": {},
+                "radiusRatio": 5,
+                "columnMap": {
+                    "r": ["C"],
+                    "x": ["B"],
+                    "y": ["D"],
+                    "trellis": [],
+                    "plots": ["Report.Name"]
+                },
+                "showActionMenu": true,
+                "measureAxis2": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "measureAxis1": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "x": {
+                    "sqrtScale": true,
+                    "showZero": true,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "y": {
+                    "sqrtScale": true,
+                    "showZero": true,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "theme": "wave",
+                "step": "ReportPerformance_1",
+                "dimensionAxis": {
+                    "showTitle": true,
+                    "customSize": "auto",
+                    "showAxis": true,
+                    "title": "",
+                    "icons": {
+                        "useIcons": false,
+                        "iconProps": {
+                            "fit": "cover",
+                            "column": "",
+                            "type": "round"
+                        }
+                    }
+                },
+                "applyConditionalFormatting": true
+            },
+            "type": "chart"
+        },
+        "chart_3": {
+            "parameters": {
+                "autoFitMode": "keepLabels",
+                "showValues": true,
+                "bins": {
+                    "breakpoints": {
+                        "high": 100,
+                        "low": 0
+                    },
+                    "bands": {
+                        "high": {
+                            "color": "#008000",
+                            "label": ""
+                        },
+                        "low": {
+                            "color": "#B22222",
+                            "label": ""
+                        },
+                        "medium": {
+                            "color": "#ffa500",
+                            "label": ""
+                        }
+                    }
+                },
+                "legend": {
+                    "descOrder": false,
+                    "showHeader": true,
+                    "show": true,
+                    "customSize": "auto",
+                    "position": "right-top",
+                    "inside": false
+                },
+                "axisMode": "multi",
+                "tooltip": {
+                    "content": {
+                        "legend": {
+                            "showBinLabel": true,
+                            "measures": ["A", "B", "C"],
+                            "showNullValues": false,
+                            "customizeLegend": false,
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": false,
+                            "dimensions": ["USER_ID_DERIVED"]
+                        }
+                    }
+                },
+                "visualizationType": "scatter",
+                "exploreLink": true,
+                "title": {
+                    "fontSize": 14,
+                    "subtitleFontSize": 11,
+                    "label": "Who is generating their own reports?",
+                    "align": "center",
+                    "subtitleLabel": "Report executions with with no name suggests the user is building or running a report from scratch."
+                },
+                "binValues": false,
+                "trellis": {
+                    "flipLabels": false,
+                    "showGridLines": true,
+                    "size": [100, 100],
+                    "enable": false,
+                    "type": "x",
+                    "chartsPerLine": 4
+                },
+                "columnProperties": {},
+                "radiusRatio": 5,
+                "columnMap": {
+                    "r": ["C"],
+                    "x": ["A"],
+                    "y": ["B"],
+                    "trellis": [],
+                    "plots": ["User.Name"]
+                },
+                "showActionMenu": true,
+                "measureAxis2": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "measureAxis1": {
+                    "sqrtScale": false,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "x": {
+                    "sqrtScale": true,
+                    "showZero": true,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "y": {
+                    "sqrtScale": true,
+                    "showZero": true,
+                    "showTitle": true,
+                    "showAxis": true,
+                    "title": "",
+                    "customDomain": {
+                        "showDomain": false
+                    }
+                },
+                "theme": "wave",
+                "step": "AdHocReportDist_1",
+                "dimensionAxis": {
+                    "showTitle": true,
+                    "customSize": "auto",
+                    "showAxis": true,
+                    "title": "",
+                    "icons": {
+                        "useIcons": false,
+                        "iconProps": {
+                            "fit": "cover",
+                            "column": "",
+                            "type": "round"
+                        }
+                    }
+                },
+                "applyConditionalFormatting": true
+            },
+            "type": "chart"
+        }
+    }
+}

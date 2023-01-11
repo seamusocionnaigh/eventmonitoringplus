@@ -7,7 +7,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithusers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.Name"
                     },
@@ -23,7 +23,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithusers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.Profile.Name"
                     },
@@ -39,7 +39,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithusers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.User.Role.Name"
                     },
@@ -55,7 +55,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithusers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_APP_NAME"
                     },
@@ -71,7 +71,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithusers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_ENTITY_TYPE"
                     },
@@ -87,7 +87,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithusers",
                         "dataSourceType": "dataset",
                         "fieldName": "TIMESTAMP_DERIVED"
                     },
@@ -105,7 +105,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithusers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -119,7 +119,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithusers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -133,7 +133,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithusers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -147,7 +147,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithusers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -161,7 +161,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithusers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -175,7 +175,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithusers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -1529,8 +1529,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -2639,8 +2639,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -3885,18 +3885,18 @@
                     "type": "chart"
                 }
             },
-            "LightningPageViewHea_1": {
+            "LightningPageViewWithusersHea_1": {
                 "broadcastFacet": true,
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
                 "isGlobal": false,
-                "label": "LightningPageViewHeatmap",
+                "label": "LightningPageViewWithusersHeatmap",
                 "query": {
                     "measures": [
                         [
@@ -4076,8 +4076,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -4432,8 +4432,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -4594,8 +4594,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -5345,8 +5345,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -6146,8 +6146,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithusers",
+                        "name": "LightningPageViewWithusers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -6527,7 +6527,7 @@
                     "onboarding": [
                         {
                             "title": "Lightning Page View Event Type",
-                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightningpageview.htm"
+                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_LightningPageViewWithusers.htm"
                         }
                     ],
                     "showActionMenu": true
@@ -8280,7 +8280,7 @@
                         "title": "Object or Page Name"
                     },
                     "theme": "sunriseDark",
-                    "step": "LightningPageViewHea_1",
+                    "step": "LightningPageViewWithusersHea_1",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
@@ -8489,7 +8489,7 @@
                     "onboarding": [
                         {
                             "title": "Lightning Page View Log Type",
-                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightningpageview.htm"
+                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_LightningPageViewWithusers.htm"
                         }
                     ],
                     "theme": "dark",
@@ -9209,8 +9209,8 @@
         },
         {
             "id": "0Fb09000000r0J3CAI",
-            "label": "LightningPageView",
-            "name": "LightningPageView",
+            "label": "LightningPageViewWithusers",
+            "name": "LightningPageViewWithusers",
             "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
         }
     ]

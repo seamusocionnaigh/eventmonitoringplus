@@ -5,6 +5,7 @@
         <name>WaveApplication</name>
     </types>
     <types>
+        <members>Report_Adoption</members>
         <members>Apex_Exceptions</members>
         <members>Apex_Performance</members>
         <members>Lightning_Page_Performance_EPT</members>
