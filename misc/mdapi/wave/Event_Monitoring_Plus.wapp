@@ -10,5 +10,5 @@
         <sharedToType>Organization</sharedToType>
     </shares>
     <templateOrigin>sfdc_internal__AdminAnalytics</templateOrigin>
-    <templateVersion>52.0</templateVersion>
+    <templateVersion>56.0</templateVersion>
 </WaveApplication>
