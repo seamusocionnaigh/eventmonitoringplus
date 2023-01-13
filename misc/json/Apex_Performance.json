@@ -8,7 +8,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0IuCAI",
-                    "name": "ApexExecutionWithusers",
+                    "name": "ApexExecutionWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                 },
                 "dependent": true,
@@ -22,7 +22,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0IuCAI",
-                    "name": "ApexExecutionWithusers",
+                    "name": "ApexExecutionWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                 },
                 "dependent": true,
@@ -35,7 +35,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0IuCAI",
-                    "name": "ApexExecutionWithusers",
+                    "name": "ApexExecutionWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                 },
                 "dependent": true,
@@ -49,7 +49,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0IuCAI",
-                    "name": "ApexExecutionWithusers",
+                    "name": "ApexExecutionWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                 },
                 "dependent": true,
@@ -63,7 +63,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0IuCAI",
-                    "name": "ApexExecutionWithusers",
+                    "name": "ApexExecutionWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                 },
                 "dependent": true,
@@ -949,8 +949,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0IuCAI",
-                        "label": "ApexExecutionWithusers",
-                        "name": "ApexExecutionWithusers",
+                        "label": "ApexExecutionWithUsers",
+                        "name": "ApexExecutionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                     }
                 ],
@@ -1193,8 +1193,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0IuCAI",
-                        "label": "ApexExecutionWithusers",
-                        "name": "ApexExecutionWithusers",
+                        "label": "ApexExecutionWithUsers",
+                        "name": "ApexExecutionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                     }
                 ],
@@ -1431,8 +1431,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0IuCAI",
-                        "label": "ApexExecutionWithusers",
-                        "name": "ApexExecutionWithusers",
+                        "label": "ApexExecutionWithUsers",
+                        "name": "ApexExecutionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                     }
                 ],
@@ -1578,8 +1578,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0IuCAI",
-                        "label": "ApexExecutionWithusers",
-                        "name": "ApexExecutionWithusers",
+                        "label": "ApexExecutionWithUsers",
+                        "name": "ApexExecutionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                     }
                 ],
@@ -1645,8 +1645,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0IuCAI",
-                        "label": "ApexExecutionWithusers",
-                        "name": "ApexExecutionWithusers",
+                        "label": "ApexExecutionWithUsers",
+                        "name": "ApexExecutionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                     }
                 ],
@@ -1831,8 +1831,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0IuCAI",
-                        "label": "ApexExecutionWithusers",
-                        "name": "ApexExecutionWithusers",
+                        "label": "ApexExecutionWithUsers",
+                        "name": "ApexExecutionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
                     }
                 ],
@@ -2466,7 +2466,7 @@
                 "groups": [],
                 "label": "LatestDate",
                 "numbers": [],
-                "query": "q = load \"ApexExecutionWithusers\";\nq = foreach q generate 'TIMESTAMP_DERIVED_sec_epoch' as 'TIMESTAMP_DERIVED_sec_epoch';\nq = order q by 'TIMESTAMP_DERIVED_sec_epoch' desc;\nq = limit q 1;",
+                "query": "q = load \"ApexExecutionWithUsers\";\nq = foreach q generate 'TIMESTAMP_DERIVED_sec_epoch' as 'TIMESTAMP_DERIVED_sec_epoch';\nq = order q by 'TIMESTAMP_DERIVED_sec_epoch' desc;\nq = limit q 1;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -2586,7 +2586,7 @@
                 "groups": [],
                 "label": "SlowLeaders",
                 "numbers": [],
-                "query": "q = load \"ApexExecutionWithusers\";\nresult = group q by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate q.'QUIDDITY' as 'QUIDDITY', q.'ENTRY_POINT' as 'ENTRY_POINT', round(avg(q.'RUN_TIME'),0) as 'A';\nresult = group result by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate 'QUIDDITY', 'ENTRY_POINT', first(A) as 'A', rank() over([..] partition by 'QUIDDITY' order by sum(A) desc) as 'Rank';\nresult = order result by ('QUIDDITY' asc, 'ENTRY_POINT' asc);\nresult = filter result by 'Rank'==1;\nresult = foreach result generate 'QUIDDITY','ENTRY_POINT','A' as 'Avg Time (ms)';\nresult = order result by 'QUIDDITY' asc;\nresult = limit result 2000;",
+                "query": "q = load \"ApexExecutionWithUsers\";\nresult = group q by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate q.'QUIDDITY' as 'QUIDDITY', q.'ENTRY_POINT' as 'ENTRY_POINT', round(avg(q.'RUN_TIME'),0) as 'A';\nresult = group result by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate 'QUIDDITY', 'ENTRY_POINT', first(A) as 'A', rank() over([..] partition by 'QUIDDITY' order by sum(A) desc) as 'Rank';\nresult = order result by ('QUIDDITY' asc, 'ENTRY_POINT' asc);\nresult = filter result by 'Rank'==1;\nresult = foreach result generate 'QUIDDITY','ENTRY_POINT','A' as 'Avg Time (ms)';\nresult = order result by 'QUIDDITY' asc;\nresult = limit result 2000;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -2631,7 +2631,7 @@
                 "groups": [],
                 "label": "YestWorstPerfType",
                 "numbers": [],
-                "query": "q = load \"ApexExecutionWithusers\";\nq = filter q by 'TIMESTAMP_DERIVED_sec_epoch'=={{column(LatestDate_1.result, [\"TIMESTAMP_DERIVED_sec_epoch\"]).asObject()}};\nresult = group q by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate q.'QUIDDITY' as 'QUIDDITY', q.'ENTRY_POINT' as 'ENTRY_POINT', round(avg(q.'RUN_TIME'),0) as 'A';\nresult = group result by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate 'QUIDDITY', 'ENTRY_POINT', first(A) as 'A', rank() over([..] partition by 'QUIDDITY' order by sum(A) desc) as 'Rank';\nresult = filter result by 'Rank' == 1;\nresult = foreach result generate 'QUIDDITY', 'ENTRY_POINT', 'A' as 'Avg Time (ms)';\nresult = order result by 'QUIDDITY' asc;\nresult = limit result 2000;",
+                "query": "q = load \"ApexExecutionWithUsers\";\nq = filter q by 'TIMESTAMP_DERIVED_sec_epoch'=={{column(LatestDate_1.result, [\"TIMESTAMP_DERIVED_sec_epoch\"]).asObject()}};\nresult = group q by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate q.'QUIDDITY' as 'QUIDDITY', q.'ENTRY_POINT' as 'ENTRY_POINT', round(avg(q.'RUN_TIME'),0) as 'A';\nresult = group result by ('QUIDDITY', 'ENTRY_POINT');\nresult = foreach result generate 'QUIDDITY', 'ENTRY_POINT', first(A) as 'A', rank() over([..] partition by 'QUIDDITY' order by sum(A) desc) as 'Rank';\nresult = filter result by 'Rank' == 1;\nresult = foreach result generate 'QUIDDITY', 'ENTRY_POINT', 'A' as 'Avg Time (ms)';\nresult = order result by 'QUIDDITY' asc;\nresult = limit result 2000;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -3947,7 +3947,7 @@
                                     "size": "12px",
                                     "color": "#ffffff"
                                 },
-                                "insert": "It is important that you review the Apex Execution Event Log manual (https://sfdc.co/ApexExecutionWithuserss) to understand the log details. But here's a brief explainer: RUN_TIME is the total execution time. RUN_TIME is the sum of CPU_TIME, DB_TOTAL_TIME, EXEC_TIME and CALLOUT_TIME."
+                                "insert": "It is important that you review the Apex Execution Event Log manual (https://sfdc.co/ApexExecutionWithUserss) to understand the log details. But here's a brief explainer: RUN_TIME is the total execution time. RUN_TIME is the sum of CPU_TIME, DB_TOTAL_TIME, EXEC_TIME and CALLOUT_TIME."
                             },
                             {
                                 "attributes": {},
@@ -4798,8 +4798,8 @@
             "link_6": {
                 "parameters": {
                     "destinationLink": {
-                        "tooltip": "Document that explains the columns and data of the ApexExecutionWithusers event log type.",
-                        "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_ApexExecutionWithusers.htm"
+                        "tooltip": "Document that explains the columns and data of the ApexExecutionWithUsers event log type.",
+                        "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_ApexExecutionWithUsers.htm"
                     },
                     "destinationType": "url",
                     "fontSize": 12,
@@ -4815,8 +4815,8 @@
     "datasets": [
         {
             "id": "0Fb09000000r0IuCAI",
-            "label": "ApexExecutionWithusers",
-            "name": "ApexExecutionWithusers",
+            "label": "ApexExecutionWithUsers",
+            "name": "ApexExecutionWithUsers",
             "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0IuCAI"
         }
     ]

@@ -12,7 +12,7 @@
                         "fieldName": "CLIENT_GEO"
                     },
                     {
-                        "dataSourceName": "LightningPageViewWithusers",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "CLIENT_GEO"
                     }
@@ -28,7 +28,7 @@
                         "fieldName": "PAGE_URL"
                     },
                     {
-                        "dataSourceName": "LightningPageViewWithusers",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_URL"
                     }
@@ -44,7 +44,7 @@
                         "fieldName": "PAGE_APP_NAME"
                     },
                     {
-                        "dataSourceName": "LightningPageViewWithusers",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_APP_NAME"
                     }
@@ -60,7 +60,7 @@
                         "fieldName": "TIMESTAMP_DERIVED"
                     },
                     {
-                        "dataSourceName": "LightningPageViewWithusers",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "TIMESTAMP_DERIVED"
                     }
@@ -76,7 +76,7 @@
                         "fieldName": "APP_NAME"
                     },
                     {
-                        "dataSourceName": "LightningPageViewWithusers",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "APP_NAME"
                     }
@@ -89,7 +89,7 @@
             {
                 "dataset": {
                     "id": "0Fb7Q000000HNgMSAW",
-                    "name": "LightningPageViewWithusers",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                 },
                 "dependent": true,
@@ -106,7 +106,7 @@
             {
                 "dataset": {
                     "id": "0Fb7Q000000HNgMSAW",
-                    "name": "LightningPageViewWithusers",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                 },
                 "dependent": true,
@@ -125,7 +125,7 @@
             {
                 "dataset": {
                     "id": "0Fb7Q000000HNgMSAW",
-                    "name": "LightningPageViewWithusers",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                 },
                 "dependent": true,
@@ -139,7 +139,7 @@
             {
                 "dataset": {
                     "id": "0Fb7Q000000HNgMSAW",
-                    "name": "LightningPageViewWithusers",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                 },
                 "dependent": true,
@@ -153,7 +153,7 @@
             {
                 "dataset": {
                     "id": "0Fb7Q000000HNgMSAW",
-                    "name": "LightningPageViewWithusers",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                 },
                 "dependent": true,
@@ -993,8 +993,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -1152,8 +1152,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -1308,8 +1308,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -1476,8 +1476,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -1632,8 +1632,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -1809,8 +1809,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -2001,8 +2001,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -2412,8 +2412,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -2533,8 +2533,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -2704,8 +2704,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -2735,8 +2735,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -2881,8 +2881,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     },
                     {
@@ -2913,7 +2913,7 @@
                     ],
                     "pivotTotals": [],
                     "sourceFilters": {
-                        "LightningPageViewWithusers": {
+                        "LightningPageViewWithUsers": {
                             "filters": [
                                 [
                                     "EFFECTIVE_PAGE_TIME",
@@ -2956,7 +2956,7 @@
                                 "PAGE_APP_NAME",
                                 "PAGE_URL"
                             ],
-                            "name": "LightningPageViewWithusers"
+                            "name": "LightningPageViewWithUsers"
                         },
                         {
                             "columns": [
@@ -3134,8 +3134,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -3350,8 +3350,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -3675,8 +3675,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -3837,7 +3837,7 @@
                 "groups": [],
                 "label": "Dataset updated",
                 "numbers": [],
-                "query": "q = load \"LightningPageViewWithusers\";\nq = foreach q generate 'TIMESTAMP_DERIVED' as 'TIMESTAMP_DERIVED', 'TIMESTAMP_DERIVED_Day' as 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Month' as 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Year' as 'TIMESTAMP_DERIVED_Year';\nq = order q by 'TIMESTAMP_DERIVED' desc;\nq = foreach q generate  'TIMESTAMP_DERIVED_Year' + \"-\" +'TIMESTAMP_DERIVED_Month' + \"-\" + 'TIMESTAMP_DERIVED_Day' as 'Time';\nq = limit q 1;",
+                "query": "q = load \"LightningPageViewWithUsers\";\nq = foreach q generate 'TIMESTAMP_DERIVED' as 'TIMESTAMP_DERIVED', 'TIMESTAMP_DERIVED_Day' as 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Month' as 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Year' as 'TIMESTAMP_DERIVED_Year';\nq = order q by 'TIMESTAMP_DERIVED' desc;\nq = foreach q generate  'TIMESTAMP_DERIVED_Year' + \"-\" +'TIMESTAMP_DERIVED_Month' + \"-\" + 'TIMESTAMP_DERIVED_Day' as 'Time';\nq = limit q 1;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -3882,8 +3882,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -4057,8 +4057,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -4122,8 +4122,8 @@
                 "datasets": [
                     {
                         "id": "0Fb7Q000000HNgMSAW",
-                        "label": "LightningPageViewWithusers",
-                        "name": "LightningPageViewWithusers",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
                     }
                 ],
@@ -4245,7 +4245,7 @@
                 "groups": [],
                 "label": "Daily EPT distribution",
                 "numbers": [],
-                "query": "q = load \"LightningPageViewWithusers\";\nq = group q by ('TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day');\nq_A = filter q by 'EFFECTIVE_PAGE_TIME' >= 0 && 'EFFECTIVE_PAGE_TIME' <= 3000;\nq_B = filter q by 'EFFECTIVE_PAGE_TIME' >= 3001 && 'EFFECTIVE_PAGE_TIME' <= 5000;\nq_C = filter q by 'EFFECTIVE_PAGE_TIME' >= 5001 && 'EFFECTIVE_PAGE_TIME' <= 8000;\nq_D = filter q by 'EFFECTIVE_PAGE_TIME' >= 8001 && 'EFFECTIVE_PAGE_TIME' <= 10000;\nq_E = filter q by 'EFFECTIVE_PAGE_TIME' >= 10001;\nbuck1 = foreach q_A generate  q_A.'TIMESTAMP_DERIVED_Year' + \"-\" + q_A.'TIMESTAMP_DERIVED_Month' + \"-\" + q_A.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 0-3s\" as 'Metric',count() as 'count';\nbuck2 = foreach q_B generate  q_B.'TIMESTAMP_DERIVED_Year' + \"-\" + q_B.'TIMESTAMP_DERIVED_Month' + \"-\" + q_B.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 3-5s\" as 'Metric',count() as 'count';\nbuck3 = foreach q_C generate  q_C.'TIMESTAMP_DERIVED_Year' + \"-\" + q_C.'TIMESTAMP_DERIVED_Month' + \"-\" + q_C.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 5-8s\" as 'Metric',count() as 'count';\nbuck4 = foreach q_D generate  q_D.'TIMESTAMP_DERIVED_Year' + \"-\" + q_D.'TIMESTAMP_DERIVED_Month' + \"-\" + q_D.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 8-10s\" as 'Metric',count() as 'count';\nbuck5 = foreach q_E generate  q_E.'TIMESTAMP_DERIVED_Year' + \"-\" + q_E.'TIMESTAMP_DERIVED_Month' + \"-\" + q_E.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT > 10s\" as 'Metric',count() as 'count';\nfinal=union buck1,buck2,buck3,buck4,buck5;\nfinal = group final by ('Time', 'Metric');\nfinal = foreach final generate 'Time' as 'Time', 'Metric' as 'Metric', sum('count') as 'Total';\nfinal = order final by ('Metric');",
+                "query": "q = load \"LightningPageViewWithUsers\";\nq = group q by ('TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day');\nq_A = filter q by 'EFFECTIVE_PAGE_TIME' >= 0 && 'EFFECTIVE_PAGE_TIME' <= 3000;\nq_B = filter q by 'EFFECTIVE_PAGE_TIME' >= 3001 && 'EFFECTIVE_PAGE_TIME' <= 5000;\nq_C = filter q by 'EFFECTIVE_PAGE_TIME' >= 5001 && 'EFFECTIVE_PAGE_TIME' <= 8000;\nq_D = filter q by 'EFFECTIVE_PAGE_TIME' >= 8001 && 'EFFECTIVE_PAGE_TIME' <= 10000;\nq_E = filter q by 'EFFECTIVE_PAGE_TIME' >= 10001;\nbuck1 = foreach q_A generate  q_A.'TIMESTAMP_DERIVED_Year' + \"-\" + q_A.'TIMESTAMP_DERIVED_Month' + \"-\" + q_A.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 0-3s\" as 'Metric',count() as 'count';\nbuck2 = foreach q_B generate  q_B.'TIMESTAMP_DERIVED_Year' + \"-\" + q_B.'TIMESTAMP_DERIVED_Month' + \"-\" + q_B.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 3-5s\" as 'Metric',count() as 'count';\nbuck3 = foreach q_C generate  q_C.'TIMESTAMP_DERIVED_Year' + \"-\" + q_C.'TIMESTAMP_DERIVED_Month' + \"-\" + q_C.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 5-8s\" as 'Metric',count() as 'count';\nbuck4 = foreach q_D generate  q_D.'TIMESTAMP_DERIVED_Year' + \"-\" + q_D.'TIMESTAMP_DERIVED_Month' + \"-\" + q_D.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT 8-10s\" as 'Metric',count() as 'count';\nbuck5 = foreach q_E generate  q_E.'TIMESTAMP_DERIVED_Year' + \"-\" + q_E.'TIMESTAMP_DERIVED_Month' + \"-\" + q_E.'TIMESTAMP_DERIVED_Day' as 'Time', \"EPT > 10s\" as 'Metric',count() as 'count';\nfinal=union buck1,buck2,buck3,buck4,buck5;\nfinal = group final by ('Time', 'Metric');\nfinal = foreach final generate 'Time' as 'Time', 'Metric' as 'Metric', sum('count') as 'Total';\nfinal = order final by ('Metric');",
                 "receiveFacetSource": {
                     "mode": "exclude",
                     "steps": [
@@ -4361,7 +4361,7 @@
                 "groups": [],
                 "label": "EPT distribution by PageEntity",
                 "numbers": [],
-                "query": "q = load \"LightningPageViewWithusers\";\nq = filter q by 'PAGE_CONTEXT' != \"\";\nq = group q by 'PAGE_CONTEXT';\nq_A = filter q by 'EFFECTIVE_PAGE_TIME' >= 0 && 'EFFECTIVE_PAGE_TIME' <= 3000;\nq_B = filter q by 'EFFECTIVE_PAGE_TIME' >= 3001 && 'EFFECTIVE_PAGE_TIME' <= 5000;\nq_C = filter q by 'EFFECTIVE_PAGE_TIME' >= 5001 && 'EFFECTIVE_PAGE_TIME' <= 8000;\nq_D = filter q by 'EFFECTIVE_PAGE_TIME' >= 8001 && 'EFFECTIVE_PAGE_TIME' <= 10000;\nq_E = filter q by 'EFFECTIVE_PAGE_TIME' >= 10001;\nbuck1 = foreach q_A generate  'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 0-3s\" as 'Metric',count() as 'count';\nbuck2 = foreach q_B generate  'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 3-5s\" as 'Metric',count() as 'count';\nbuck3 = foreach q_C generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 5-8s\" as 'Metric',count() as 'count';\nbuck4 = foreach q_D generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 8-10s\" as 'Metric', count() as 'count';\nbuck5 = foreach q_E generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT > 10s\" as 'Metric',count() as 'count';\nfinal=union buck1,buck2,buck3,buck4,buck5;\nfinal = group final by ('PAGE_CONTEXT', 'Metric');\nfinal = foreach final generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', 'Metric' as 'Metric', sum('count') as 'Total';",
+                "query": "q = load \"LightningPageViewWithUsers\";\nq = filter q by 'PAGE_CONTEXT' != \"\";\nq = group q by 'PAGE_CONTEXT';\nq_A = filter q by 'EFFECTIVE_PAGE_TIME' >= 0 && 'EFFECTIVE_PAGE_TIME' <= 3000;\nq_B = filter q by 'EFFECTIVE_PAGE_TIME' >= 3001 && 'EFFECTIVE_PAGE_TIME' <= 5000;\nq_C = filter q by 'EFFECTIVE_PAGE_TIME' >= 5001 && 'EFFECTIVE_PAGE_TIME' <= 8000;\nq_D = filter q by 'EFFECTIVE_PAGE_TIME' >= 8001 && 'EFFECTIVE_PAGE_TIME' <= 10000;\nq_E = filter q by 'EFFECTIVE_PAGE_TIME' >= 10001;\nbuck1 = foreach q_A generate  'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 0-3s\" as 'Metric',count() as 'count';\nbuck2 = foreach q_B generate  'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 3-5s\" as 'Metric',count() as 'count';\nbuck3 = foreach q_C generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 5-8s\" as 'Metric',count() as 'count';\nbuck4 = foreach q_D generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT 8-10s\" as 'Metric', count() as 'count';\nbuck5 = foreach q_E generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', \"EPT > 10s\" as 'Metric',count() as 'count';\nfinal=union buck1,buck2,buck3,buck4,buck5;\nfinal = group final by ('PAGE_CONTEXT', 'Metric');\nfinal = foreach final generate 'PAGE_CONTEXT' as 'PAGE_CONTEXT', 'Metric' as 'Metric', sum('count') as 'Total';",
                 "receiveFacetSource": {
                     "mode": "exclude",
                     "steps": [
@@ -6055,7 +6055,7 @@
                     "filters": [
                         {
                             "dataset": {
-                                "name": "LightningPageViewWithusers"
+                                "name": "LightningPageViewWithUsers"
                             },
                             "field": "TIMESTAMP_DERIVED"
                         }
@@ -6073,7 +6073,7 @@
                     "filters": [
                         {
                             "dataset": {
-                                "name": "LightningPageViewWithusers"
+                                "name": "LightningPageViewWithUsers"
                             },
                             "field": "CLIENT_GEO"
                         }
@@ -6926,7 +6926,7 @@
                     "filters": [
                         {
                             "dataset": {
-                                "name": "LightningPageViewWithusers"
+                                "name": "LightningPageViewWithUsers"
                             },
                             "field": "EFFECTIVE_PAGE_TIME"
                         }
@@ -6944,7 +6944,7 @@
                     "filters": [
                         {
                             "dataset": {
-                                "name": "LightningPageViewWithusers"
+                                "name": "LightningPageViewWithUsers"
                             },
                             "field": "PAGE_URL"
                         }
@@ -6962,7 +6962,7 @@
                     "filters": [
                         {
                             "dataset": {
-                                "name": "LightningPageViewWithusers"
+                                "name": "LightningPageViewWithUsers"
                             },
                             "field": "APP_NAME"
                         }
@@ -7127,8 +7127,8 @@
         },
         {
             "id": "0Fb7Q000000HNgMSAW",
-            "label": "LightningPageViewWithusers",
-            "name": "LightningPageViewWithusers",
+            "label": "LightningPageViewWithUsers",
+            "name": "LightningPageViewWithUsers",
             "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgMSAW"
         }
     ]
