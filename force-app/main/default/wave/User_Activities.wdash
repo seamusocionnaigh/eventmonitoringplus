@@ -5,7 +5,7 @@
             "dataSourceType": "dataset",
             "fieldName": "User.Name"
         }, {
-            "dataSourceName": "LightningInteraction",
+            "dataSourceName": "LightningInteractionWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "User.Name"
         }],
@@ -17,7 +17,7 @@
             "dataSourceType": "dataset",
             "fieldName": "User.Profile.Name"
         }, {
-            "dataSourceName": "LightningInteraction",
+            "dataSourceName": "LightningInteractionWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "User.Profile.Name"
         }],
@@ -29,7 +29,7 @@
             "dataSourceType": "dataset",
             "fieldName": "User.User.Role.Name"
         }, {
-            "dataSourceName": "LightningInteraction",
+            "dataSourceName": "LightningInteractionWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "User.User.Role.Name"
         }],
@@ -41,7 +41,7 @@
             "dataSourceType": "dataset",
             "fieldName": "PAGE_APP_NAME"
         }, {
-            "dataSourceName": "LightningInteraction",
+            "dataSourceName": "LightningInteractionWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "PAGE_APP_NAME"
         }],
@@ -53,7 +53,7 @@
             "dataSourceType": "dataset",
             "fieldName": "PAGE_ENTITY_TYPE"
         }, {
-            "dataSourceName": "LightningInteraction",
+            "dataSourceName": "LightningInteractionWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "PAGE_ENTITY_TYPE"
         }],
@@ -65,7 +65,7 @@
             "dataSourceType": "dataset",
             "fieldName": "TIMESTAMP_DERIVED"
         }, {
-            "dataSourceName": "LightningInteraction",
+            "dataSourceName": "LightningInteractionWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "TIMESTAMP_DERIVED"
         }],
@@ -1035,7 +1035,7 @@
         "UserInteractionHeatm_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "UserInteractionHeatmap",
@@ -1169,7 +1169,7 @@
         "UniqueComponentsByUs_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "UniqueComponentsByUserId",
@@ -1267,7 +1267,7 @@
         "ActiveTimeLookup.SUM_HandleTime_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "query": {
@@ -1384,7 +1384,7 @@
         "CaseStats_2": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "CaseStats",
@@ -1434,7 +1434,7 @@
         "CaseStats_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "CaseStats",
@@ -1484,7 +1484,7 @@
         "UniqueClicksTrending_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "UniqueClicksTrending",
@@ -1534,7 +1534,7 @@
         "TIMESTAMP_DERIVED_Day_2_2": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "TIMESTAMP_DERIVED_Day_2",
@@ -1719,7 +1719,7 @@
         "TIMESTAMP_DERIVED_Day_2_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "TIMESTAMP_DERIVED_Day_2",
@@ -1854,7 +1854,7 @@
         "LIWUCount_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "LIWUCount",
@@ -1976,7 +1976,7 @@
         "UniquePageViewsTrend_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "UniquePageViewsTrending",
@@ -2026,7 +2026,7 @@
         "Top20Objects": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "Top20Objects",
@@ -2101,7 +2101,7 @@
             "groups": [],
             "label": "ApproxClickDeltaAll",
             "numbers": [],
-            "query": "q = load \"LightningInteraction\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by all;\nresult = foreach result generate round(coalesce(avg('AvgTime'),0),0) as 'AvgTime';\nresult = limit result 2000;",
+            "query": "q = load \"LightningInteractionWithUsers\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by all;\nresult = foreach result generate round(coalesce(avg('AvgTime'),0),0) as 'AvgTime';\nresult = limit result 2000;",
             "receiveFacetSource": {
                 "mode": "all",
                 "steps": []
@@ -2214,7 +2214,7 @@
             "groups": [],
             "label": "LatestDate",
             "numbers": [],
-            "query": "q = load \"LightningInteraction\";\nq = foreach q generate date_to_string(toDate(TIMESTAMP_DERIVED_sec_epoch), \"yyyy-MM-dd\") as 'LatestDate';\nq = order q by 'LatestDate' desc;\nq = limit q 1;",
+            "query": "q = load \"LightningInteractionWithUsers\";\nq = foreach q generate date_to_string(toDate(TIMESTAMP_DERIVED_sec_epoch), \"yyyy-MM-dd\") as 'LatestDate';\nq = order q by 'LatestDate' desc;\nq = limit q 1;",
             "receiveFacetSource": {
                 "mode": "all",
                 "steps": []
@@ -2324,7 +2324,7 @@
         "ActiveTimeLookup.SUM_ActiveTime_2": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "ActiveTimeLookup.SUM_ActiveTime_2",
@@ -2704,7 +2704,7 @@
         "WhichComponents_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "WhichComponents",
@@ -3100,7 +3100,7 @@
         "InteractionDelta_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "InteractionDelta_1",
@@ -3221,7 +3221,7 @@
         "UniqueComponentsClic_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "UniqueComponentsClicked",
@@ -3345,7 +3345,7 @@
             "groups": [],
             "label": "ApproxOfUserClickTimes",
             "numbers": [],
-            "query": "q = load \"LightningInteraction\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'<20000;\nresult = order result by 'AvgTime' desc;\nresult = limit result 2000;",
+            "query": "q = load \"LightningInteractionWithUsers\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'<20000;\nresult = order result by 'AvgTime' desc;\nresult = limit result 2000;",
             "receiveFacetSource": {
                 "mode": "all",
                 "steps": []
@@ -3456,7 +3456,7 @@
         "Top20Components_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "Top20Components",
@@ -3683,7 +3683,7 @@
         "PageChangeFlag_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "PageChangeFlag_1",
@@ -3803,7 +3803,7 @@
         "ClicksPerCaseTimelin_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "ClicksPerCaseTimeline",
@@ -3910,7 +3910,7 @@
         "ClicksByComponent_1": {
             "broadcastFacet": true,
             "datasets": [{
-                "name": "LightningInteraction"
+                "name": "LightningInteractionWithUsers"
             }],
             "isGlobal": false,
             "label": "ClicksByComponent",
@@ -4676,7 +4676,7 @@
                             "size": "12px",
                             "color": "#e6ecf2"
                         },
-                        "insert": "All Salesforce Lightning pages are made up of 'components'. Examples of components are: Save Button, Quick Action, Detail Tab, a Related List, the drop-down arrow on top of a Related List. This widget filters on the \"user\" value of the UI_EVENT_TYPE column of the LightningInteraction logs."
+                        "insert": "All Salesforce Lightning pages are made up of 'components'. Examples of components are: Save Button, Quick Action, Detail Tab, a Related List, the drop-down arrow on top of a Related List. This widget filters on the \"user\" value of the UI_EVENT_TYPE column of the LightningInteractionWithUsers logs."
                     }, {
                         "attributes": {
                             "align": "left"

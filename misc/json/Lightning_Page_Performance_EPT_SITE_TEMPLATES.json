@@ -7,7 +7,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "CLIENT_GEO"
                     },
@@ -23,7 +23,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_URL"
                     },
@@ -39,7 +39,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_APP_NAME"
                     },
@@ -55,7 +55,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "TIMESTAMP_DERIVED"
                     },
@@ -71,7 +71,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "APP_NAME"
                     },
@@ -2887,8 +2887,8 @@
                     },
                     {
                         "id": "0Fb7Q000000HNgKSAW",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgKSAW"
                     }
                 ],
@@ -2973,7 +2973,7 @@
                                 "PAGE_APP_NAME",
                                 "PAGE_URL"
                             ],
-                            "name": "LightningInteraction"
+                            "name": "LightningInteractionWithUsers"
                         }
                     ],
                     "totals": []
@@ -7121,8 +7121,8 @@
     "datasets": [
         {
             "id": "0Fb7Q000000HNgKSAW",
-            "label": "LightningInteraction",
-            "name": "LightningInteraction",
+            "label": "LightningInteractionWithUsers",
+            "name": "LightningInteractionWithUsers",
             "url": "/services/data/v55.0/wave/datasets/0Fb7Q000000HNgKSAW"
         },
         {
