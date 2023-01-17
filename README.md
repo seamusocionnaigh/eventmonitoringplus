@@ -35,14 +35,14 @@ Harder Option: [Set up a custom process to push Event Logs into CRM Analytics](h
 ## Dashboards
 
 ### User Journeys:
-(Video Guide)[https://vimeo.com/789882598]
+[Video Guide](https://vimeo.com/789882598)
 It is imperative that every business understands what parts of a Salesforce implementation are valuable to its users.  This dashboard gives a top-to-bottom view of what UI-level interactions users perform in Lightning, from apps, standard and custom objects, to components of a page layout, what they view and what they click. As a result, Salesforce sponsors, stakeholdes, owners, product owners, project managers, admins and developers have a clearer sense of what is valuable to users by virtue of their level of interaction with many of the customisations they have developed and improved and put in the hands of users.
 This dashboard leverages the [LightingInteration event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_LightningInteractionWithUsers.htm); reading the documentation is strongly encouraged.
 
 ![User_Activities](https://user-images.githubusercontent.com/20658634/147172567-c1ff9dee-c955-4429-a163-c104363f9c8d.png)
 
 ### Apex Performance:
-[Video Guide)[https://vimeo.com/789882324]
+[Video Guide](https://vimeo.com/789882324)
 A narrative of the raw ApexExecutionWithUsers dataset in order to help pin-point slow-performing code. Ideally for a Developer, Admin, QA, Release Manager and / or Product Owner to identify what code is consistently slow, what's started being slow, and what skillset is required to begin reviewing the code. Try and use this early-on in your development process, or at the very latest in a UAT full-copy sandbox, so you can spot trends in newly-problematic code and decide if a current release is about to introduce risk to the business in production.
 This dashboard leverages the [ApexExecutionWithUsers event log](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_ApexExecutionWithUsers.htm); reading the documentation is strongly encouraged.
 
