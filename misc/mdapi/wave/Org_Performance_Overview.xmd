@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <measures>
+        <field>lens_4.B</field>
+        <isDerived>false</isDerived>
+        <label>Long Running</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>sync_1.E</field>
+        <isDerived>false</isDerived>
+        <label>CountLongRunning</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>sync_1.D</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>%Over5s</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>sync_1.C</field>
+        <isDerived>false</isDerived>
+        <label>countOver5s</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#00B531</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>5000</bin>
+                <formatValue>#E84340</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>sync_1.B</field>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>Clone_of_Apex_Summar_1.F</field>
+        <isDerived>false</isDerived>
+        <label>countOver10s</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>Clone_of_Apex_Summar_1.D</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>%over5s</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>Clone_of_Apex_Summar_1.C</field>
+        <isDerived>false</isDerived>
+        <label>countOver5s</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#00B531</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>5000</bin>
+                <formatValue>#E84340</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>Clone_of_Apex_Summar_1.B</field>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>REST_API_1.F</field>
+        <isDerived>false</isDerived>
+        <label>Avg DB_TOTAL_TIME (ms)</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>soap_1.E</field>
+        <isDerived>false</isDerived>
+        <label>countOver10s</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>soap_1.D</field>
+        <isDerived>false</isDerived>
+        <label>countOver5s</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>Soap_API_1.E</field>
+        <isDerived>false</isDerived>
+        <label>Avg DB_TOTAL_TIME (ms)</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>callout_1.B</field>
+        <isDerived>false</isDerived>
+        <label>count Failed</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>callout_1.C</field>
+        <isDerived>false</isDerived>
+        <label>count Success</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>callout_1.F</field>
+        <isDerived>false</isDerived>
+        <label>%over5s</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <field>callout_1.E</field>
+        <isDerived>false</isDerived>
+        <label>CountOver5s</label>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <field>LongRunningRequestCh_1.C</field>
+        <isDerived>false</isDerived>
+        <label>LRR</label>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>LongRunningRequestCh_1.B</field>
+        <isDerived>false</isDerived>
+        <label>countOver5s</label>
+        <sortIndex>18</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_11.B</field>
+        <isDerived>false</isDerived>
+        <label>Avg EXEC_TIME_over10s</label>
+        <sortIndex>19</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_11.F</field>
+        <isDerived>false</isDerived>
+        <label>Avg EXEC_TIME_over5s</label>
+        <sortIndex>20</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin>*</bin>
+                <formatValue>#00B531</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin>5000</bin>
+                <formatValue>#E84340</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>color</property>
+            <referenceField>E</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>multiple</type>
+        </conditionalFormatting>
+        <field>lens_11.E</field>
+        <isDerived>false</isDerived>
+        <sortIndex>21</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Org_Performance_Overview</waveVisualization>
+</WaveXmd>
