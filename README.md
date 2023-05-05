@@ -12,7 +12,19 @@ Easy Option: CRM Analytics Templated App
 * [Ensure Event Monitoring Analytics is enabled](https://help.salesforce.com/s/articleView?id=sf.bi_app_event_monitor_enable_select_PSL.htm&type=5)
 * [Assign permissions to users](https://help.salesforce.com/s/articleView?id=bi_app_event_monitor_create_permsets.htm&type=5&language=en_US)
 * [Create the analytics app](https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.bi_app_admin_wave_create.htm)
-    * *Hard Requirement*: **must** include following log types:  LightningInteractionWithUsers, LightningPageViewWithUsers, ApexExecutionWithUsers, ApexUnexpectedException)
+    * *Hard Requirement*: **must** include following log types:
+      * ApexExecution
+      * ApexUnexpectedException
+      * ApexCallout
+      * ApexRestApi
+      * ApexSoap
+      * ApexTrigger
+      * API
+      * BulkApi
+      * ConcurrentLongRunningApexLimit
+      * LightningInteraction
+      * LightningPageView
+      * Login
 
 Harder Option: [Set up a custom process to push Event Logs into CRM Analytics](https://www.salesforcehacker.com/2015/01/simple-script-for-loading-event.html)
 
@@ -86,6 +98,12 @@ Performance: the relationship between rows returned and database (DB) time.
 Security: how may reports are being run in .csv, Excel or printable formats.
 
 ![image](https://user-images.githubusercontent.com/8489662/212783437-090034c7-5505-47a5-9534-7c570e560c7b.png)
+
+### Org Performance Overview
+
+This dashboard gives a complete performance overview of the business logic and API layers of your org; highlights the usual errors and hotspots that cause general platform and org-wide performance bottlenecks and failures.  Consider this as a general superset of some of the other performance-focused dashboards in this repo. Can be used as a startign point to spot general performance trends that can be investigated more thoroughly in other lenses or dashboards.
+
+![image](https://user-images.githubusercontent.com/20658634/236536412-617a30bc-9a28-4fa4-ac4c-ce5d74a06607.png)
 
 ## Notes, Observations, Comments:
 
