@@ -1,5 +1,9 @@
 {
-    "dataSourceLinks": [],
+    "dataSourceLinksInfo": {
+        "enableAutomaticLinking": false,
+        "excludeRelationships": [],
+        "links": []
+    },
     "filters": [{
         "dataset": {
             "name": "ReportWithUsers"

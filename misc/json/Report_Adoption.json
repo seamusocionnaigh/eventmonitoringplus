@@ -2,7 +2,11 @@
     "label": "Report Adoption",
     "mobileDisabled": false,
     "state": {
-        "dataSourceLinks": [],
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": false,
+            "excludeRelationships": [],
+            "links": []
+        },
         "filters": [
             {
                 "dataset": {

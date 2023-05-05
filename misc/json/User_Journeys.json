@@ -3,9 +3,12 @@
     "mobileDisabled": false,
     "description": "For exec-level summary of interactions in the system down to individual page views and components being used.",
     "state": {
-        "dataSourceLinks": [
-            {
-                "fields": [
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": false,
+            "excludeRelationships": [],
+            "links": [
+                {
+                 "fields": [
                     {
                         "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
@@ -99,8 +102,7 @@
                 ],
                 "label": "Date",
                 "name": "Link_3520"
-            }
-        ],
+                }]},
         "filters": [
             {
                 "dataset": {

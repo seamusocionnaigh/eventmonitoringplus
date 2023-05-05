@@ -1,6 +1,10 @@
 {
-    "dataSourceLinks": [{
-        "fields": [{
+    "dataSourceLinksInfo": {
+        "enableAutomaticLinking": false,
+        "excludeRelationships": [],
+        "links": [
+            {
+             "fields": [{
             "dataSourceName": "LightningPageViewWithUsers",
             "dataSourceType": "dataset",
             "fieldName": "User.Name"
@@ -71,7 +75,8 @@
         }],
         "label": "Date",
         "name": "Link_3520"
-    }],
+        }]},
+
     "filters": [{
         "dataset": {
             "name": "LightningPageViewWithUsers"

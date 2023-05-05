@@ -11,6 +11,7 @@
         <members>Lightning_Page_Performance_EPT</members>
         <members>User_Activities</members>
 		<members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
+        <members>Org_Performance_Overview</members>
         <name>WaveDashboard</name>
     </types>
     <types>
@@ -19,7 +20,8 @@
         <members>Lightning_Page_Performance_EPT</members>
         <members>User_Activities</members>
 		<members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
+        <members>Org_Performance_Overview</members>
         <name>WaveXmd</name>
     </types>
-    <version>56.0</version>
+    <version>57.0</version>
 </Package>

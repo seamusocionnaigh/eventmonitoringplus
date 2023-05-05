@@ -3,7 +3,11 @@
     "mobileDisabled": false,
     "description": "Deep dive into specific classes and methods that are not performing optimally.",
     "state": {
-        "dataSourceLinks": [],
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": false,
+            "excludeRelationships": [],
+            "links": []
+        },
         "filters": [
             {
                 "dataset": {

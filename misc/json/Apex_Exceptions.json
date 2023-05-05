@@ -3,7 +3,11 @@
     "mobileDisabled": false,
     "description": "Which Classes are generating the most amount of errors, by type, over time.",
     "state": {
-        "dataSourceLinks": [],
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": false,
+            "excludeRelationships": [],
+            "links": []
+        },
         "filters": [
             {
                 "dataset": {
