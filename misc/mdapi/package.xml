@@ -20,7 +20,6 @@
         <members>Lightning_Page_Performance_EPT</members>
         <members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <members>User_Activities</members>
-        <members>Report_Adoption</members>
         <members>Org_Performance_Overview</members>
         <name>WaveXmd</name>
     </types>
