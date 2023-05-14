@@ -186,6 +186,66 @@
         <isDerived>false</isDerived>
         <sortIndex>21</sortIndex>
     </measures>
+    <measures>
+        <field>lens_10.C</field>
+        <isDerived>false</isDerived>
+        <label>LRR</label>
+        <sortIndex>22</sortIndex>
+    </measures>
+    <measures>
+        <field>lens_10.B</field>
+        <isDerived>false</isDerived>
+        <label>countOver5s</label>
+        <sortIndex>23</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Too many SOQL queries: 201 for job</label>
+        <sortIndex>24</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.C</field>
+        <isDerived>false</isDerived>
+        <label>Too many query rows: 50001</label>
+        <sortIndex>25</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Too many SOQL queries: 101</label>
+        <sortIndex>26</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.A</field>
+        <isDerived>false</isDerived>
+        <label>RowLock</label>
+        <sortIndex>27</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.E</field>
+        <isDerived>false</isDerived>
+        <label>Apex CPU time limit exceeded</label>
+        <sortIndex>28</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.F</field>
+        <isDerived>false</isDerived>
+        <label>Too many query locator rows</label>
+        <sortIndex>29</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.G</field>
+        <isDerived>false</isDerived>
+        <label>Group Lock</label>
+        <sortIndex>30</sortIndex>
+    </measures>
+    <measures>
+        <field>ROWLOCK_1.H</field>
+        <isDerived>false</isDerived>
+        <label>Tot. APEX Exceptions</label>
+        <sortIndex>31</sortIndex>
+    </measures>
     <type>Asset</type>
     <waveVisualization>Org_Performance_Overview</waveVisualization>
 </WaveXmd>

@@ -3289,7 +3289,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "group membership"
                                     ],
@@ -3313,7 +3313,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "Too many query locator rows"
                                     ],
@@ -3337,7 +3337,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "Apex CPU time limit exceeded"
                                     ],
@@ -3361,7 +3361,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "Unable_to_lock"
                                     ],
@@ -3385,7 +3385,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "Too many SOQL queries: 101"
                                     ],
@@ -3409,7 +3409,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "Too many query rows: 50001"
                                     ],
@@ -3433,7 +3433,7 @@
                             ],
                             "filters": [
                                 [
-                                    "STACK_TRACE",
+                                    "EXCEPTION_MESSAGE",
                                     [
                                         "Too many SOQL queries: 201"
                                     ],

@@ -483,7 +483,7 @@
                 "widgetStyle": {
                   "borderEdges": []
                 }
-              },
+              },ROWLOCK_1
               {
                 "colspan": 50,
                 "column": 0,
@@ -1131,7 +1131,7 @@
                 "column": 9,
                 "name": "number_3",
                 "row": 8,
-                "rowspan": 12,
+                "rowspan": 12,ROWLOCK_1
                 "widgetStyle": {
                   "backgroundColor": "rgb(20, 41, 94)",
                   "borderColor": "#E6ECF2",
@@ -3244,7 +3244,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "group membership"
                   ],
@@ -3268,7 +3268,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "Too many query locator rows"
                   ],
@@ -3292,7 +3292,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "Apex CPU time limit exceeded"
                   ],
@@ -3316,7 +3316,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "Unable_to_lock"
                   ],
@@ -3340,7 +3340,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "Too many SOQL queries: 101"
                   ],
@@ -3364,7 +3364,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "Too many query rows: 50001"
                   ],
@@ -3388,7 +3388,7 @@
               ],
               "filters": [
                 [
-                  "STACK_TRACE",
+                  "EXCEPTION_MESSAGE",
                   [
                     "Too many SOQL queries: 201"
                   ],
