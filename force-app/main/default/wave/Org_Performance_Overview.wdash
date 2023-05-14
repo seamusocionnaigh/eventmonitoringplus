@@ -483,7 +483,7 @@
                 "widgetStyle": {
                   "borderEdges": []
                 }
-              },ROWLOCK_1
+              },
               {
                 "colspan": 50,
                 "column": 0,
@@ -1131,7 +1131,7 @@
                 "column": 9,
                 "name": "number_3",
                 "row": 8,
-                "rowspan": 12,ROWLOCK_1
+                "rowspan": 12,
                 "widgetStyle": {
                   "backgroundColor": "rgb(20, 41, 94)",
                   "borderColor": "#E6ECF2",
