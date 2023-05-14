@@ -2739,7 +2739,7 @@
         "isGlobal": false,
         "label": "EPT by GEO",
         "query": {
-          "query": "{\"measures\":[[\"avg\",\"EFFECTIVE_PAGE_TIME\"]],\"limit\":20,\"groups\":[\"CLIENT_GEO\"],\"order\":[[\"avg_EFFECTIVE_PAGE_TIME\",{\"ascending\":false}]]}",
+          "query": "{\"measures\":[[\"avg\",\"EFFECTIVE_PAGE_TIME\"],[\"count\",\"*\"]],\"limit\":20,\"groups\":[\"CLIENT_GEO\"],\"order\":[[\"count\",{\"ascending\":false,\"inner\":false}]]}",
           "version": -1
         },
         "receiveFacetSource": {

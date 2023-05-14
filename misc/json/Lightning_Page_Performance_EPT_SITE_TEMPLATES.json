@@ -3654,6 +3654,9 @@
                         [
                             "avg",
                             "EFFECTIVE_PAGE_TIME"
+                        ],[
+                            "count",
+                            "*"
                         ]
                     ],
                     "limit": 20,
@@ -3662,7 +3665,7 @@
                     ],
                     "order": [
                         [
-                            "avg_EFFECTIVE_PAGE_TIME",
+                            "count",
                             {
                                 "ascending": false
                             }
