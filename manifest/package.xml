@@ -5,6 +5,18 @@
         <name>WaveApplication</name>
     </types>
     <types>
+        <members>ApexUnexpectedExceptionsEnancements</members>
+        <name>WaveDataflow</name>
+    </types>
+    <types>
+        <members>ApexUnexpectedExceptionsEnancements</members>
+        <name>WaveRecipe</name>
+    </types>
+    <types>
+        <members>ApexUnexpectedExceptionWithUsers</members>
+        <name>WaveDataset</name>
+    </types>     
+    <types>
         <members>Report_Adoption</members>
         <members>Apex_Exceptions</members>
         <members>Apex_Performance</members>
@@ -23,5 +35,5 @@
         <members>Org_Performance_Overview</members>
         <name>WaveXmd</name>
     </types>
-    <version>57.0</version>
+    <version>58.0</version>
 </Package>

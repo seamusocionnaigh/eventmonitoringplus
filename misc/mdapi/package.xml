@@ -5,12 +5,24 @@
         <name>WaveApplication</name>
     </types>
     <types>
+        <members>ApexUnexpectedExceptionsEnancements</members>
+        <name>WaveDataflow</name>
+    </types>
+    <types>
+        <members>ApexUnexpectedExceptionsEnancements</members>
+        <name>WaveRecipe</name>
+    </types>
+    <types>
+        <members>ApexUnexpectedExceptionWithUsers</members>
+        <name>WaveDataset</name>
+    </types>     
+    <types>
+        <members>Report_Adoption</members>
         <members>Apex_Exceptions</members>
         <members>Apex_Performance</members>
         <members>Lightning_Page_Performance_EPT</members>
-        <members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <members>User_Activities</members>
-        <members>Report_Adoption</members>
+		<members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <members>Org_Performance_Overview</members>
         <name>WaveDashboard</name>
     </types>
@@ -18,10 +30,10 @@
         <members>Apex_Exceptions</members>
         <members>Apex_Performance</members>
         <members>Lightning_Page_Performance_EPT</members>
-        <members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <members>User_Activities</members>
+		<members>Lightning_Page_Performance_EPT_SITE_TEMPLATES</members>
         <members>Org_Performance_Overview</members>
         <name>WaveXmd</name>
     </types>
-    <version>57.0</version>
+    <version>58.0</version>
 </Package>
