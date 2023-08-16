@@ -1,0 +1,805 @@
+{
+  "version" : "58.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "EXCEPTION_TYPE", "EXCEPTION_CATEGORY", "TIMESTAMP_DERIVED", "EVENT_TYPE", "TIMESTAMP", "EXCEPTION_MESSAGE", "REQUEST_ID", "STACK_TRACE", "ORGANIZATION_ID" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "ApexUnexpectedExceptionStageCopy",
+          "name" : "ApexUnexpectedExceptionStageCopy"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "CLIENT_IP", "User.Country", "EVENT_TYPE", "User_City", "User.City", "IS_LONG_RUNNING_REQUEST", "USER_ID", "REQUEST_ID", "URI", "ENTRY_POINT", "ORGANIZATION_ID", "User.Division", "User.IsActive", "User.Department", "User.Profile.Name", "User.Username", "TIMESTAMP", "User_IsActive", "USER_ID_DERIVED", "User_Name", "User_User_Role_Name", "User.Name", "SESSION_KEY", "User_Country", "QUIDDITY", "User_Username", "URI_ID_DERIVED", "TIMESTAMP_DERIVED", "User.User.Role.Name", "LOGIN_KEY", "User_Profile_Name", "CALLOUT_TIME", "NUMBER_SOQL_QUERIES", "EXEC_TIME", "CPU_TIME", "RUN_TIME", "DB_TOTAL_TIME" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "ApexExecutionWithUsers",
+          "name" : "ApexExecutionWithUsers"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "OUTPUT1" : {
+      "action" : "save",
+      "sources" : [ "REPLACE7_copy0" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "ApexUnexpectedExceptionWithUsers",
+          "name" : "ApexUnexpectedExceptionWithUsers",
+          "folderName" : "Event_Monitoring_Plus"
+        }
+      }
+    },
+    "FORMULA0" : {
+      "action" : "formula",
+      "sources" : [ "LOAD_DATASET0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "RowCount",
+          "label" : "RowCount",
+          "formulaExpression" : "1",
+          "precision" : 18,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA4" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "ExceptionMessageDetail",
+          "label" : "Exception Message Detail",
+          "formulaExpression" : "case when contains(\"EXCEPTION_MESSAGE\",'Starting position out of bounds') then 'Starting position out of bounds' when contains(\"EXCEPTION_MESSAGE\",'Exception thrown for auth token retrieval') then 'Exception thrown for auth token retrieval' when contains(\"EXCEPTION_MESSAGE\",'Aggregate query does not support queryMore') then 'Aggregate query does not support queryMore' when contains(\"EXCEPTION_MESSAGE\",'CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY') then 'CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY' when contains(\"EXCEPTION_MESSAGE\",'No file found') then 'No file found' when contains(\"EXCEPTION_MESSAGE\",'Implementation restriction') then 'Implementation restriction' when contains(\"EXCEPTION_MESSAGE\",'Unexpected character') then 'Unexpected character' when contains(\"EXCEPTION_MESSAGE\",'Apex Type unsupported in JSON') then 'Apex Type unsupported in JSON' when contains(\"EXCEPTION_MESSAGE\",'MISSING_ARGUMENT') then 'Missing Argument' when contains(\"EXCEPTION_MESSAGE\",'CPU time') then 'LimitException: Apex CPU Time Limit'  when contains(\"EXCEPTION_MESSAGE\",'Apex heap size too large') then 'LimitException: Apex heap size too large'  when contains(\"EXCEPTION_MESSAGE\",'SOQL queries') then 'LimitException: Too many SOQL Queries'  when contains(\"EXCEPTION_MESSAGE\",'Too many query rows') then 'LimitException: Too many query rows'  when contains(\"EXCEPTION_MESSAGE\",'Too many query locator rows') then 'LimitException: Too many query locator rows'   when contains(\"EXCEPTION_MESSAGE\",'Too many DML rows') then 'LimitException: Too many DML rows'  when contains(\"EXCEPTION_MESSAGE\",'Too many DML statements') then 'LimitException: Too many DML statements'  when contains(\"EXCEPTION_MESSAGE\",'Too many callouts') then 'LimitException: Too many callouts'  when contains(\"EXCEPTION_MESSAGE\",'Too many queueable') then 'LimitException: Too many queueable jobs in queue'  when contains(\"EXCEPTION_MESSAGE\",'Too many Email Invocations') then 'LimitException: Too many Email Invocations'  when contains(\"EXCEPTION_MESSAGE\",'Too many future calls') then 'LimitException: Too many future calls'  when contains(\"EXCEPTION_MESSAGE\",'Inactive User') then 'InactiveUserException: Inactive User'  when contains(\"EXCEPTION_MESSAGE\",'You do not have sufficient privileges to access the page') then 'ApexPagesHandledException: You do not have sufficient privileges to access the page'  when contains(\"EXCEPTION_MESSAGE\",'connection was cancelled here') then 'RunningForTooLongException: connection was cancelled here'  when contains(\"EXCEPTION_MESSAGE\",'Dependent class is invalid and needs recompilation') then 'ParseExceptionWrapper: Dependent class is invalid and needs recompilation'  when contains(\"EXCEPTION_MESSAGE\",'Method does not exist or incorrect signature') then 'ParseExceptionWrapper: Method does not exist or incorrect signature'  when contains(\"EXCEPTION_MESSAGE\",'SendEmail failed') then 'EmailExecutionException: SendEmail failed'  when contains(\"EXCEPTION_MESSAGE\",'General exception trying to send email from Apex') then 'EmailExecutionException: General exception trying to send email from Apex'  when contains(\"EXCEPTION_MESSAGE\",'Record Currently Unavailable') then 'OracleRowLockedException: Record Currently Unavailable'  when contains(\"EXCEPTION_MESSAGE\",'ORA-30006: resource busy') then 'OracleRowLockedException: ORA-30006: resource busy'  when contains(\"EXCEPTION_MESSAGE\",'An error occurred while connecting to the external system') then 'DataSourceException: An error occurred while connecting to the external system'  when contains(\"EXCEPTION_MESSAGE\",'We encountered an error while querying the external data') then 'DataSourceException: We encountered an error while querying the external data'  when contains(\"EXCEPTION_MESSAGE\",'UNABLE_TO_LOCK_ROW') then 'DmlExecutionException: UNABLE_TO_LOCK_ROW'  when contains(\"EXCEPTION_MESSAGE\",'ENTITY_IS_LOCKED') then 'DmlExecutionException: ENTITY_IS_LOCKED'  when contains(\"EXCEPTION_MESSAGE\",'INSUFFICIENT_ACCESS_OR_READONLY') then 'DmlExecutionException: INSUFFICIENT_ACCESS_OR_READONLY'  when contains(\"EXCEPTION_MESSAGE\",'INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY') then 'DmlExecutionException: INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY'  when contains(\"EXCEPTION_MESSAGE\",'ENTITY_IS_DELETED') then 'DmlExecutionException: ENTITY_IS_DELETED'  when contains(\"EXCEPTION_MESSAGE\",'DELETE_FAILED') then 'DmlExecutionException: DELETE_FAILED'  when contains(\"EXCEPTION_MESSAGE\",'INACTIVE_OWNER_OR_USER') then 'DmlExecutionException: INACTIVE_OWNER_OR_USER'  when contains(\"EXCEPTION_MESSAGE\",'REQUIRED_FIELD_MISSING') then 'DmlExecutionException: REQUIRED_FIELD_MISSING'  when contains(\"EXCEPTION_MESSAGE\",'FIELD_INTEGRITY_EXCEPTION') then 'DmlExecutionException: FIELD_INTEGRITY_EXCEPTION'  when contains(\"EXCEPTION_MESSAGE\",'FIELD_CUSTOM_VALIDATION_EXCEPTION') then 'DmlExecutionException: FIELD_CUSTOM_VALIDATION_EXCEPTION'  when contains(\"EXCEPTION_MESSAGE\",'FIELD_FILTER_VALIDATION_EXCEPTION') then 'DmlExecutionException: FIELD_FILTER_VALIDATION_EXCEPTION'  when contains(\"EXCEPTION_MESSAGE\",'INVALID_CROSS_REFERENCE_KEY') then 'DmlExecutionException: INVALID_CROSS_REFERENCE_KEY'  when contains(\"EXCEPTION_MESSAGE\",'INVALID_FIELD_FOR_INSERT_UPDATE') then 'DmlExecutionException: INVALID_FIELD_FOR_INSERT_UPDATE'  when contains(\"EXCEPTION_MESSAGE\",'INVALID_STATUS') then 'DmlExecutionException: INVALID_STATUS, You cannot update a version that is not the latest version of a document' when contains(\"EXCEPTION_MESSAGE\",'INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST') then 'DmlExecutionException: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST'  when contains(\"EXCEPTION_MESSAGE\",'DUPLICATE_VALUE') then 'DmlExecutionException: DUPLICATE_VALUE'  when contains(\"EXCEPTION_MESSAGE\",'DUPLICATES_DETECTED') then 'DmlExecutionException: DUPLICATES_DETECTED'  when contains(\"EXCEPTION_MESSAGE\",'STORAGE_LIMIT_EXCEEDED') then 'DmlExecutionException: STORAGE_LIMIT_EXCEEDED'  when contains(\"EXCEPTION_MESSAGE\",'STRING_TOO_LONG') then 'DmlExecutionException: STRING_TOO_LONG'  when contains(\"EXCEPTION_MESSAGE\",'requires a license to use') then 'LicenseException: Apex Class part of the AppExchange Package requires a license to use'  when contains(\"EXCEPTION_MESSAGE\",'Flow email rate limited') then 'Flow email rate limited'  when contains(\"EXCEPTION_MESSAGE\",'Future method cannot be called from a future or batch method') then 'Future method cannot be called from a future or batch method'  when contains(\"EXCEPTION_MESSAGE\",'Attempt to de-reference') then 'Attempt to de-reference null object'  when contains(\"EXCEPTION_MESSAGE\",'List has no rows') then 'List has no rows for assignment to SObject'  when contains(\"EXCEPTION_MESSAGE\",'Read timed out') then 'Read timed out'  when contains(\"EXCEPTION_MESSAGE\",'batchSize must not be null') then 'Null Batch Size'  when contains(\"EXCEPTION_MESSAGE\",'beforeUpdate') then 'BeforeUpdate Trigger'  when contains(\"EXCEPTION_MESSAGE\",'TEMPLATE_NOT_ACTIVE') then 'TEMPLATE_NOT_ACTIVE'  when contains(\"EXCEPTION_MESSAGE\",'AfterUpdate') then 'AfterUpdate Trigger'  when contains(\"EXCEPTION_MESSAGE\",'BeforeInsert') then 'BeforeInsert Trigger'  when contains(\"EXCEPTION_MESSAGE\",'AfterInsert') then 'AfterInsert Trigger'  when contains(\"EXCEPTION_MESSAGE\",'BeforeDelete') then 'BeforeDelete'  when contains(\"EXCEPTION_MESSAGE\",'failed to get force.com org details') then 'Authentication Error'  when contains(\"EXCEPTION_MESSAGE\",'No contact roles found for contract') then 'Missing contact roles'  when contains(\"EXCEPTION_MESSAGE\",'index out of bounds') then 'index out of bounds'  when contains(\"EXCEPTION_MESSAGE\",'Permission to access') then 'Permission Denied'  when contains(\"EXCEPTION_MESSAGE\",'group membership operation already in progress') then 'Group Lock'  when contains(\"EXCEPTION_MESSAGE\",'SObject row was retrieved') then 'SOQL Field Error'  when contains(\"EXCEPTION_MESSAGE\",'Invalid field') then 'Invalid field'  when contains(\"EXCEPTION_MESSAGE\",'Can only throw this exception') then 'Exception Error'  when contains(\"EXCEPTION_MESSAGE\",'Invalid Visualforce page parameter') then 'Invalid Parameter'  when contains(\"EXCEPTION_MESSAGE\",'Quote to oppty sync failed') then 'Quote-Opp Sync Fail'  when contains(\"EXCEPTION_MESSAGE\",'unexpected token') then 'unexpected token'  when contains(\"EXCEPTION_MESSAGE\",'Batchable instance is too big') then 'Batch Size Error'  else 'Unknown' end",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA5" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA4" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "ClassName",
+          "label" : "Class Name",
+          "formulaExpression" : "case \r\n\twhen contains(\"EXCEPTION_MESSAGE\",'\\' for job id \\'7') then substr(\"EXCEPTION_MESSAGE\", instr(\"EXCEPTION_MESSAGE\",': ')+3, instr(\"EXCEPTION_MESSAGE\",' for') - instr(\"EXCEPTION_MESSAGE\",': ')-4) \r\n\twhen contains(\"EXCEPTION_MESSAGE\",' for job ID 7') then substr(\"EXCEPTION_MESSAGE\", instr(\"EXCEPTION_MESSAGE\",': ')+1, instr(\"EXCEPTION_MESSAGE\",' for') - instr(\"EXCEPTION_MESSAGE\",': ')-1) \r\n\twhen contains(\"EXCEPTION_MESSAGE\",') : \\'') then coalesce(substr(\"EXCEPTION_MESSAGE\",instr(\"EXCEPTION_MESSAGE\",':',1)+3,instr(\"EXCEPTION_MESSAGE\",':',1,2)-(instr(\"EXCEPTION_MESSAGE\",':',1)+5)),'Unknown') else coalesce(substr(\"EXCEPTION_MESSAGE\",instr(\"EXCEPTION_MESSAGE\",':',1) + 1 , instr(\"EXCEPTION_MESSAGE\",':',1,2)-instr(\"EXCEPTION_MESSAGE\",':',1)-1),'Unknown') \r\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA7" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA5" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "TimestampRequestKey",
+          "label" : "TimestampRequestKey",
+          "formulaExpression" : "concat(dayofyear(TIMESTAMP_DERIVED),REQUEST_ID)",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "FILTER0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "ClassTriggerPage",
+          "label" : "Class or Trigger or Page",
+          "formulaExpression" : "case \r\n    when contains(\"ENTRY_POINT\",'batch') then \"ENTRY_POINT\" \r\n    when contains(\"ENTRY_POINT\",' on ') then substr(\"ENTRY_POINT\",1,instr(\"ENTRY_POINT\",' ')) \r\n    when contains(\"ENTRY_POINT\", 'VF- /apex/') then substr(\"ENTRY_POINT\",11) \r\n    when contains(\"ENTRY_POINT\", 'VFRemote-') then substr(\"ENTRY_POINT\",11,instr(substr(\"ENTRY_POINT\",11),' ')) \r\n    when contains(\"ENTRY_POINT\",'.') then substr(\"ENTRY_POINT\",1,instr(\"ENTRY_POINT\",'.')-1)\r\n    else ENTRY_POINT \r\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA2" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA1" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Method",
+          "label" : "Method",
+          "formulaExpression" : "case \r\n\twhen contains(\"ENTRY_POINT\",'VFRemote-') then substr(\"ENTRY_POINT\",instr(\"ENTRY_POINT\",'(')+1,instr(\"ENTRY_POINT\",')')-1)\r\n\twhen contains(ENTRY_POINT, 'apex-//')  then substr(\"ENTRY_POINT\",instr('ENTRY_POINT','$')+1) \r\n\twhen (contains(\"ENTRY_POINT\",'.') AND substr(\"ENTRY_POINT\",instr(\"ENTRY_POINT\",'.')+1) != 'apexp') then substr(\"ENTRY_POINT\",instr(\"ENTRY_POINT\",'.')+1) \r\n\telse null\r\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA3" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA2" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "QuiddityLabel",
+          "label" : "Quiddity",
+          "formulaExpression" : "case when \"QUIDDITY\" = 'A' then 'ACS Batch Apex' when \"QUIDDITY\" = 'B' then 'Bulk API and Bulk API 2.0' when \"QUIDDITY\" = 'BA' then 'Start method of a Batch Apex job' when \"QUIDDITY\" = 'C' then 'Scheduled Apex' when \"QUIDDITY\" = 'CI' then 'Commerce Integration' when \"QUIDDITY\" = 'DL' then ' Discoverable Login page' when \"QUIDDITY\" = 'E' then 'Inbound Email Service' when \"QUIDDITY\" = 'F' then 'Future' when \"QUIDDITY\" = 'FC' then 'Function Callback' when \"QUIDDITY\" = 'H' then 'Apex REST' when \"QUIDDITY\" = 'I' then 'Invocable Action' when \"QUIDDITY\" = 'K' then 'Quick Action' when \"QUIDDITY\" = 'L' then 'Lightning' when \"QUIDDITY\" = 'M' then 'Remote Action' when \"QUIDDITY\" = 'P' then 'Batch Apex jobs running in parallel' when \"QUIDDITY\" = 'PI' then 'Post install script for a managed package' when \"QUIDDITY\" = 'Q' then 'Queueable' when \"QUIDDITY\" = 'QTXF' then 'Transaction Finalizer for Queueable' when \"QUIDDITY\" = 'R' then 'Synchronous uncategorized' when \"QUIDDITY\" = 'S' then 'QueryLocator Batch Apex' when \"QUIDDITY\" = 'TA' then 'Tests Async' when \"QUIDDITY\" = 'TD' then 'Tests Deployment' when \"QUIDDITY\" = 'TS' then 'Tests Synchronous' when \"QUIDDITY\" = 'V' then 'Visualforce' when \"QUIDDITY\" = 'W' then 'SOAP Webservices' when \"QUIDDITY\" = 'X' then 'Execute Anonymous' else 'Unknown' end ",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA6" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA3" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "TimestampRequestKey",
+          "label" : "TimestampRequestKey",
+          "formulaExpression" : "concat(dayofyear(TIMESTAMP_DERIVED),REQUEST_ID)",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "CLIENT_IP", "User.Country", "EVENT_TYPE", "User_City", "User.City", "TRIGGER_TYPE", "USER_ID", "REQUEST_ID", "URI", "ORGANIZATION_ID", "User.Division", "TRIGGER_ID", "User.IsActive", "User.Department", "User.Profile.Name", "User.Username", "TIMESTAMP", "TRIGGER_NAME", "User_IsActive", "USER_ID_DERIVED", "ENTITY_NAME", "User_Name", "User_User_Role_Name", "User.Name", "SESSION_KEY", "User_Country", "REQUEST_STATUS", "User_Username", "URI_ID_DERIVED", "TIMESTAMP_DERIVED", "User.User.Role.Name", "USER_TYPE", "LOGIN_KEY", "User_Profile_Name", "EXEC_TIME", "CPU_TIME", "RUN_TIME", "DB_TOTAL_TIME" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "ApexTriggerWithUsers",
+          "name" : "ApexTriggerWithUsers"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FILTER0" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET1" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "ENTRY_POINT",
+          "operator" : "NOT",
+          "operands" : [ "TRIGGERS" ]
+        } ]
+      }
+    },
+    "APPEND0" : {
+      "action" : "appendV2",
+      "sources" : [ "FORMULA6", "LOAD_DATASET2" ],
+      "parameters" : {
+        "fieldMappings" : [ {
+          "top" : "CLIENT_IP",
+          "bottom" : "CLIENT_IP"
+        }, {
+          "top" : "User.Country",
+          "bottom" : "User.Country"
+        }, {
+          "top" : "EVENT_TYPE",
+          "bottom" : "EVENT_TYPE"
+        }, {
+          "top" : "User_City",
+          "bottom" : "User_City"
+        }, {
+          "top" : "User.City",
+          "bottom" : "User.City"
+        }, {
+          "top" : "USER_ID",
+          "bottom" : "USER_ID"
+        }, {
+          "top" : "REQUEST_ID",
+          "bottom" : "REQUEST_ID"
+        }, {
+          "top" : "URI",
+          "bottom" : "URI"
+        }, {
+          "top" : "ENTRY_POINT",
+          "bottom" : "TRIGGER_NAME"
+        }, {
+          "top" : "ORGANIZATION_ID",
+          "bottom" : "ORGANIZATION_ID"
+        }, {
+          "top" : "User.Division",
+          "bottom" : "User.Division"
+        }, {
+          "top" : "User.IsActive",
+          "bottom" : "User.IsActive"
+        }, {
+          "top" : "User.Department",
+          "bottom" : "User.Department"
+        }, {
+          "top" : "User.Profile.Name",
+          "bottom" : "User.Profile.Name"
+        }, {
+          "top" : "User.Username",
+          "bottom" : "User.Username"
+        }, {
+          "top" : "TIMESTAMP",
+          "bottom" : "TIMESTAMP"
+        }, {
+          "top" : "User_IsActive",
+          "bottom" : "User_IsActive"
+        }, {
+          "top" : "USER_ID_DERIVED",
+          "bottom" : "USER_ID_DERIVED"
+        }, {
+          "top" : "User_Name",
+          "bottom" : "User_Name"
+        }, {
+          "top" : "User_User_Role_Name",
+          "bottom" : "User_User_Role_Name"
+        }, {
+          "top" : "User.Name",
+          "bottom" : "User.Name"
+        }, {
+          "top" : "SESSION_KEY",
+          "bottom" : "SESSION_KEY"
+        }, {
+          "top" : "User_Country",
+          "bottom" : "User_Country"
+        }, {
+          "top" : "QUIDDITY",
+          "bottom" : "TRIGGER_TYPE"
+        }, {
+          "top" : "User_Username",
+          "bottom" : "User_Username"
+        }, {
+          "top" : "URI_ID_DERIVED",
+          "bottom" : "URI_ID_DERIVED"
+        }, {
+          "top" : "TIMESTAMP_DERIVED",
+          "bottom" : "TIMESTAMP_DERIVED"
+        }, {
+          "top" : "User.User.Role.Name",
+          "bottom" : "User.User.Role.Name"
+        }, {
+          "top" : "LOGIN_KEY",
+          "bottom" : "LOGIN_KEY"
+        }, {
+          "top" : "User_Profile_Name",
+          "bottom" : "User_Profile_Name"
+        }, {
+          "top" : "EXEC_TIME",
+          "bottom" : "EXEC_TIME"
+        }, {
+          "top" : "CPU_TIME",
+          "bottom" : "CPU_TIME"
+        }, {
+          "top" : "RUN_TIME",
+          "bottom" : "RUN_TIME"
+        }, {
+          "top" : "DB_TOTAL_TIME",
+          "bottom" : "DB_TOTAL_TIME"
+        }, {
+          "top" : "ClassTriggerPage",
+          "bottom" : "TRIGGER_NAME"
+        }, {
+          "top" : "Method",
+          "bottom" : "TRIGGER_TYPE"
+        }, {
+          "top" : "QuiddityLabel",
+          "bottom" : "TRIGGER_TYPE"
+        } ]
+      }
+    },
+    "JOIN0" : {
+      "action" : "join",
+      "sources" : [ "FORMULA7", "APPEND0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "TimestampRequestKey" ],
+        "rightQualifier" : "Source",
+        "rightKeys" : [ "TimestampRequestKey" ]
+      }
+    },
+    "REPLACE1_copy0" : {
+      "action" : "formula",
+      "sources" : [ "JOIN0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.User.User.Role.Name_replace",
+          "newProperties" : {
+            "name" : "Source.User.User.Role.Name"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.User.User.Role.Name" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.User.User.Role.Name_replace",
+          "label" : "Source.User.User.Role.Name",
+          "formulaExpression" : "coalesce(\"Source.User.User.Role.Name\", null, 'No Role')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE2_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE8_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.User.Department_replace",
+          "newProperties" : {
+            "name" : "Source.User.Department"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.User.Department" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.User.Department_replace",
+          "label" : "Source.User.Department",
+          "formulaExpression" : "coalesce(\"Source.User.Department\", null, 'No Department')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE3_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE2_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.User.Division_replace",
+          "newProperties" : {
+            "name" : "Source.User.Division"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.User.Division" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.User.Division_replace",
+          "label" : "Source.User.Division",
+          "formulaExpression" : "coalesce(\"Source.User.Division\", null, 'No Division')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE4_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE3_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.User.Country_replace",
+          "newProperties" : {
+            "name" : "Source.User.Country"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.User.Country" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.User.Country_replace",
+          "label" : "Source.User.Country",
+          "formulaExpression" : "coalesce(\"Source.User.Country\", null, 'No Country')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE5_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE4_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.ENTRY_POINT_replace",
+          "newProperties" : {
+            "name" : "Source.ENTRY_POINT"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.ENTRY_POINT" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.ENTRY_POINT_replace",
+          "label" : "Source.ENTRY_POINT",
+          "formulaExpression" : "coalesce(\"Source.ENTRY_POINT\", null, 'Source Not Found')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE6_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE5_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.ClassTriggerPage_replace",
+          "newProperties" : {
+            "name" : "Source.ClassTriggerPage"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.ClassTriggerPage" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.ClassTriggerPage_replace",
+          "label" : "Source.Class or Trigger or Page",
+          "formulaExpression" : "coalesce(\"Source.ClassTriggerPage\", null, 'Source Not Found')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE7_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE6_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.Method_replace",
+          "newProperties" : {
+            "name" : "Source.Method"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.Method" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.Method_replace",
+          "label" : "Source.Method",
+          "formulaExpression" : "coalesce(\"Source.Method\", null, 'Source Not Found')",
+          "precision" : 255
+        } ]
+      }
+    },
+    "REPLACE8_copy0" : {
+      "action" : "formula",
+      "sources" : [ "REPLACE1_copy0" ],
+      "schema" : {
+        "fields" : [ {
+          "name" : "Source.User.Profile.Name_replace",
+          "newProperties" : {
+            "name" : "Source.User.Profile.Name"
+          }
+        } ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Source.User.Profile.Name" ]
+        }
+      },
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source.User.Profile.Name_replace",
+          "label" : "Source.User.Profile.Name",
+          "formulaExpression" : "coalesce(\"Source.User.Profile.Name\", null, 'No Profile')",
+          "precision" : 255
+        } ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "ApexUnexpectedExceptionStageCopy",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 672,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "ApexExecutionWithUsers",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "OUTPUT1" : {
+        "label" : "ApexExceptionsWithExecutions",
+        "description" : "Apex Exceptions with a count of Exceptions",
+        "type" : "OUTPUT",
+        "top" : 112.19999999999999,
+        "left" : 952.1
+      },
+      "TRANSFORM0" : {
+        "label" : "ExceptionsTransform",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 252,
+        "left" : 672,
+        "graph" : {
+          "FORMULA0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA4" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA5" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA7" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "TimestampRequestKey"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "FORMULA4"
+        }, {
+          "source" : "FORMULA4",
+          "target" : "FORMULA5"
+        }, {
+          "source" : "FORMULA5",
+          "target" : "FORMULA7"
+        } ]
+      },
+      "TRANSFORM1" : {
+        "label" : "ApexTransformations",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 392,
+        "graph" : {
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA2" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA3" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Quiddity"
+          },
+          "FORMULA6" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "DateTimeRequestKey"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA1",
+          "target" : "FORMULA2"
+        }, {
+          "source" : "FORMULA2",
+          "target" : "FORMULA3"
+        }, {
+          "source" : "FORMULA3",
+          "target" : "FORMULA6"
+        } ]
+      },
+      "LOAD_DATASET2" : {
+        "label" : "ApexTriggerWithUsers",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 532,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "FILTER0" : {
+        "label" : "FilterOutTriggers",
+        "description" : "",
+        "type" : "FILTER",
+        "top" : 112,
+        "left" : 252
+      },
+      "APPEND0" : {
+        "label" : "UnionApexTriggers",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 112,
+        "left" : 532
+      },
+      "JOIN0" : {
+        "label" : "JoinExceptionsExecutions",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 672
+      },
+      "TRANSFORM2_copy0" : {
+        "label" : "FinalTransform",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 812,
+        "graph" : {
+          "REPLACE1_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceRole"
+          },
+          "REPLACE2_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceDepartment"
+          },
+          "REPLACE3_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceDivision"
+          },
+          "REPLACE4_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceCountry"
+          },
+          "REPLACE5_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceNullEntry"
+          },
+          "REPLACE6_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceClass"
+          },
+          "REPLACE7_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceMethod"
+          },
+          "REPLACE8_copy0" : {
+            "parameters" : {
+              "type" : "REPLACE_UI"
+            },
+            "label" : "ReplaceNullProfile"
+          }
+        },
+        "connectors" : [ {
+          "source" : "REPLACE2_copy0",
+          "target" : "REPLACE3_copy0"
+        }, {
+          "source" : "REPLACE3_copy0",
+          "target" : "REPLACE4_copy0"
+        }, {
+          "source" : "REPLACE4_copy0",
+          "target" : "REPLACE5_copy0"
+        }, {
+          "source" : "REPLACE5_copy0",
+          "target" : "REPLACE6_copy0"
+        }, {
+          "source" : "REPLACE6_copy0",
+          "target" : "REPLACE7_copy0"
+        }, {
+          "source" : "REPLACE8_copy0",
+          "target" : "REPLACE2_copy0"
+        }, {
+          "source" : "REPLACE1_copy0",
+          "target" : "REPLACE8_copy0"
+        } ]
+      }
+    },
+    "connectors" : [ {
+      "source" : "TRANSFORM1",
+      "target" : "APPEND0"
+    }, {
+      "source" : "FILTER0",
+      "target" : "TRANSFORM1"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "FILTER0"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "LOAD_DATASET2",
+      "target" : "APPEND0"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "JOIN0"
+    }, {
+      "source" : "APPEND0",
+      "target" : "JOIN0"
+    }, {
+      "source" : "JOIN0",
+      "target" : "TRANSFORM2_copy0"
+    }, {
+      "source" : "TRANSFORM2_copy0",
+      "target" : "OUTPUT1"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

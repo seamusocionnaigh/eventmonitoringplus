@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Event_Monitoring_Plus</application>
+    <description>Created from the ApexUnexpectedExceptionsEnancements recipe.</description>
+    <masterLabel>ApexUnexpectedExceptionWithUsers</masterLabel>
+    <type>default</type>
+</WaveDataset>
