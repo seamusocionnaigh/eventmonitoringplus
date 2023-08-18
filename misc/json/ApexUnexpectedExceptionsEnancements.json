@@ -36,37 +36,29 @@
                     "type": "analyticsDataset"
                 },
                 "fields": [
-                    "CLIENT_IP",
                     "User.Country",
-                    "EVENT_TYPE",
-                    "User_City",
                     "User.City",
-                    "IS_LONG_RUNNING_REQUEST",
-                    "USER_ID",
-                    "REQUEST_ID",
-                    "URI",
-                    "ENTRY_POINT",
-                    "ORGANIZATION_ID",
                     "User.Division",
                     "User.IsActive",
                     "User.Department",
                     "User.Profile.Name",
                     "User.Username",
-                    "TIMESTAMP",
-                    "User_IsActive",
                     "USER_ID_DERIVED",
-                    "User_Name",
-                    "User_User_Role_Name",
                     "User.Name",
+                    "User.User.Role.Name",
+                    "CLIENT_IP",
+                    "EVENT_TYPE",
+                    "IS_LONG_RUNNING_REQUEST",
+                    "REQUEST_ID",
+                    "URI",
+                    "ENTRY_POINT",
+                    "ORGANIZATION_ID",
+                    "TIMESTAMP",
                     "SESSION_KEY",
-                    "User_Country",
                     "QUIDDITY",
-                    "User_Username",
                     "URI_ID_DERIVED",
                     "TIMESTAMP_DERIVED",
-                    "User.User.Role.Name",
                     "LOGIN_KEY",
-                    "User_Profile_Name",
                     "CALLOUT_TIME",
                     "NUMBER_SOQL_QUERIES",
                     "EXEC_TIME",
@@ -259,40 +251,33 @@
                     "type": "analyticsDataset"
                 },
                 "fields": [
-                    "CLIENT_IP",
                     "User.Country",
-                    "EVENT_TYPE",
-                    "User_City",
                     "User.City",
-                    "TRIGGER_TYPE",
                     "USER_ID",
-                    "REQUEST_ID",
-                    "URI",
-                    "ORGANIZATION_ID",
                     "User.Division",
-                    "TRIGGER_ID",
                     "User.IsActive",
                     "User.Department",
                     "User.Profile.Name",
                     "User.Username",
-                    "TIMESTAMP",
-                    "TRIGGER_NAME",
-                    "User_IsActive",
                     "USER_ID_DERIVED",
-                    "ENTITY_NAME",
-                    "User_Name",
-                    "User_User_Role_Name",
                     "User.Name",
-                    "SESSION_KEY",
-                    "User_Country",
-                    "REQUEST_STATUS",
-                    "User_Username",
-                    "URI_ID_DERIVED",
-                    "TIMESTAMP_DERIVED",
                     "User.User.Role.Name",
                     "USER_TYPE",
+                    "CLIENT_IP",
+                    "EVENT_TYPE",
+                    "TRIGGER_TYPE",
+                    "REQUEST_ID",
+                    "URI",
+                    "ORGANIZATION_ID",
+                    "TRIGGER_ID",
+                    "TIMESTAMP",
+                    "TRIGGER_NAME",
+                    "ENTITY_NAME",
+                    "SESSION_KEY",
+                    "REQUEST_STATUS",
+                    "URI_ID_DERIVED",
+                    "TIMESTAMP_DERIVED",
                     "LOGIN_KEY",
-                    "User_Profile_Name",
                     "EXEC_TIME",
                     "CPU_TIME",
                     "RUN_TIME",
@@ -328,44 +313,12 @@
             "parameters": {
                 "fieldMappings": [
                     {
-                        "bottom": "CLIENT_IP",
-                        "top": "CLIENT_IP"
-                    },
-                    {
                         "bottom": "User.Country",
                         "top": "User.Country"
                     },
                     {
-                        "bottom": "EVENT_TYPE",
-                        "top": "EVENT_TYPE"
-                    },
-                    {
-                        "bottom": "User_City",
-                        "top": "User_City"
-                    },
-                    {
                         "bottom": "User.City",
                         "top": "User.City"
-                    },
-                    {
-                        "bottom": "USER_ID",
-                        "top": "USER_ID"
-                    },
-                    {
-                        "bottom": "REQUEST_ID",
-                        "top": "REQUEST_ID"
-                    },
-                    {
-                        "bottom": "URI",
-                        "top": "URI"
-                    },
-                    {
-                        "bottom": "TRIGGER_NAME",
-                        "top": "ENTRY_POINT"
-                    },
-                    {
-                        "bottom": "ORGANIZATION_ID",
-                        "top": "ORGANIZATION_ID"
                     },
                     {
                         "bottom": "User.Division",
@@ -388,44 +341,52 @@
                         "top": "User.Username"
                     },
                     {
-                        "bottom": "TIMESTAMP",
-                        "top": "TIMESTAMP"
-                    },
-                    {
-                        "bottom": "User_IsActive",
-                        "top": "User_IsActive"
-                    },
-                    {
                         "bottom": "USER_ID_DERIVED",
                         "top": "USER_ID_DERIVED"
-                    },
-                    {
-                        "bottom": "User_Name",
-                        "top": "User_Name"
-                    },
-                    {
-                        "bottom": "User_User_Role_Name",
-                        "top": "User_User_Role_Name"
                     },
                     {
                         "bottom": "User.Name",
                         "top": "User.Name"
                     },
                     {
+                        "bottom": "User.User.Role.Name",
+                        "top": "User.User.Role.Name"
+                    },
+                    {
+                        "bottom": "CLIENT_IP",
+                        "top": "CLIENT_IP"
+                    },
+                    {
+                        "bottom": "EVENT_TYPE",
+                        "top": "EVENT_TYPE"
+                    },
+                    {
+                        "bottom": "REQUEST_ID",
+                        "top": "REQUEST_ID"
+                    },
+                    {
+                        "bottom": "URI",
+                        "top": "URI"
+                    },
+                    {
+                        "bottom": "TRIGGER_NAME",
+                        "top": "ENTRY_POINT"
+                    },
+                    {
+                        "bottom": "ORGANIZATION_ID",
+                        "top": "ORGANIZATION_ID"
+                    },
+                    {
+                        "bottom": "TIMESTAMP",
+                        "top": "TIMESTAMP"
+                    },
+                    {
                         "bottom": "SESSION_KEY",
                         "top": "SESSION_KEY"
                     },
                     {
-                        "bottom": "User_Country",
-                        "top": "User_Country"
-                    },
-                    {
                         "bottom": "TRIGGER_TYPE",
                         "top": "QUIDDITY"
-                    },
-                    {
-                        "bottom": "User_Username",
-                        "top": "User_Username"
                     },
                     {
                         "bottom": "URI_ID_DERIVED",
@@ -436,16 +397,8 @@
                         "top": "TIMESTAMP_DERIVED"
                     },
                     {
-                        "bottom": "User.User.Role.Name",
-                        "top": "User.User.Role.Name"
-                    },
-                    {
                         "bottom": "LOGIN_KEY",
                         "top": "LOGIN_KEY"
-                    },
-                    {
-                        "bottom": "User_Profile_Name",
-                        "top": "User_Profile_Name"
                     },
                     {
                         "bottom": "EXEC_TIME",
@@ -474,12 +427,20 @@
                     {
                         "bottom": "TRIGGER_TYPE",
                         "top": "QuiddityLabel"
+                    },
+                    {
+                        "bottom": "TimestampRequestKey",
+                        "top": "TimestampRequestKey"
+                    },
+                    {
+                        "bottom": "USER_ID",
+                        "top": "USER_ID"
                     }
                 ]
             },
             "sources": [
                 "FORMULA6",
-                "LOAD_DATASET2"
+                "FORMULA8"
             ]
         },
         "JOIN0": {
@@ -786,6 +747,25 @@
             "sources": [
                 "REPLACE1_copy0"
             ]
+        },
+        "FORMULA8": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "concat(dayofyear(TIMESTAMP_DERIVED),REQUEST_ID)",
+                        "label": "TimestampRequestKey",
+                        "name": "TimestampRequestKey",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "LOAD_DATASET2"
+            ]
         }
     },
     "ui": {
@@ -793,7 +773,7 @@
             "LOAD_DATASET0": {
                 "label": "ApexUnexpectedExceptionStageCopy",
                 "type": "LOAD_DATASET",
-                "top": 392,
+                "top": 530.2,
                 "left": 672,
                 "parameters": {
                     "sampleSize": 2000
@@ -802,7 +782,7 @@
             "LOAD_DATASET1": {
                 "label": "ApexExecutionWithUsers",
                 "type": "LOAD_DATASET",
-                "top": 112,
+                "top": 250.2,
                 "left": 112,
                 "parameters": {
                     "sampleSize": 2000
@@ -812,14 +792,14 @@
                 "label": "ApexExceptionsWithExecutions",
                 "description": "Apex Exceptions with a count of Exceptions",
                 "type": "OUTPUT",
-                "top": 112.19999999999999,
-                "left": 952.1
+                "top": 250.2,
+                "left": 952
             },
             "TRANSFORM0": {
                 "label": "ExceptionsTransform",
                 "description": "",
                 "type": "TRANSFORM",
-                "top": 252,
+                "top": 390.2,
                 "left": 672,
                 "graph": {
                     "FORMULA0": {
@@ -866,7 +846,7 @@
                 "label": "ApexTransformations",
                 "description": "",
                 "type": "TRANSFORM",
-                "top": 112,
+                "top": 250.2,
                 "left": 392,
                 "graph": {
                     "FORMULA1": {
@@ -912,7 +892,7 @@
             "LOAD_DATASET2": {
                 "label": "ApexTriggerWithUsers",
                 "type": "LOAD_DATASET",
-                "top": 252,
+                "top": 532.5,
                 "left": 532,
                 "parameters": {
                     "sampleSize": 2000
@@ -922,28 +902,28 @@
                 "label": "FilterOutTriggers",
                 "description": "",
                 "type": "FILTER",
-                "top": 112,
+                "top": 250.2,
                 "left": 252
             },
             "APPEND0": {
                 "label": "UnionApexTriggers",
                 "description": "",
                 "type": "APPEND",
-                "top": 112,
+                "top": 252.10000000000002,
                 "left": 532
             },
             "JOIN0": {
                 "label": "JoinExceptionsExecutions",
                 "description": "",
                 "type": "JOIN",
-                "top": 112,
+                "top": 250.2,
                 "left": 672
             },
             "TRANSFORM2_copy0": {
                 "label": "FinalTransform",
                 "description": "",
                 "type": "TRANSFORM",
-                "top": 112,
+                "top": 250.2,
                 "left": 812,
                 "graph": {
                     "REPLACE1_copy0": {
@@ -1025,6 +1005,22 @@
                         "target": "REPLACE8_copy0"
                     }
                 ]
+            },
+            "TRANSFORM3": {
+                "label": "TriggerTransforms",
+                "description": "",
+                "type": "TRANSFORM",
+                "top": 392.1,
+                "left": 532,
+                "graph": {
+                    "FORMULA8": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "DateTimeRequestKey"
+                    }
+                },
+                "connectors": []
             }
         },
         "connectors": [
@@ -1045,7 +1041,7 @@
                 "target": "TRANSFORM0"
             },
             {
-                "source": "LOAD_DATASET2",
+                "source": "TRANSFORM3",
                 "target": "APPEND0"
             },
             {
@@ -1063,6 +1059,10 @@
             {
                 "source": "TRANSFORM2_copy0",
                 "target": "OUTPUT1"
+            },
+            {
+                "source": "LOAD_DATASET2",
+                "target": "TRANSFORM3"
             }
         ],
         "hiddenColumns": []
