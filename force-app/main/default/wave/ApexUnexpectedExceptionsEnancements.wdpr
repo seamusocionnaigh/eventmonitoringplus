@@ -21,7 +21,7 @@
       "action" : "load",
       "sources" : [ ],
       "parameters" : {
-        "fields" : [ "User.Country", "User.City", "User.Division", "User.IsActive", "User.Department", "User.Profile.Name", "User.Username", "USER_ID_DERIVED", "User.Name", "User.User.Role.Name", "CLIENT_IP", "EVENT_TYPE", "IS_LONG_RUNNING_REQUEST", "REQUEST_ID", "URI", "ENTRY_POINT", "ORGANIZATION_ID", "TIMESTAMP", "SESSION_KEY", "QUIDDITY", "URI_ID_DERIVED", "TIMESTAMP_DERIVED", "LOGIN_KEY", "CALLOUT_TIME", "NUMBER_SOQL_QUERIES", "EXEC_TIME", "CPU_TIME", "RUN_TIME", "DB_TOTAL_TIME" ],
+        "fields" : [ "CLIENT_IP", "User.Country", "EVENT_TYPE", "User_City", "User.City", "IS_LONG_RUNNING_REQUEST", "USER_ID", "REQUEST_ID", "URI", "ENTRY_POINT", "ORGANIZATION_ID", "User.Division", "User.IsActive", "User.Department", "User.Profile.Name", "User.Username", "TIMESTAMP", "User_IsActive", "USER_ID_DERIVED", "User_Name", "User_User_Role_Name", "User.Name", "SESSION_KEY", "User_Country", "QUIDDITY", "User_Username", "URI_ID_DERIVED", "TIMESTAMP_DERIVED", "User.User.Role.Name", "LOGIN_KEY", "User_Profile_Name", "CALLOUT_TIME", "NUMBER_SOQL_QUERIES", "EXEC_TIME", "CPU_TIME", "RUN_TIME", "DB_TOTAL_TIME" ],
         "dataset" : {
           "type" : "analyticsDataset",
           "label" : "ApexExecutionWithUsers",
@@ -43,8 +43,7 @@
           "label" : "ApexUnexpectedExceptionWithUsers",
           "name" : "ApexUnexpectedExceptionWithUsers",
           "folderName" : "Event_Monitoring_Plus"
-        },
-        "measuresToCurrencies" : [ ]
+        }
       }
     },
     "FORMULA0" : {
@@ -172,7 +171,7 @@
       "action" : "load",
       "sources" : [ ],
       "parameters" : {
-        "fields" : [ "User.Country", "User.City", "USER_ID", "User.Division", "User.IsActive", "User.Department", "User.Profile.Name", "User.Username", "USER_ID_DERIVED", "User.Name", "User.User.Role.Name", "USER_TYPE", "CLIENT_IP", "EVENT_TYPE", "TRIGGER_TYPE", "REQUEST_ID", "URI", "ORGANIZATION_ID", "TRIGGER_ID", "TIMESTAMP", "TRIGGER_NAME", "ENTITY_NAME", "SESSION_KEY", "REQUEST_STATUS", "URI_ID_DERIVED", "TIMESTAMP_DERIVED", "LOGIN_KEY", "EXEC_TIME", "CPU_TIME", "RUN_TIME", "DB_TOTAL_TIME" ],
+        "fields" : [ "CLIENT_IP", "User.Country", "EVENT_TYPE", "User_City", "User.City", "TRIGGER_TYPE", "USER_ID", "REQUEST_ID", "URI", "ORGANIZATION_ID", "User.Division", "TRIGGER_ID", "User.IsActive", "User.Department", "User.Profile.Name", "User.Username", "TIMESTAMP", "TRIGGER_NAME", "User_IsActive", "USER_ID_DERIVED", "ENTITY_NAME", "User_Name", "User_User_Role_Name", "User.Name", "SESSION_KEY", "User_Country", "REQUEST_STATUS", "User_Username", "URI_ID_DERIVED", "TIMESTAMP_DERIVED", "User.User.Role.Name", "USER_TYPE", "LOGIN_KEY", "User_Profile_Name", "EXEC_TIME", "CPU_TIME", "RUN_TIME", "DB_TOTAL_TIME" ],
         "dataset" : {
           "type" : "analyticsDataset",
           "label" : "ApexTriggerWithUsers",
@@ -198,14 +197,38 @@
     },
     "APPEND0" : {
       "action" : "appendV2",
-      "sources" : [ "FORMULA6", "FORMULA8" ],
+      "sources" : [ "FORMULA6", "LOAD_DATASET2" ],
       "parameters" : {
         "fieldMappings" : [ {
+          "top" : "CLIENT_IP",
+          "bottom" : "CLIENT_IP"
+        }, {
           "top" : "User.Country",
           "bottom" : "User.Country"
         }, {
+          "top" : "EVENT_TYPE",
+          "bottom" : "EVENT_TYPE"
+        }, {
+          "top" : "User_City",
+          "bottom" : "User_City"
+        }, {
           "top" : "User.City",
           "bottom" : "User.City"
+        }, {
+          "top" : "USER_ID",
+          "bottom" : "USER_ID"
+        }, {
+          "top" : "REQUEST_ID",
+          "bottom" : "REQUEST_ID"
+        }, {
+          "top" : "URI",
+          "bottom" : "URI"
+        }, {
+          "top" : "ENTRY_POINT",
+          "bottom" : "TRIGGER_NAME"
+        }, {
+          "top" : "ORGANIZATION_ID",
+          "bottom" : "ORGANIZATION_ID"
         }, {
           "top" : "User.Division",
           "bottom" : "User.Division"
@@ -222,41 +245,35 @@
           "top" : "User.Username",
           "bottom" : "User.Username"
         }, {
+          "top" : "TIMESTAMP",
+          "bottom" : "TIMESTAMP"
+        }, {
+          "top" : "User_IsActive",
+          "bottom" : "User_IsActive"
+        }, {
           "top" : "USER_ID_DERIVED",
           "bottom" : "USER_ID_DERIVED"
+        }, {
+          "top" : "User_Name",
+          "bottom" : "User_Name"
+        }, {
+          "top" : "User_User_Role_Name",
+          "bottom" : "User_User_Role_Name"
         }, {
           "top" : "User.Name",
           "bottom" : "User.Name"
         }, {
-          "top" : "User.User.Role.Name",
-          "bottom" : "User.User.Role.Name"
-        }, {
-          "top" : "CLIENT_IP",
-          "bottom" : "CLIENT_IP"
-        }, {
-          "top" : "EVENT_TYPE",
-          "bottom" : "EVENT_TYPE"
-        }, {
-          "top" : "REQUEST_ID",
-          "bottom" : "REQUEST_ID"
-        }, {
-          "top" : "URI",
-          "bottom" : "URI"
-        }, {
-          "top" : "ENTRY_POINT",
-          "bottom" : "TRIGGER_NAME"
-        }, {
-          "top" : "ORGANIZATION_ID",
-          "bottom" : "ORGANIZATION_ID"
-        }, {
-          "top" : "TIMESTAMP",
-          "bottom" : "TIMESTAMP"
-        }, {
           "top" : "SESSION_KEY",
           "bottom" : "SESSION_KEY"
         }, {
+          "top" : "User_Country",
+          "bottom" : "User_Country"
+        }, {
           "top" : "QUIDDITY",
           "bottom" : "TRIGGER_TYPE"
+        }, {
+          "top" : "User_Username",
+          "bottom" : "User_Username"
         }, {
           "top" : "URI_ID_DERIVED",
           "bottom" : "URI_ID_DERIVED"
@@ -264,8 +281,14 @@
           "top" : "TIMESTAMP_DERIVED",
           "bottom" : "TIMESTAMP_DERIVED"
         }, {
+          "top" : "User.User.Role.Name",
+          "bottom" : "User.User.Role.Name"
+        }, {
           "top" : "LOGIN_KEY",
           "bottom" : "LOGIN_KEY"
+        }, {
+          "top" : "User_Profile_Name",
+          "bottom" : "User_Profile_Name"
         }, {
           "top" : "EXEC_TIME",
           "bottom" : "EXEC_TIME"
@@ -287,12 +310,6 @@
         }, {
           "top" : "QuiddityLabel",
           "bottom" : "TRIGGER_TYPE"
-        }, {
-          "top" : "TimestampRequestKey",
-          "bottom" : "TimestampRequestKey"
-        }, {
-          "top" : "USER_ID",
-          "bottom" : "USER_ID"
         } ]
       }
     },
@@ -529,21 +546,6 @@
           "precision" : 255
         } ]
       }
-    },
-    "FORMULA8" : {
-      "action" : "formula",
-      "sources" : [ "LOAD_DATASET2" ],
-      "parameters" : {
-        "expressionType" : "SQL",
-        "fields" : [ {
-          "type" : "TEXT",
-          "name" : "TimestampRequestKey",
-          "label" : "TimestampRequestKey",
-          "formulaExpression" : "concat(dayofyear(TIMESTAMP_DERIVED),REQUEST_ID)",
-          "precision" : 255,
-          "defaultValue" : ""
-        } ]
-      }
     }
   },
   "ui" : {
@@ -551,7 +553,7 @@
       "LOAD_DATASET0" : {
         "label" : "ApexUnexpectedExceptionStageCopy",
         "type" : "LOAD_DATASET",
-        "top" : 530.2,
+        "top" : 392,
         "left" : 672,
         "parameters" : {
           "sampleSize" : 2000
@@ -560,7 +562,7 @@
       "LOAD_DATASET1" : {
         "label" : "ApexExecutionWithUsers",
         "type" : "LOAD_DATASET",
-        "top" : 250.2,
+        "top" : 112,
         "left" : 112,
         "parameters" : {
           "sampleSize" : 2000
@@ -570,14 +572,14 @@
         "label" : "ApexExceptionsWithExecutions",
         "description" : "Apex Exceptions with a count of Exceptions",
         "type" : "OUTPUT",
-        "top" : 250.2,
-        "left" : 952
+        "top" : 112.19999999999999,
+        "left" : 952.1
       },
       "TRANSFORM0" : {
         "label" : "ExceptionsTransform",
         "description" : "",
         "type" : "TRANSFORM",
-        "top" : 390.2,
+        "top" : 252,
         "left" : 672,
         "graph" : {
           "FORMULA0" : {
@@ -620,7 +622,7 @@
         "label" : "ApexTransformations",
         "description" : "",
         "type" : "TRANSFORM",
-        "top" : 250.2,
+        "top" : 112,
         "left" : 392,
         "graph" : {
           "FORMULA1" : {
@@ -662,7 +664,7 @@
       "LOAD_DATASET2" : {
         "label" : "ApexTriggerWithUsers",
         "type" : "LOAD_DATASET",
-        "top" : 532.5,
+        "top" : 252,
         "left" : 532,
         "parameters" : {
           "sampleSize" : 2000
@@ -672,28 +674,28 @@
         "label" : "FilterOutTriggers",
         "description" : "",
         "type" : "FILTER",
-        "top" : 250.2,
+        "top" : 112,
         "left" : 252
       },
       "APPEND0" : {
         "label" : "UnionApexTriggers",
         "description" : "",
         "type" : "APPEND",
-        "top" : 252.10000000000002,
+        "top" : 112,
         "left" : 532
       },
       "JOIN0" : {
         "label" : "JoinExceptionsExecutions",
         "description" : "",
         "type" : "JOIN",
-        "top" : 250.2,
+        "top" : 112,
         "left" : 672
       },
       "TRANSFORM2_copy0" : {
         "label" : "FinalTransform",
         "description" : "",
         "type" : "TRANSFORM",
-        "top" : 250.2,
+        "top" : 112,
         "left" : 812,
         "graph" : {
           "REPLACE1_copy0" : {
@@ -767,22 +769,6 @@
           "source" : "REPLACE1_copy0",
           "target" : "REPLACE8_copy0"
         } ]
-      },
-      "TRANSFORM3" : {
-        "label" : "TriggerTransforms",
-        "description" : "",
-        "type" : "TRANSFORM",
-        "top" : 392.1,
-        "left" : 532,
-        "graph" : {
-          "FORMULA8" : {
-            "parameters" : {
-              "type" : "BASE_FORMULA_UI"
-            },
-            "label" : "DateTimeRequestKey"
-          }
-        },
-        "connectors" : [ ]
       }
     },
     "connectors" : [ {
@@ -798,7 +784,7 @@
       "source" : "LOAD_DATASET0",
       "target" : "TRANSFORM0"
     }, {
-      "source" : "TRANSFORM3",
+      "source" : "LOAD_DATASET2",
       "target" : "APPEND0"
     }, {
       "source" : "TRANSFORM0",
@@ -812,9 +798,6 @@
     }, {
       "source" : "TRANSFORM2_copy0",
       "target" : "OUTPUT1"
-    }, {
-      "source" : "LOAD_DATASET2",
-      "target" : "TRANSFORM3"
     } ],
     "hiddenColumns" : [ ]
   },
