@@ -5,11 +5,11 @@
         <name>WaveApplication</name>
     </types>
     <types>
-        <members>ApexUnexpectedExceptionsEnancements</members>
+        <members>ApexUnexpectedExceptionsEnhancements</members>
         <name>WaveDataflow</name>
     </types>
     <types>
-        <members>ApexUnexpectedExceptionsEnancements</members>
+        <members>ApexUnexpectedExceptionsEnhancements</members>
         <name>WaveRecipe</name>
     </types>
     <types>

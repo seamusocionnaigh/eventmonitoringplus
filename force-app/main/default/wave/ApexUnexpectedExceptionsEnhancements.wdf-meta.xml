@@ -3,6 +3,6 @@
     <content xsi:nil="true"/>
     <application>WAVE_PUBLIC_DATAFLOWS</application>
     <dataflowType>RecipeV3</dataflowType>
-    <description>Recipe ApexUnexpectedExceptionsEnancements_recipe</description>
-    <masterLabel>ApexUnexpectedExceptionsEnancements_recipe</masterLabel>
+    <description>Recipe ApexUnexpectedExceptionsEnhancements_recipe</description>
+    <masterLabel>ApexUnexpectedExceptionsEnhancements_recipe</masterLabel>
 </WaveDataflow>
