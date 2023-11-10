@@ -34,6 +34,7 @@ Harder Option: [Set up a custom process to push Event Logs into CRM Analytics](h
 
 [Installation guide](https://vimeo.com/789882418)
 
+* It is recommended to use Salesforce DX or Workbench to perform the deployment, as per the video installation guide link, above.
 * Identify the API name of the above-mention datasets in CRM Analytics that you wanted to analyse.
 * These should be datasets that are regularly updated, as part of whichever log ingestion process you've configured above.
 * To identify the API name of a dataset, [follow these steps](https://help.salesforce.com/s/articleView?id=sf.bi_dataset_edit.htm&type=5) to reach the edit page and note the 'API Name' in the top-left.
