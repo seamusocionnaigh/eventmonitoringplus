@@ -26,6 +26,7 @@ Easy Option: CRM Analytics Templated App
       * LightningPageView
       * Login
       * Report
+      * RESTApi
 
 Harder Option: [Set up a custom process to push Event Logs into CRM Analytics](https://www.salesforcehacker.com/2015/01/simple-script-for-loading-event.html)
 
