@@ -8,8 +8,8 @@
         "fields" : [ "EXCEPTION_TYPE", "EXCEPTION_CATEGORY", "TIMESTAMP_DERIVED", "EVENT_TYPE", "TIMESTAMP", "EXCEPTION_MESSAGE", "REQUEST_ID", "STACK_TRACE", "ORGANIZATION_ID" ],
         "dataset" : {
           "type" : "analyticsDataset",
-          "label" : "ApexUnexpectedExceptionStageCopy",
-          "name" : "ApexUnexpectedExceptionStageCopy"
+          "label" : "ApexUnexpectedExceptionProcessed",
+          "name" : "ApexUnexpectedExceptionProcessed"
         },
         "sampleDetails" : {
           "type" : "TopN",
@@ -549,7 +549,7 @@
   "ui" : {
     "nodes" : {
       "LOAD_DATASET0" : {
-        "label" : "ApexUnexpectedExceptionStageCopy",
+        "label" : "ApexUnexpectedExceptionProcessed",
         "type" : "LOAD_DATASET",
         "top" : 530.2,
         "left" : 672,
