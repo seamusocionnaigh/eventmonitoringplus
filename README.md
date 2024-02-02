@@ -116,3 +116,9 @@ As of January 2023, the dashboards now use the *'~WithUsers'* datasets. It is im
 
 The app is deployed with a default security setting of 'Manager' for the Entire Organisation; anyone in the Entire Organisation that has access to CRM Analytics. Users will only be able to view the contents of the dashboards *if* they also have access to the datasets. Your datasets are protected within whichever app you've stored them in and so will remain as the main security control.
 Related point: feel free to edit and save these dashboards into your existing Event Monitoring CRM Analytics app. Again, be aware of reconfiguring any templated apps, as it will delete these dashboards.
+
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=seamusocionnaigh&amp;repo=eventmonitoringplus&amp;branch=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
