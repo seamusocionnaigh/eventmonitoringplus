@@ -76,6 +76,7 @@
         "label": "Date",
         "name": "Link_3520"
         }]},
+
     "filters": [{
         "dataset": {
             "name": "LightningPageViewWithUsers"

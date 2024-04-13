@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <assetIcon>/analytics/wave/web/proto/images/app/icons/3.png</assetIcon>
-    <description>Additional Tableau CRM dashboards that help you better understand the insights and value of Event Monitoring log data.</description>
+    <description>Additional CRM Analytics dashboards that help you better understand the insights and value of Event Monitoring log data.</description>
     <folder>Event_Monitoring_Plus</folder>
     <masterLabel>Event Monitoring Plus</masterLabel>
     <shares>
@@ -9,4 +9,6 @@
         <sharedTo>AllInternalUsers</sharedTo>
         <sharedToType>Organization</sharedToType>
     </shares>
+    <templateOrigin>sfdc_internal__AdminAnalytics</templateOrigin>
+    <templateVersion></templateVersion>
 </WaveApplication>

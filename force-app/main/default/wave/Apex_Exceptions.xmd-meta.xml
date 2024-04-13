@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#E8963B</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>gradient</type>
+        </conditionalFormatting>
+        <field>ExceptionsGrid_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <measures>
+        <conditionalFormatting>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#E8963B</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>0</sortIndex>
+            </formattingBins>
+            <formattingBins>
+                <bin xsi:nil="true"/>
+                <formatValue>#B50E03</formatValue>
+                <label xsi:nil="true"/>
+                <sortIndex>1</sortIndex>
+            </formattingBins>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>gradient</type>
+        </conditionalFormatting>
+        <field>ExceptionsGrid_1.A</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeater_1.F</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>User Impact Rate</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeater_1.E</field>
+        <isDerived>false</isDerived>
+        <label>UsersImpacted</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeater_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Users</label>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeater_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Executions</label>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeater_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Exceptions</label>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeater_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Error Rate</label>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeaterDebug_1.C</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Error Rate</label>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeaterDebug_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Exceptions</label>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeaterDebug_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Executions</label>
+        <sortIndex>9</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeaterDebug_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Users</label>
+        <sortIndex>10</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeaterDebug_1.E</field>
+        <isDerived>false</isDerived>
+        <label>UsersImpacted</label>
+        <sortIndex>11</sortIndex>
+    </measures>
+    <measures>
+        <field>SummaryRepeaterDebug_1.F</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>User Impact Rate</label>
+        <sortIndex>12</sortIndex>
+    </measures>
+    <measures>
+        <field>RequestsExceptionsSu_1.C</field>
+        <formatCustomFormat>[&quot;#,###%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <label>Error Rate</label>
+        <sortIndex>13</sortIndex>
+    </measures>
+    <measures>
+        <field>RequestsExceptionsSu_1.B</field>
+        <isDerived>false</isDerived>
+        <label>Executions</label>
+        <sortIndex>14</sortIndex>
+    </measures>
+    <measures>
+        <field>RequestsExceptionsSu_1.A</field>
+        <isDerived>false</isDerived>
+        <label>Exceptions</label>
+        <sortIndex>15</sortIndex>
+    </measures>
+    <measures>
+        <field>RequestsExceptionsSu_1.F</field>
+        <formatCustomFormat>[&quot;#,###%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>false</isDerived>
+        <label>User Impact Rate</label>
+        <sortIndex>16</sortIndex>
+    </measures>
+    <measures>
+        <field>RequestsExceptionsSu_1.E</field>
+        <isDerived>false</isDerived>
+        <label>Users</label>
+        <sortIndex>17</sortIndex>
+    </measures>
+    <measures>
+        <field>RequestsExceptionsSu_1.D</field>
+        <isDerived>false</isDerived>
+        <label>Users Impacted</label>
+        <sortIndex>18</sortIndex>
+    </measures>
     <type>Asset</type>
     <waveVisualization>Apex_Exceptions</waveVisualization>
 </WaveXmd>
