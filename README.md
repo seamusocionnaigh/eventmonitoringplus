@@ -3,11 +3,17 @@ A lightweight collection of CRM Analytics dashboards for gaining a better unders
 
 ## Installation Instructions
 
+Two important points:
+* Never click the 'Update Available' link in the Event Monitoring Plus app folder after instllation. This will remove Event Monitoring Plus. You ***can*** click 'Update Available' in the standard Event Monitoring Analytics app.
+* The latest version of Event Monitoring Plus contains a recipe to process Apex Executions and Apex Unexpected Exceptions. ***You must run or schedule*** the ***'ApexUnexpectedExceptionsEnhancements'*** recipe in the Data Manager before viewing the 'Apex Exceptions' dashboard.
+
+
 ### Prerequisite: Setting Up The Log Ingestion process:
 
 Easy Option: CRM Analytics Templated App
 
-* (If the "Event Monitoring Analytics" CRM Analytics app is already running with the below-listed log types, you can skip to Package Deployment)
+* This package relies on v59 or later of the CRM Analytics Templated App.
+* (If the "Event Monitoring Analytics" CRM Analytics app is already running with the below-listed log types, check that the log types in "Create the analytics app" have been included. If so, proceed to "Deploying the new dashboards".)
 * Select a sandbox or production org
 * [Ensure Event Monitoring Analytics is enabled](https://help.salesforce.com/s/articleView?id=sf.bi_app_event_monitor_enable_select_PSL.htm&type=5)
 * [Assign permissions to users](https://help.salesforce.com/s/articleView?id=bi_app_event_monitor_create_permsets.htm&type=5&language=en_US)
@@ -25,20 +31,37 @@ Easy Option: CRM Analytics Templated App
       * LightningInteraction
       * LightningPageView
       * Login
+      * Report
+      * RESTApi
+* At the end of the wizard (Step 7) you ***must*** check the box asking "Add only new event log file data to existing datasets?"
 
 Harder Option: [Set up a custom process to push Event Logs into CRM Analytics](https://www.salesforcehacker.com/2015/01/simple-script-for-loading-event.html)
 
-### Deploying the new dashboards
+### Deploying the new dashboards and recipe
+
+#### Easy Option: Automate Deployment via Heroku App
+
+Use the button below to authenticate with the Heroku app.
+**Make sure to type 'main' in the Branch/Tag/Commit field.**
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=seamusocionnaigh&amp;repo=eventmonitoringplus&amp;branch=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
+#### Manual Deployment
 
 [Installation guide](https://vimeo.com/789882418)
 
-* Identify the API name of the above-mention datasets in CRM Analytics that you wanted to analyse.
-* These should be datasets that are regularly updated, as part of whichever log ingestion process you've configured above.
+* It is recommended to use Salesforce DX or Workbench to perform the deployment, as per the video installation guide.
+* This package assumes that an administrator has created only one version of the Event Monitoring Analytics app.
+* Multiple instances of that app create multiple versions of the datasets with numbers appended to the name. (If you have gone through several iterations of creating the Event Monitoring Analytics templated app, you may end up with dataset names like "ApexExecutionWithUsers1" or "ApexExecutionWithUsers5" (if you've been unlucky enough to create it 5 times)).
+* If there are multiple versions of the app, it is recommended to consult with all creatores, owners and stakeholders of each instance of the app to determine if there is overlap between each instance and find a path towards consolidating into one app.
+* If there are multiple instances of the app and hence multiple instances, you will need to identify the API name of the correct datasets to use. (These should be datasets that are regularly updated, as part of whichever log ingestion process you've configured.)
 * To identify the API name of a dataset, [follow these steps](https://help.salesforce.com/s/articleView?id=sf.bi_dataset_edit.htm&type=5) to reach the edit page and note the 'API Name' in the top-left.
-* This package assumes that the dataset names are the first or only iteration of the log ingestion process, and hence uses simple dataet names, like, for example "ApexExecutionWithUsers" for the ApexExecutionWithUsers log file. (If you have gone through several iterations of creating the CRM Analytics templated app, you may end up with dataset names like "ApexExecutionWithUsers1" or "ApexExecutionWithUsers5" (if you've been unlucky enough to create it 5 times)).
-* **If** your dataset names are different / have numbers as suffixes, download the package, edit the .wdash (Wave Dashboard) files, and Find/Replace with the appropriate dataset API name from your environment (e.g. "LightningPageViewWithUsers" with "LightningPageViewWithUsers1"). (User_Activities.wdash uses the LightningInteractionWithUsers and LightningPageViewWithUsers datasets; Apex_Performance.wdash uses ApexExecutionWithUsers; Apex_Exceptions.wdash uses ApexUnexpectedException).
-* If you are using the datasets from the default Event Monitoring analytics app (te the *'~WithUsers'* datasets), make sure that you've scheduled your [Event Monitoring Analytics app's dataflow](https://help.salesforce.com/s/articleView?id=sf.bi_app_event_monitor_schedule_dataflow.htm&type=5).
-* This is a SFDX version of the original repo. So you just have to auth an org and deploy as per the `manifest/package.xml` as explained [here](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_develop_any_org.htm). 
+* **If** your dataset names are different / have numbers as suffixes, download the package, edit the .wdash (Wave Dashboard) and .wdpr (Wave Recipe) files, and Find/Replace with the appropriate dataset API name from your environment (e.g. "LightningPageViewWithUsers" with "LightningPageViewWithUsers1"). (User_Activities.wdash uses the LightningInteractionWithUsers and LightningPageViewWithUsers datasets; Apex_Performance.wdash uses ApexExecutionWithUsers; Apex_Exceptions.wdash uses ApexUnexpectedException).
+* If you are using the datasets from the default Event Monitoring analytics app (the *'~WithUsers'* datasets), make sure that you've scheduled your [Event Monitoring Analytics app's dataflow](https://help.salesforce.com/s/articleView?id=sf.bi_app_event_monitor_schedule_dataflow.htm&type=5).
+* This is an SFDX version project. You can authenticate to an org and deploy as per the `manifest/package.xml` as explained [here](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_develop_any_org.htm). 
 * You can also deploy the dashboards with these two other alternatives:
   * Metadata deployment with Ant, SFDX, etc. If you know how to do this, the `misc/mdapi/package.xml` and payload should suffice.
     * If you *don't* know how to do a metadata deployment, create a .zip of the `misc/mdapi/` directore (your zip file should not have any root folder - both `package.xml` and `wave` folder should be on the root of the zip file), [and then follow this guide](https://help.salesforce.com/s/articleView?id=000315117&type=1); note in Step 7 you *do have to* click the 'Single Package' checkbox.
