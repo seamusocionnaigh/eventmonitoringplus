@@ -51,6 +51,18 @@ Use the button below to authenticate with the Heroku app.
 
 #### Manual Deployment
 
+#### Easy Option: Automate Deployment via Heroku App
+
+Use the button below to authenticate with the Heroku app.
+Make sure to enter 'main' in the Branch/Tag/Commit field.
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=seamusocionnaigh&amp;repo=eventmonitoringplus&amp;branch=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
+#### Manual Deployment
+
 [Installation guide](https://vimeo.com/789882418)
 
 * It is recommended to use Salesforce DX or Workbench to perform the deployment, as per the video installation guide.
@@ -58,6 +70,9 @@ Use the button below to authenticate with the Heroku app.
 * Multiple instances of that app create multiple versions of the datasets with numbers appended to the name. (If you have gone through several iterations of creating the Event Monitoring Analytics templated app, you may end up with dataset names like "ApexExecutionWithUsers1" or "ApexExecutionWithUsers5" (if you've been unlucky enough to create it 5 times)).
 * If there are multiple versions of the app, it is recommended to consult with all creatores, owners and stakeholders of each instance of the app to determine if there is overlap between each instance and find a path towards consolidating into one app.
 * If there are multiple instances of the app and hence multiple instances, you will need to identify the API name of the correct datasets to use. (These should be datasets that are regularly updated, as part of whichever log ingestion process you've configured.)
+* It is recommended to use Salesforce DX or Workbench to perform the deployment, as per the video installation guide link, above.
+* Identify the API name of the above-mention datasets in CRM Analytics that you wanted to analyse.
+* These should be datasets that are regularly updated, as part of whichever log ingestion process you've configured above.
 * To identify the API name of a dataset, [follow these steps](https://help.salesforce.com/s/articleView?id=sf.bi_dataset_edit.htm&type=5) to reach the edit page and note the 'API Name' in the top-left.
 * **If** your dataset names are different / have numbers as suffixes, download the package, edit the .wdash (Wave Dashboard) and .wdpr (Wave Recipe) files, and Find/Replace with the appropriate dataset API name from your environment (e.g. "LightningPageViewWithUsers" with "LightningPageViewWithUsers1"). (User_Activities.wdash uses the LightningInteractionWithUsers and LightningPageViewWithUsers datasets; Apex_Performance.wdash uses ApexExecutionWithUsers; Apex_Exceptions.wdash uses ApexUnexpectedException).
 * If you are using the datasets from the default Event Monitoring analytics app (the *'~WithUsers'* datasets), make sure that you've scheduled your [Event Monitoring Analytics app's dataflow](https://help.salesforce.com/s/articleView?id=sf.bi_app_event_monitor_schedule_dataflow.htm&type=5).
